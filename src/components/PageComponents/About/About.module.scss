@@ -1,2 +1,19 @@
+// IMPORTS
+
+@use'../../../styles/typography.module' as typography;
+
 // COMPONENT STYLES
 
+.Content {
+  h2 {
+    @include typography.sectionTitle--big();
+  }
+
+  h3 {
+    @include typography.paragTitle();
+  }
+
+  p {
+    @include typography.body--regular();
+  }
+}

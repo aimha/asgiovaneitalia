@@ -1,1 +1,27 @@
+// IMPORTS
+
+@use'../../../styles/typography.module' as typography;
+
 // COMPONENT STYLES
+
+.Content {
+  h2 {
+    @include typography.sectionTitle--small();
+  }
+
+  p {
+    @include typography.body--bigger();
+  }
+
+  h3 {
+    @include typography.dateTitle();
+  }
+
+  .DatesBody {
+    @include typography.dateBody();
+  }
+
+  .DatesDate {
+      @include typography.dateDate();
+    }
+}

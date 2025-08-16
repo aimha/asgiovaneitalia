@@ -1,1 +1,21 @@
+// IMPORTS
+
+@use'../../../styles/typography.module' as typography;
+
 // COMPONENT STYLES
+
+.Content {
+  h2 {
+    @include typography.sectionTitle--small();
+  }
+
+  .Card {
+    h3 {
+      @include typography.cardTitle();
+    }
+
+    p {
+      @include typography.cardBody();
+    }
+  }
+}

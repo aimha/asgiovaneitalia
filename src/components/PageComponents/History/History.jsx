@@ -32,8 +32,12 @@ function History(props) {
               <For each={ historyDB.dateList }>
                 {(item, index) =>
                   <li className={`${styles.DatesItem}`}>
-                    <div>{ item.date }</div>
-                    <div>{ item.body }</div>
+                    <div className={`${styles.DatesDate}`}>
+                      { item.date }
+                    </div>
+                    <div className={`${styles.DatesBody}`}>
+                      { item.body }
+                    </div>
                   </li>
                 }
               </For>  

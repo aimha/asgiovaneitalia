@@ -1,1 +1,15 @@
+// IMPORTS
+
+@use'../../../styles/typography.module' as typography;
+
 // COMPONENT STYLES
+
+.Content {
+  h2 {
+    @include typography.paragTitle();
+  }
+
+  p {
+    @include typography.body--bigger();
+  }
+}

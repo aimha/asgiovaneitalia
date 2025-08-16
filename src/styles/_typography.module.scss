@@ -1,11 +1,114 @@
-// interlinea
-
-$line: 1rem;
-
 // baseline grid mixin
 
 @mixin baseline($line-height, $lines-bottom) {
   line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+}
+
+@mixin heroOver() {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: var(--head-xl);
+  font-weight: 800;
+  line-height: var(--leading-lg);
+}
+
+@mixin heroTitle() {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: var(--head-8xl);
+  font-weight: 900;
+  line-height: var(--leading-10xl);
+}
+
+@mixin heroClaim() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-xl);
+  font-weight: 100;
+  line-height: var(--leading-lg);
+}
+
+@mixin sectionTitle--big() {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: var(--head-7xl);
+  font-weight: 900;
+  line-height: var(--leading-7xl);
+}
+
+@mixin sectionTitle--small() {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: var(--head-6xl);
+  font-weight: 900;
+  line-height: var(--leading-5xl);
+}
+
+@mixin sectionTitle--small() {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: var(--head-6xl);
+  font-weight: 900;
+  line-height: var(--leading-5xl);
+}
+
+@mixin paragTitle() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 800;
+  line-height: var(--leading-base);
+}
+
+@mixin paragTitle--small() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-base);
+  font-weight: 800;
+  line-height: var(--leading-base);
+}
+
+@mixin body--regular() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 300;
+  line-height: var(--leading-sm);
+}
+
+@mixin body--bigger() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-base);
+  font-weight: 300;
+  line-height: var(--leading-base);
+}
+
+@mixin dateTitle() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 800;
+  line-height: var(--leading-base);
+  text-transform: uppercase;
+}
+
+@mixin dateBody() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 300;
+  line-height: var(--leading-sm);
+  font-variant: small-caps;
+}
+
+@mixin dateDate() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-sm);
+  font-weight: 800;
+  line-height: var(--leading-sm);
+}
+
+@mixin cardTitle() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 800;
+  line-height: var(--leading-base);
+}
+
+@mixin cardBody() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 300;
+  line-height: var(--leading-sm);
 }

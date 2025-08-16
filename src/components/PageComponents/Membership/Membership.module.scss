@@ -1,1 +1,19 @@
+// IMPORTS
+
+@use'../../../styles/typography.module' as typography;
+
 // COMPONENT STYLES
+
+.Content {
+  h2 {
+    @include typography.sectionTitle--small();
+  }
+
+  h3 {
+    @include typography.paragTitle--small();
+  }
+
+  p {
+    @include typography.body--regular();
+  }
+}
