@@ -6,7 +6,8 @@ import styles from './Where.module.scss'
 // import logic
 import WhereClass from './Where.module';
 
-function Where() {
+function Where(props) {
+  const whereDB = props.db;
 
 	onMount(() => {
     const whereComponent = new WhereClass();
@@ -15,7 +16,12 @@ function Where() {
 
 	return (
 		<>
-      <div>Where Section</div>
+      <div id="where" className={`${styles.Container} section`}>
+        <div className={`${styles.Content}`}>
+          <h2>{ whereDB.title }</h2>
+          <p innerHTML={ whereDB.body }></p>
+        </div>
+      </div>
 		</>
 	)
 }

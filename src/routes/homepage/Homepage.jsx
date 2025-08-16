@@ -39,10 +39,10 @@ function App() {
       <Hero db={ state.hero }/>
       <About db={ state.about }/>
       <History db={ state.history }/>
-      <Activities />
-      <Membership />
-      <Where />
-      <Footer />
+      <Activities db={ state.activities }/>
+      <Membership db={ state.membership }/>
+      <Where db={ state.where }/>
+      <Footer db={ state.footer }/>
     </>
   );
 }

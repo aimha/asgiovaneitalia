@@ -6,8 +6,8 @@ import styles from './Footer.module.scss'
 // import logic
 import FooterClass from './Footer.module';
 
-function Footer() {
-
+function Footer(props) {
+  const footerDB = props.db;
 	onMount(() => {
     const footerComponent = new FooterClass();
     footerComponent.init();
@@ -15,7 +15,11 @@ function Footer() {
 
 	return (
 		<>
-      <div>Footer section</div>
+      <div id="footer" className={`${styles.Container} section`}>
+        <div className={`${styles.Content}`}>
+          <h2>{ footerDB.title }</h2>
+        </div>
+      </div>
 		</>
 	)
 }

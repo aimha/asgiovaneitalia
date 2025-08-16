@@ -16,7 +16,7 @@ function History(props) {
 
 	return (
 		<>
-      <div id="about" className={`${styles.Container} section`}>
+      <div id="history" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
           <div>
             <h2>

@@ -52,7 +52,48 @@ function createStateManagement() {
           body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
         }
       ]
-    } 
+    },
+    activities: {
+      title: 'Le Nostre Attività',
+      cards: [
+        {
+          title: 'Sport',
+          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          img: ''
+        },
+        {
+          title: 'Cultura',
+          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          img: ''
+        },
+        {
+          title: 'Musica',
+          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          img: ''
+        },
+        {
+          title: 'Ristorazione',
+          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          img: ''
+        }
+      ]
+    },
+    membership: {
+      title: 'Diventa parte di una storia che continua a crescere',
+      subtitle: 'Diventa socio ed entra in una comunità che da quasi cento anni coltiva sport, cultura e passione.',
+      body: [
+        "Ac hendrerit in elit est quisque ultrices amet. Et sit phasellus cras orci bibendum. Aenean ullamcorper ut vulputate tellus donec mattis. In eleifend purus pharetra ipsum amet dui. Et amet condimentum nunc metus sit magna felis condimentum",
+        "Ac hendrerit in elit est quisque ultrices amet. Et sit phasellus cras orci bibendum. Aenean ullamcorper ut vulputate tellus donec mattis. In eleifend purus pharetra ipsum amet dui. Et amet condimentum nunc metus sit magna felis condimentum"
+      ],
+      cta: 'Tesserati ora'
+    },
+    where: {
+      title: 'A.S. Giovane Italia',
+      body: 'Via John Fitzgerald Kennedy 7<br>43125<br>Parma (PR)'
+    },
+    footer: {
+      title: 'this is a footer'
+    }
   });
 
   return { state };
