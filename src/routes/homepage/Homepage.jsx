@@ -1,8 +1,16 @@
 import { onMount } from 'solid-js';
 
-// import components
+// import utility components
 import Grid from '../../components/Grid/Grid';
-import Slider from '../../components/Slider/Slider';
+
+// import page components
+import Hero from '../../components/PageComponents/Hero/Hero';
+import About from '../../components/PageComponents/About/About';
+import History from '../../components/PageComponents/History/History';
+import Activities from '../../components/PageComponents/Activities/Activities';
+import Membership from '../../components/PageComponents/Membership/Membership';
+import Where from '../../components/PageComponents/Where/Where';
+import Footer from '../../components/PageComponents/Footer/Footer';
 
 // import style
 import styles from './Homepage.module.scss';
@@ -11,35 +19,28 @@ import styles from './Homepage.module.scss';
 import HomepageClass from './Homepage.module';
 
 // import state management store
-import stateManagement from "../../data/stores/Store";
+// import stateManagement from "../../data/stores/Store";
 
-function App() {
-  const { state } = stateManagement;
-  
+function App() {  
   onMount(() => {
     // initialize homepage logic
-    const hp = new HomepageClass(styles.Title, styles.Paragraph);
-
+    const hp = new HomepageClass();
     hp.init();
   })
 
   return (
     <>
       {/* UTILITY */}
-      <Grid />
+      {/* <Grid /> */}
 
       {/* PAGE CONTENT */}
-      <div className={`${styles.Container}`}>
-        <h1 className={`${styles.Title}`}>
-          Hello { state.username } from { state.location }!
-        </h1>
-        <p className={`${styles.Paragraph}`}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet deleniti perferendis animi deserunt magnam cupiditate nisi ab! Aperiam commodi autem nesciunt odio reiciendis enim impedit pariatur. Enim obcaecati beatae accusamus eum. Nihil excepturi facere accusantium assumenda sapiente minima beatae eius laborum natus dicta? Nulla fuga facere aliquam magni tempora. Ipsum nobis neque vitae repellat, laborum inventore deserunt tempore incidunt omnis? Libero incidunt rem perferendis et deleniti nam exercitationem iusto inventore animi ipsam mollitia expedita, officiis debitis laudantium sunt blanditiis quia?
-        </p>
-
-      <Slider />
-
-      </div>
+      <Hero />
+      <About />
+      <History />
+      <Activities />
+      <Membership />
+      <Where />
+      <Footer />
     </>
   );
 }
