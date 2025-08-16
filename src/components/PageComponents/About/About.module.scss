@@ -4,16 +4,23 @@
 
 // COMPONENT STYLES
 
-.Content {
-  h2 {
-    @include typography.sectionTitle--big();
-  }
-
-  h3 {
-    @include typography.paragTitle();
-  }
-
-  p {
-    @include typography.body--regular();
+.Container {
+  background-color: var(--color-neutral200);
+  .Content {
+    color: var(--color-neutral800);
+  
+    h2 {
+      @include typography.sectionTitle--big();
+      color: var(--color-primary500);
+    }
+  
+    h3 {
+      @include typography.paragTitle();
+      margin-top: -5px;
+    }
+  
+    p {
+      @include typography.body--regular();
+    }
   }
 }

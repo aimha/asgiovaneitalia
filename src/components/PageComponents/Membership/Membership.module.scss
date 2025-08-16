@@ -4,16 +4,22 @@
 
 // COMPONENT STYLES
 
-.Content {
-  h2 {
-    @include typography.sectionTitle--small();
-  }
+.Container {
+  background-color: var(--color-neutral100);
+  color: var(--color-neutral800);
 
-  h3 {
-    @include typography.paragTitle--small();
-  }
-
-  p {
-    @include typography.body--regular();
+  .Content {
+    h2 {
+      @include typography.sectionTitle--small();
+      color: var(--color-secondary500);
+    }
+  
+    h3 {
+      @include typography.paragTitle--small();
+    }
+  
+    p {
+      @include typography.body--regular();
+    }
   }
 }

@@ -4,16 +4,25 @@
 
 // COMPONENT STYLES
 
-.Content {
-  span {
-    @include typography.heroOver();
-  }
+.Container {
+  background-color: var(--color-primary500);
+  color: var(--color-neutral200);
+  min-height: 100vh;
 
-  h1 {
-    @include typography.heroTitle();
-  }
+  .Content {
+    text-align: center;
 
-  p {
-    @include typography.heroClaim();
+    div {
+      @include typography.heroOver();
+      color: var(--color-secondary500);
+    }
+  
+    h1 {
+      @include typography.heroTitle();
+    }
+  
+    p {
+      @include typography.heroClaim();
+    }
   }
 }

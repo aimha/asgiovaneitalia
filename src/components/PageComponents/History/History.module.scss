@@ -4,24 +4,34 @@
 
 // COMPONENT STYLES
 
-.Content {
-  h2 {
-    @include typography.sectionTitle--small();
-  }
+.Container {
+  background-color: var(--color-neutral900);
 
-  p {
-    @include typography.body--bigger();
-  }
+  .Content {
+    color: var(--color-neutral200);
 
-  h3 {
-    @include typography.dateTitle();
-  }
-
-  .DatesBody {
-    @include typography.dateBody();
-  }
-
-  .DatesDate {
-      @include typography.dateDate();
+    h2 {
+      @include typography.sectionTitle--small();
     }
+  
+    p {
+      @include typography.body--bigger();
+    }
+  
+    h3 {
+      @include typography.dateTitle();
+    }
+  
+    .Dates {
+      color: var(--color-secondary500);
+
+      .DatesBody {
+        @include typography.dateBody();
+      }
+    
+      .DatesDate {
+          @include typography.dateDate();
+      }
+    }
+  }
 }

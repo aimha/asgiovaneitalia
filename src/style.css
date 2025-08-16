@@ -4,8 +4,8 @@
 @theme {
   /* LAYOUT */
   --corners-sm: .25rem;
-  --corners-sm: .5rem;
-  --corners-sm: 1rem;
+  --corners-md: .5rem;
+  --corners-lg: 1rem;
 
   /* TYPE */
   --leading-xs: 1rem; /* 20px */

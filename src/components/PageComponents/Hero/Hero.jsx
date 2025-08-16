@@ -20,7 +20,7 @@ function Hero(props) {
 		<>
 			<div id="hero" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
-          <span>{ heroDB.over }</span>
+          <div>{ heroDB.over }</div>
           <h1>{ heroDB.title }</h1>
           <p>{ heroDB.claim }</p>
         </div>

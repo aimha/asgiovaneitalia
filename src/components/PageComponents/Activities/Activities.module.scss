@@ -4,18 +4,29 @@
 
 // COMPONENT STYLES
 
-.Content {
-  h2 {
-    @include typography.sectionTitle--small();
-  }
+.Container {
+  background-color: var(--color-primary900);
+  color: var(--color-secondary500);
 
-  .Card {
-    h3 {
-      @include typography.cardTitle();
+  .Content {
+    h2 {
+      @include typography.sectionTitle--small();
     }
+  
+    .Card {
+      background-color: var(--color-primary700);
+      border-radius: var(--corners-md);
+      padding: 2rem 2rem 3rem;
 
-    p {
-      @include typography.cardBody();
+      h3 {
+        @include typography.cardTitle();
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        @include typography.cardBody();
+        color: var(--color-neutral200);
+      }
     }
   }
 }

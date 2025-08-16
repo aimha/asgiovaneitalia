@@ -1,3 +1,7 @@
+// interlinea
+
+$line: 1rem;
+
 // baseline grid mixin
 
 @mixin baseline($line-height, $lines-bottom) {
@@ -10,28 +14,35 @@
   font-family: "Alegreya Sans", sans-serif;
   font-size: var(--head-xl);
   font-weight: 800;
-  line-height: var(--leading-lg);
+
+  @include baseline(3, 0);
 }
 
 @mixin heroTitle() {
   font-family: "Alegreya Sans", sans-serif;
   font-size: var(--head-8xl);
   font-weight: 900;
-  line-height: var(--leading-10xl);
+
+  @include baseline(7.5, 2);
+  margin-top: 5px;
 }
 
 @mixin heroClaim() {
   font-family: "Merriweather Sans", sans-serif;
   font-size: var(--text-xl);
   font-weight: 100;
-  line-height: var(--leading-lg);
+
+  @include baseline(2, 0);
+  margin-top: -5px;
 }
 
 @mixin sectionTitle--big() {
   font-family: "Alegreya Sans", sans-serif;
   font-size: var(--head-7xl);
   font-weight: 900;
-  line-height: var(--leading-7xl);
+
+  @include baseline(6, 4);
+  margin-top: 5px;
 }
 
 @mixin sectionTitle--small() {

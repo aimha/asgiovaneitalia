@@ -4,12 +4,17 @@
 
 // COMPONENT STYLES
 
-.Content {
-  h2 {
-    @include typography.paragTitle();
-  }
+.Container {
+  background-color: var(--color-primary900);
+  color: var(--color-neutral100);
 
-  p {
-    @include typography.body--bigger();
+  .Content {
+    h2 {
+      @include typography.paragTitle();
+    }
+  
+    p {
+      @include typography.body--bigger();
+    }
   }
 }
