@@ -19,9 +19,11 @@ import styles from './Homepage.module.scss';
 import HomepageClass from './Homepage.module';
 
 // import state management store
-// import stateManagement from "../../data/stores/Store";
+import stateManagement from "../../data/stores/Store";
 
-function App() {  
+function App() {
+  const { state } = stateManagement;
+
   onMount(() => {
     // initialize homepage logic
     const hp = new HomepageClass();
@@ -34,9 +36,9 @@ function App() {
       {/* <Grid /> */}
 
       {/* PAGE CONTENT */}
-      <Hero />
-      <About />
-      <History />
+      <Hero db={ state.hero }/>
+      <About db={ state.about }/>
+      <History db={ state.history }/>
       <Activities />
       <Membership />
       <Where />

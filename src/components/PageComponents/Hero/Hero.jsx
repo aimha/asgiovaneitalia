@@ -6,7 +6,8 @@ import styles from './Hero.module.scss'
 // import logic
 import HeroClass from './Hero.module';
 
-function Hero() {
+function Hero(props) {
+  const heroDB = props.db;
 
 	onMount(() => {
 		// initialize hero logic
@@ -17,14 +18,14 @@ function Hero() {
 
 	return (
 		<>
-			<div id="hero" className={`${styles.Container}`}>
+			<div id="hero" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
-          <span>Associazione Sportiva</span>
-          <h1>Giovane Italia</h1>
-          <p>Sport, Musica e Cultura a Parma. Dal 1927.</p>
+          <span>{ heroDB.over }</span>
+          <h1>{ heroDB.title }</h1>
+          <p>{ heroDB.claim }</p>
         </div>
         <div className={`${styles.Cta}`}>
-          Esplora
+          { heroDB.cta }
         </div>
       </div>
 		</>
