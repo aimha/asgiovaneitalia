@@ -23,6 +23,12 @@
     height: fit-content;
     text-align: center;
 
+    .Logo {
+      display: inline-block;
+      width: ty.vw(2);
+      height: ty.vw(2.18);
+    }
+
     .Over {
       color: var(--color-secondary500);
 
