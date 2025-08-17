@@ -16,7 +16,7 @@
     .Card {
       background-color: var(--color-primary700);
       border-radius: var(--corners-md);
-      padding: 2rem 2rem 3rem;
+      padding: 2.083333333333333vw 2.083333333333333vw 3.125vw;
 
       h3 {
         @include typography.cardTitle();
