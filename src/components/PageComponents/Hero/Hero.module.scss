@@ -6,6 +6,9 @@
 // COMPONENT STYLES
 
 .Container {
+  background-image: url('/imgs/hero_bg.png');
+  background-size: cover;
+
   background-color: var(--color-primary700);
   color: var(--color-neutral200);
 

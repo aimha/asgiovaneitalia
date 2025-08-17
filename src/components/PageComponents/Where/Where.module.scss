@@ -5,6 +5,10 @@
 // COMPONENT STYLES
 
 .Container {
+  background-image: url('/imgs/mappa.png');
+  background-size: cover;
+  background-position: 0% 55%;
+
   background-color: var(--color-primary900);
   color: var(--color-neutral100);
 
