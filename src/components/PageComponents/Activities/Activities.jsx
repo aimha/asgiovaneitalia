@@ -18,13 +18,19 @@ function Activities(props) {
 		<>
       <div id="activities" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
-          <h2>{ actDB.title }</h2>
+          <h2 className={`${styles.Title}`}>
+            { actDB.title }
+          </h2>
           <ul className={`${styles.CardList}`}>
             <For each={ actDB.cards }>
               {(item, index) =>
                 <li className={`${styles.Card}`}>
-                  <h3>{ item.title }</h3>
-                  <p>{ item.body }</p>
+                  <h3 className={`${styles.CardTitle}`}>
+                    { item.title }
+                  </h3>
+                  <p className={`${styles.CardBody}`}>
+                    { item.body }
+                  </p>
                 </li>
               }
             </For>

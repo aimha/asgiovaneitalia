@@ -9,24 +9,36 @@
   color: var(--color-secondary500);
 
   .Content {
-    h2 {
+    .Title {
+      text-align: center;
+
       @include ty.sectionTitle--small();
     }
-  
-    .Card {
-      background-color: var(--color-primary700);
-      border-radius: var(--corners-md);
-      padding: 2.083333333333333vw 2.083333333333333vw 3.125vw;
 
-      h3 {
-        @include ty.cardTitle();
-        margin-bottom: 1rem;
-      }
-  
-      p {
-        @include ty.cardBody();
-        color: var(--color-neutral200);
+    .CardList {
+      margin-top: ty.vw(13);
+      display: flex;
+      gap: ty.vw(2);
+      text-align: center;
+
+      .Card {
+        background-color: var(--color-primary700);
+        border-radius: var(--corners-md);
+        padding: ty.vw(2) ty.vw(2) ty.vw(3);
+
+        .CardTitle {
+          padding-bottom: ty.vw(2);
+
+          @include ty.cardTitle();
+        }
+    
+        .CardBody {
+          color: var(--color-neutral200);
+
+          @include ty.cardBody();
+        }
       }
     }
+  
   }
 }
