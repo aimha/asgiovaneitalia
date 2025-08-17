@@ -21,7 +21,7 @@ $line: vw(1);
   font-size: var(--head-xl);
   font-weight: 800;
 
-  @include baseline(3, 0);
+  @include baseline(3.1, 0);
 }
 
 @mixin heroTitle() {
@@ -29,7 +29,7 @@ $line: vw(1);
   font-size: var(--head-8xl);
   font-weight: 900;
 
-  @include baseline(7.5, 0);
+  @include baseline(7.6, 0);
 }
 
 @mixin heroClaim() {
@@ -140,8 +140,8 @@ $line: vw(1);
 
 @mixin cta() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   font-weight: 500;
 
-  @include baseline(1.5, 0);
+  @include baseline(1.95, 0);
 }

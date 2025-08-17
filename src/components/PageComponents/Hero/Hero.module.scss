@@ -1,6 +1,7 @@
 // IMPORTS
 
 @use'../../../styles/typography.module' as ty;
+@use'../../../styles/objects.module' as obj;
 
 // COMPONENT STYLES
 
@@ -8,7 +9,7 @@
   background-color: var(--color-primary700);
   color: var(--color-neutral200);
 
-  padding: 0 4.166666666666666vw;
+  padding: 0 ty.vw(4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,8 +21,9 @@
     text-align: center;
 
     .Over {
-      @include ty.heroOver();
       color: var(--color-secondary500);
+
+      @include ty.heroOver();
     }
   
     .Title {
@@ -29,17 +31,15 @@
     }
   
     .Claim {
+      margin-top: ty.vw(1.9);
+
       @include ty.heroClaim();
     }
 
     .Cta {
-      @include ty.cta();
-
-      margin-top: ty.vw(5);
-      display: inline-block;
-      padding: ty.vw(.5) ty.vw(2);
-      border-radius: ty.vw(2);
-      background-color: var(--color-secondary500);
+      margin-top: ty.vw(4.9);
+      
+      @include obj.ctaButton(--color-secondary500, --color-neutral100);
     }
   }
 }

@@ -20,9 +20,15 @@ function Hero(props) {
 		<>
 			<div id="hero" className={`${styles.Container}`}>
         <div className={`${styles.Content}`}>
-          <div className={`${styles.Over}`}>{ heroDB.over }</div>
-          <h1 className={`${styles.Title}`}>{ heroDB.title }</h1>
-          <p className={`${styles.Claim}`}>{ heroDB.claim }</p>
+          <div className={`${styles.Over}`}>
+            { heroDB.over }
+          </div>
+          <h1 className={`${styles.Title}`}>
+            { heroDB.title }
+          </h1>
+          <p className={`${styles.Claim}`}>
+            { heroDB.claim }
+          </p>
           <div className={`${styles.Cta}`}>
             { heroDB.cta }
           </div>

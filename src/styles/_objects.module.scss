@@ -1,0 +1,16 @@
+// IMPORTS
+
+@use'typography.module' as ty;
+
+// OBJECTS MIXINS
+
+@mixin ctaButton($bg, $text) {
+  color: var($text);
+
+  display: inline-block;
+  padding: ty.vw(.5) ty.vw(2);
+  border-radius: ty.vw(2);
+  background-color: var($bg);
+
+  @include ty.cta();
+}
