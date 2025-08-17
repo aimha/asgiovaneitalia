@@ -18,17 +18,25 @@ function Membership(props) {
 		<>
       <div id="membership" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
-          <div>
-            <h2>{ memDB.title }</h2>
+          <div className={`${styles.LeftSide}`}>
+            <h2 className={`${styles.Title}`}>
+              { memDB.title }
+            </h2>
           </div>
-          <div>
-            <h3>{ memDB.subtitle }</h3>
+          <div className={`${styles.RightSide}`}>
+            <h3 className={`${styles.SubTitle}`}>
+              { memDB.subtitle }
+            </h3>
             <For each={ memDB.body }>
               {(item, index) =>
-                <p>{ item }</p>
+                <p className={`${styles.Body}`}>
+                  { item }
+                </p>
               }
             </For>
-            <div>{ memDB.cta }</div>
+            <div className={`${styles.Cta}`}>
+              { memDB.cta }
+            </div>
           </div>
         </div>
       </div>

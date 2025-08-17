@@ -1,6 +1,7 @@
 // IMPORTS
 
 @use'../../../styles/typography.module' as ty;
+@use'../../../styles/objects.module' as obj;
 
 // COMPONENT STYLES
 
@@ -9,17 +10,40 @@
   color: var(--color-neutral800);
 
   .Content {
-    h2 {
-      @include ty.sectionTitle--small();
-      color: var(--color-secondary500);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: ty.vw(2);
+
+    .LeftSide {
+      grid-column: 1 / 7;
+
+      .Title {
+        color: var(--color-secondary500);
+        margin-top: ty.vw(.15);
+
+        @include ty.sectionTitle--small();
+      }
     }
-  
-    h3 {
-      @include ty.paragTitle--small();
-    }
-  
-    p {
-      @include ty.body--regular();
+
+    .RightSide {
+      grid-column: 8 / 13;
+      margin-top: ty.vw(1.05);
+      
+      .SubTitle {
+        @include ty.paragTitle--small();
+      }
+
+      .Body {
+        margin-top: ty.vw(2);
+
+        @include ty.body--regular();
+      }
+
+      .Cta {
+        margin-top: ty.vw(3);
+
+        @include obj.ctaButton(--color-primary500, --color-neutral100);
+      }
     }
   }
 }
