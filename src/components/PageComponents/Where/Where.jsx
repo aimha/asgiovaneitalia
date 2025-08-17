@@ -18,8 +18,12 @@ function Where(props) {
 		<>
       <div id="where" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
-          <h2>{ whereDB.title }</h2>
-          <p innerHTML={ whereDB.body }></p>
+          <div>
+            <h2 className={`${styles.Title}`}>
+              { whereDB.title }
+            </h2>
+            <p innerHTML={ whereDB.body } className={`${styles.Body}`}></p>
+          </div>
         </div>
       </div>
 		</>

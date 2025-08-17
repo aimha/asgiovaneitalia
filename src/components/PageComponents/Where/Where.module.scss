@@ -9,12 +9,21 @@
   color: var(--color-neutral100);
 
   .Content {
-    h2 {
-      @include ty.paragTitle();
-    }
-  
-    p {
-      @include ty.body--bigger();
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: ty.vw(2);
+
+    >div {
+      grid-column: 9 / 13;
+      margin-top: ty.vw(.05);
+
+      .Title {
+        @include ty.paragTitle();
+      }
+
+      .Body {
+        @include ty.body--bigger();
+      }
     }
   }
 }
