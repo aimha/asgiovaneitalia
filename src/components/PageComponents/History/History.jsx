@@ -18,16 +18,18 @@ function History(props) {
 		<>
       <div id="history" className={`${styles.Container} section`}>
         <div className={`${styles.Content}`}>
-          <div>
-            <h2>
+          <div className={`${styles.Main}`}>
+            <h2 className={`${styles.Title}`}>
               { historyDB.title }
             </h2>
-            <p>
+            <p className={`${styles.Body}`}>
               { historyDB.body }
             </p>
           </div>
           <div className={`${styles.Dates}`}>
-            <h3>BREVE CRONOLOGIA</h3>
+            <h3 className={`${styles.DatesTitle}`}>
+              { historyDB.dateTitle }
+            </h3>
             <ul className={`${styles.DatesList}`}>
               <For each={ historyDB.dateList }>
                 {(item, index) =>

@@ -30,13 +30,13 @@
       margin-top: ty.vw(1.05);
       
       .SubTitle {
-        @include ty.paragTitle--small();
+        @include ty.paragTitle();
       }
 
       .Body {
         margin-top: ty.vw(2);
 
-        @include ty.body--regular();
+        @include ty.body--bigger();
       }
 
       .Cta {

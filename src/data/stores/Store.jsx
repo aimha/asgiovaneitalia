@@ -22,6 +22,7 @@ function createStateManagement() {
     history: {
       title: 'Cento anni di storie, volti e passioni',
       body: 'Era il 1927 quando, sotto lo scudo bianco-amaranto, prese vita Giovane Italia. Nei decenni, abbiamo visto passare grandi nomi come Alberto Michelotti e Bruno Mora, ma soprattutto generazioni di parmigiani che qui hanno trovato casa.',
+      dateTitle: "GIOVANE ITALIA IN TAPPE",
       dateList: [
         {
           date: 1927,

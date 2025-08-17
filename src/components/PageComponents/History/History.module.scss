@@ -9,28 +9,56 @@
 
   .Content {
     color: var(--color-neutral200);
+    display: flex;
+    gap: ty.vw(2);
 
-    h2 {
-      @include ty.sectionTitle--small();
+    &>* {
+      flex-basis: 50%;
     }
+
+    .Main {
+      .Title {
+        margin-top: ty.vw(.15);
+        @include ty.sectionTitle--small();
+      }
+
+      .Body {
+        margin-top: ty.vw(4.9);
+        padding: 0 ty.vw(7.5);
   
-    p {
-      @include ty.body--bigger();
+        @include ty.body--bigger();
+      }
     }
-  
-    h3 {
-      @include ty.dateTitle();
-    }
-  
+
+
     .Dates {
       color: var(--color-secondary500);
+      padding-top: ty.vw(3);
 
-      .DatesBody {
-        @include ty.dateBody();
+      .DatesTitle {
+        margin-left: ty.vw(6);
+        @include ty.dateTitle();
       }
-    
-      .DatesDate {
-          @include ty.dateDate();
+
+      .DatesList {
+
+        .DatesItem {
+          margin-top: ty.vw(2);
+          display: flex;
+          gap: ty.vw(2);
+
+          .DatesBody {
+            @include ty.dateBody();
+          }
+
+          .DatesDate {
+            text-align: right;
+            min-width: ty.vw(4);
+
+            @include ty.dateDate();
+          }
+        }
+
       }
     }
   }
