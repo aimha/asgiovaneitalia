@@ -10,18 +10,22 @@
   .Content {
     color: var(--color-neutral800);
   
-    h2 {
+    .Title {
       @include ty.sectionTitle--big();
       color: var(--color-primary500);
     }
-  
-    h3 {
-      @include ty.paragTitle();
-      margin-top: -5px;
+
+    .Paragraph {
+      margin-top: ty.vw(10);
+
+      .SubTitle {
+        @include ty.paragTitle();
+      }
+
+      .Body {
+        @include ty.body--regular();
+      }
     }
   
-    p {
-      @include ty.body--regular();
-    }
   }
 }

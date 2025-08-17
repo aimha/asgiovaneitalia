@@ -33,6 +33,8 @@
     }
 
     .Cta {
+      @include ty.cta();
+
       margin-top: ty.vw(5);
       display: inline-block;
       padding: ty.vw(.5) ty.vw(2);

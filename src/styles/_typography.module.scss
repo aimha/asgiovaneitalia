@@ -47,7 +47,7 @@ $line: 1.0416666666666665vw;
   font-size: var(--head-7xl);
   font-weight: 900;
 
-  @include baseline(6, 4);
+  @include baseline(6, 0);
   margin-top: 5px;
 }
 
@@ -69,7 +69,10 @@ $line: 1.0416666666666665vw;
   font-family: "Merriweather Sans", sans-serif;
   font-size: var(--text-lg);
   font-weight: 800;
-  line-height: var(--leading-base);
+  // line-height: var(--leading-base);
+
+  @include baseline(2, 2);
+  margin-top: -12px;
 }
 
 @mixin paragTitle--small() {
@@ -127,5 +130,12 @@ $line: 1.0416666666666665vw;
   font-family: "Merriweather Sans", sans-serif;
   font-size: var(--text-xs);
   font-weight: 300;
+  line-height: var(--leading-sm);
+}
+
+@mixin cta() {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 500;
   line-height: var(--leading-sm);
 }
