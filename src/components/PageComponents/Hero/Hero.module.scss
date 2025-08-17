@@ -1,28 +1,43 @@
 // IMPORTS
 
-@use'../../../styles/typography.module' as typography;
+@use'../../../styles/typography.module' as ty;
 
 // COMPONENT STYLES
 
 .Container {
-  background-color: var(--color-primary500);
+  background-color: var(--color-primary700);
   color: var(--color-neutral200);
+
+  padding: 0 4.166666666666666vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   min-height: 100vh;
 
   .Content {
+    height: fit-content;
     text-align: center;
 
-    div {
-      @include typography.heroOver();
+    .Over {
+      @include ty.heroOver();
       color: var(--color-secondary500);
     }
   
-    h1 {
-      @include typography.heroTitle();
+    .Title {
+      @include ty.heroTitle();
     }
   
-    p {
-      @include typography.heroClaim();
+    .Claim {
+      @include ty.heroClaim();
+    }
+
+    .Cta {
+      margin-top: ty.vw(5);
+      display: inline-block;
+      padding: ty.vw(.5) ty.vw(2);
+      border-radius: ty.vw(2);
+      background-color: var(--color-secondary500);
     }
   }
 }

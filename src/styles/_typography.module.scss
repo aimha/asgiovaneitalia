@@ -1,3 +1,9 @@
+// funzioni di conversione
+
+@function vw($rem) {
+  @return ((($rem * 20) / 1920) * 100vw);
+}    
+
 // interlinea
 
 $line: 1.0416666666666665vw;

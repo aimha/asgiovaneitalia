@@ -1,6 +1,6 @@
 // IMPORTS
 
-@use'../../../styles/typography.module' as typography;
+@use'../../../styles/typography.module' as ty;
 
 // COMPONENT STYLES
 
@@ -10,7 +10,7 @@
 
   .Content {
     h2 {
-      @include typography.sectionTitle--small();
+      @include ty.sectionTitle--small();
     }
   
     .Card {
@@ -19,12 +19,12 @@
       padding: 2.083333333333333vw 2.083333333333333vw 3.125vw;
 
       h3 {
-        @include typography.cardTitle();
+        @include ty.cardTitle();
         margin-bottom: 1rem;
       }
   
       p {
-        @include typography.cardBody();
+        @include ty.cardBody();
         color: var(--color-neutral200);
       }
     }

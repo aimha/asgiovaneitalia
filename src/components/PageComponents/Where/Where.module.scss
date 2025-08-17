@@ -1,6 +1,6 @@
 // IMPORTS
 
-@use'../../../styles/typography.module' as typography;
+@use'../../../styles/typography.module' as ty;
 
 // COMPONENT STYLES
 
@@ -10,11 +10,11 @@
 
   .Content {
     h2 {
-      @include typography.paragTitle();
+      @include ty.paragTitle();
     }
   
     p {
-      @include typography.body--bigger();
+      @include ty.body--bigger();
     }
   }
 }

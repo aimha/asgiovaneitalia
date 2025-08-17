@@ -18,14 +18,14 @@ function Hero(props) {
 
 	return (
 		<>
-			<div id="hero" className={`${styles.Container} section`}>
+			<div id="hero" className={`${styles.Container}`}>
         <div className={`${styles.Content}`}>
-          <div>{ heroDB.over }</div>
-          <h1>{ heroDB.title }</h1>
-          <p>{ heroDB.claim }</p>
-        </div>
-        <div className={`${styles.Cta}`}>
-          { heroDB.cta }
+          <div className={`${styles.Over}`}>{ heroDB.over }</div>
+          <h1 className={`${styles.Title}`}>{ heroDB.title }</h1>
+          <p className={`${styles.Claim}`}>{ heroDB.claim }</p>
+          <div className={`${styles.Cta}`}>
+            { heroDB.cta }
+          </div>
         </div>
       </div>
 		</>

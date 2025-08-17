@@ -1,6 +1,6 @@
 // IMPORTS
 
-@use'../../../styles/typography.module' as typography;
+@use'../../../styles/typography.module' as ty;
 
 // COMPONENT STYLES
 
@@ -10,16 +10,16 @@
 
   .Content {
     h2 {
-      @include typography.sectionTitle--small();
+      @include ty.sectionTitle--small();
       color: var(--color-secondary500);
     }
   
     h3 {
-      @include typography.paragTitle--small();
+      @include ty.paragTitle--small();
     }
   
     p {
-      @include typography.body--regular();
+      @include ty.body--regular();
     }
   }
 }

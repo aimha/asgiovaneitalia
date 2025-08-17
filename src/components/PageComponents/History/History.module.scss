@@ -1,6 +1,6 @@
 // IMPORTS
 
-@use'../../../styles/typography.module' as typography;
+@use'../../../styles/typography.module' as ty;
 
 // COMPONENT STYLES
 
@@ -11,26 +11,26 @@
     color: var(--color-neutral200);
 
     h2 {
-      @include typography.sectionTitle--small();
+      @include ty.sectionTitle--small();
     }
   
     p {
-      @include typography.body--bigger();
+      @include ty.body--bigger();
     }
   
     h3 {
-      @include typography.dateTitle();
+      @include ty.dateTitle();
     }
   
     .Dates {
       color: var(--color-secondary500);
 
       .DatesBody {
-        @include typography.dateBody();
+        @include ty.dateBody();
       }
     
       .DatesDate {
-          @include typography.dateDate();
+          @include ty.dateDate();
       }
     }
   }

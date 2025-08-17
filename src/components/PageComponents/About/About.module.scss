@@ -1,6 +1,6 @@
 // IMPORTS
 
-@use'../../../styles/typography.module' as typography;
+@use'../../../styles/typography.module' as ty;
 
 // COMPONENT STYLES
 
@@ -11,17 +11,17 @@
     color: var(--color-neutral800);
   
     h2 {
-      @include typography.sectionTitle--big();
+      @include ty.sectionTitle--big();
       color: var(--color-primary500);
     }
   
     h3 {
-      @include typography.paragTitle();
+      @include ty.paragTitle();
       margin-top: -5px;
     }
   
     p {
-      @include typography.body--regular();
+      @include ty.body--regular();
     }
   }
 }
