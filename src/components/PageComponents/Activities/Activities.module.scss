@@ -22,9 +22,32 @@
       text-align: center;
 
       .Card {
+        position: relative;
         background-color: var(--color-primary700);
         border-radius: var(--corners-md);
-        padding: ty.vw(2) ty.vw(2) ty.vw(3);
+        padding: ty.vw(4) ty.vw(2) ty.vw(3);
+
+        .CardIcon {
+          position: absolute;
+          width: ty.vw(8);
+          height: ty.vw(8);
+          background-color: inherit;
+          border-radius: 100%;
+          top: ty.vw(-4);
+          left: 50%;
+          transform: translate(-50%, 0);
+
+          img {
+            height: auto;
+            min-height: ty.vw(4);
+            margin: ty.vw(2) auto;
+          }
+        }
+
+        .CardTitle,
+        .CardBody {
+          position: relative;
+        }
 
         .CardTitle {
           padding-bottom: ty.vw(2);

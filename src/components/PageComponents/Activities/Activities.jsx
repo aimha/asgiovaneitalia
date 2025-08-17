@@ -21,10 +21,16 @@ function Activities(props) {
           <h2 className={`${styles.Title}`}>
             { actDB.title }
           </h2>
+
           <ul className={`${styles.CardList}`}>
             <For each={ actDB.cards }>
               {(item, index) =>
+
                 <li className={`${styles.Card}`}>
+                  <div className={`${styles.CardIcon}`}>
+                    <img src={ item.img } alt="" />
+                  </div>
+
                   <h3 className={`${styles.CardTitle}`}>
                     { item.title }
                   </h3>
@@ -32,6 +38,7 @@ function Activities(props) {
                     { item.body }
                   </p>
                 </li>
+
               }
             </For>
           </ul>

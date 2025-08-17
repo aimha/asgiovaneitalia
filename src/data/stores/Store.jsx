@@ -60,22 +60,22 @@ function createStateManagement() {
         {
           title: 'Sport',
           body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
-          img: ''
+          img: '/icons/icon_sport.svg'
         },
         {
           title: 'Cultura',
           body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
-          img: ''
+          img: '/icons/icon_cultura.svg'
         },
         {
           title: 'Musica',
           body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
-          img: ''
+          img: '/icons/icon_music.svg'
         },
         {
           title: 'Ristorazione',
           body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
-          img: ''
+          img: '/icons/icon_ristorazione.svg'
         }
       ]
     },
