@@ -21,9 +21,10 @@
       margin-top: ty.vw(9.8);
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      grid-gap: ty.vw(2);
 
       >div {
-        grid-column: 6 / 11;
+        grid-column: 6 / 12;
       }
 
       .SubTitle {

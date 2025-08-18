@@ -1,3 +1,7 @@
+// IMPORTS
+
+@use'typography.module' as ty;
+
 /* GENERAL STYLING */
 
 html,
@@ -9,5 +13,6 @@ body {
 }
 
 .section {
-  padding: 10.416666666666668vw 4.166666666666666vw;
+  padding: ty.vw(10) ty.vw(4);
+  max-width: 100svw;
 }

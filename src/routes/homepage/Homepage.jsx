@@ -42,7 +42,7 @@ function App() {
       <Activities db={ state.activities }/>
       <Membership db={ state.membership }/>
       <Where db={ state.where }/>
-      {/* <Footer db={ state.footer }/> */}
+      <Footer db={ state.footer }/>
     </>
   );
 }

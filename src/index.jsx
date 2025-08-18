@@ -18,7 +18,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => 
-  <div class="app-container w-screen h-screen">
+  <div class="app-container">
     <Router>
       <Route path="/" component={Homepage} />
     </Router>
