@@ -9,7 +9,9 @@ export default defineConfig({
     solidPlugin(),
     tailwindcss()
   ],
-  server: {port: 3000},
+  server: {
+    port: 3000,
+  },
   build: {
     target: 'esnext',
     outDir: './dist', 

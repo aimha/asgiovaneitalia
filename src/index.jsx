@@ -20,7 +20,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(() => 
   <div class="app-container">
     <Router>
-      <Route path="/" component={Homepage} />
+      <Route path="/asgiovaneitalia/" component={Homepage} />
     </Router>
   </div>
   , root);
