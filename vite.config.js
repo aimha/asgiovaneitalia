@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   publicDir: './static/',
-  base: "/",
+  base: "/asgiovaneitalia/",
   plugins: [
     solidPlugin(),
     tailwindcss()
