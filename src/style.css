@@ -22,6 +22,9 @@
   --leading-8xl: 6.770833333333333vw; /* 6.5rem / 130px */
   --leading-9xl: 7.291666666666667vw; /* 7rem / 140px */
   --leading-10xl: 7.8125vw; /* 7.5rem / 150px */
+  --leading-11xl: 8.33334vw; /* 8rem / 160px */
+  --leading-12xl: 10.4166vw; /* 10rem / 200px */
+  --leading-13xl: 12.5vw; /* 12rem / 240px */
 
   --text-xs: 0.8333333333333334vw; /* .8rem / 16px */
   --text-sm: 1.0416666666666665vw; /* 1rem / 20px */
@@ -41,6 +44,7 @@
   --head-6xl: 6.77083vw; /* 6.5rem /  130px */
   --head-7xl: 8.4375vw; /* 8.1rem / 162px */
   --head-8xl: 10.52083vw; /* 10.1rem / 202px */
+  --head-9xl: 13.33334vw; /* 12.6rem / 252px */
 
   /* COLORS */
   --color-primary900: oklch(0.2579 0.0699 0.12);
