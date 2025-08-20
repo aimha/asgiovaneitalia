@@ -6,8 +6,7 @@ export default defineConfig({
   publicDir: './static/',
   base: "/asgiovaneitalia/",
   plugins: [
-    solidPlugin(),
-    tailwindcss()
+    solidPlugin()
   ],
   server: {
     port: 3000,
