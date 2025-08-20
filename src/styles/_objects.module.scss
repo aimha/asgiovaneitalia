@@ -6,12 +6,12 @@
 // OBJECTS MIXINS
 
 @mixin ctaButton($bg, $text) {
-  color: var($text);
+  color: $text;
 
   display: inline-block;
   padding: fn.vw(.5) fn.vw(2);
   border-radius: fn.vw(2);
-  background-color: var($bg);
+  background-color: $bg;
 
   @include ty.cta();
 }

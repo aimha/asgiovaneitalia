@@ -3,12 +3,13 @@
 @use'../../../styles/typography.module' as ty;
 @use'../../../styles/objects.module' as obj;
 @use'../../../styles/functions.module' as fn;
+@use'../../../styles/variables.module' as var;
 
 // COMPONENT STYLES
 
 .Container {
-  background-color: var(--color-neutral100);
-  color: var(--color-neutral800);
+  background-color: var.$clr-neutral100;
+  color: var.$clr-neutral800;
 
   .Content {
     display: grid;
@@ -19,7 +20,7 @@
       grid-column: 1 / 7;
 
       .Title {
-        color: var(--color-secondary500);
+        color: var.$clr-secondary500;
         margin-top: fn.vw(.15);
 
         @include ty.sectionTitle--small();
@@ -43,7 +44,7 @@
       .Cta {
         margin-top: fn.vw(4);
 
-        @include obj.ctaButton(--color-primary500, --color-neutral100);
+        @include obj.ctaButton(var.$clr-primary500, var.$clr-neutral100);
       }
     }
   }

@@ -2,17 +2,18 @@
 
 @use'../../../styles/typography.module' as ty;
 @use'../../../styles/functions.module' as fn;
+@use'../../../styles/variables.module' as var;
 
 // COMPONENT STYLES
 
 .Container {
-  background-color: var(--color-neutral200);
+  background-color: var.$clr-neutral200;
 
   .Content {
-    color: var(--color-neutral800);
+    color: var.$clr-neutral800;
   
     .Title {
-      color: var(--color-primary500);
+      color: var.$clr-primary500;
       margin-top: fn.vw(.25);
 
       @include ty.sectionTitle--big();

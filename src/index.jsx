@@ -6,7 +6,6 @@ import { Router, Route } from "@solidjs/router";
 import Homepage from "./routes/homepage/Homepage";
 
 // Styles
-import './style.css';
 import './styles/global.scss';
 
 const root = document.getElementById('root');

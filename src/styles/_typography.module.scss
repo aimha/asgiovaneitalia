@@ -17,7 +17,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin heroOver() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--head-xl);
+  font-size: var.$hd-xl;
   font-weight: 800;
 
   @include baseline(3.1, 0);
@@ -25,7 +25,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin heroTitle() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--head-8xl);
+  font-size: var.$hd-8xl;
   font-weight: 900;
 
   @include baseline(7.6, 0);
@@ -33,7 +33,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin heroClaim() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-xl);
+  font-size: var.$txt-xl;
   font-weight: 100;
 
   @include baseline(2, 0);
@@ -41,7 +41,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin sectionTitle--big() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--head-7xl);
+  font-size: var.$hd-7xl;
   font-weight: 900;
 
   @include baseline(6, 0);
@@ -49,7 +49,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin sectionTitle--small() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--head-6xl);
+  font-size: var.$hd-6xl;
   font-weight: 900;
 
   @include baseline(5, 0);
@@ -57,7 +57,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin sectionTitle--small() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--head-6xl);
+  font-size: var.$hd-6xl;
   font-weight: 900;
 
   @include baseline(5, 0);
@@ -65,7 +65,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin paragTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-lg);
+  font-size: var.$txt-lg;
   font-weight: 800;
 
   @include baseline(2, 0);
@@ -73,7 +73,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin paragTitle--small() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-base);
+  font-size: var.$txt-base;
   font-weight: 800;
 
   @include baseline(2, 0);
@@ -81,7 +81,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin body--regular() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-xs);
+  font-size: var.$txt-xs;
   font-weight: 300;
 
   @include baseline(1.5, 0);
@@ -89,7 +89,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin body--bigger() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-base);
+  font-size: var.$txt-base;
   font-weight: 300;
 
   @include baseline(2, 0);
@@ -97,7 +97,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin dateTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-lg);
+  font-size: var.$txt-lg;
   font-weight: 800;
   text-transform: uppercase;
 
@@ -106,7 +106,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin dateBody() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-sm);
+  font-size: var.$txt-sm;
   font-weight: 300;
   font-variant: small-caps;
 
@@ -115,7 +115,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin dateDate() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-sm);
+  font-size: var.$txt-sm;
   font-weight: 800;
 
   @include baseline(1.5, 0);
@@ -123,7 +123,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin cardTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-xl);
+  font-size: var.$txt-xl;
   font-weight: 800;
 
   @include baseline(2, 0);
@@ -131,7 +131,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin cardBody() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: var(--text-sm);
+  font-size: var.$txt-sm;
   font-weight: 100;
 
   @include baseline(1.5, 0);
@@ -139,7 +139,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin cta() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: var(--text-base);
+  font-size: var.$txt-base;
   font-weight: 500;
 
   @include baseline(1.95, 0);

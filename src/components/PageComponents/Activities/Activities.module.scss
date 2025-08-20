@@ -2,12 +2,14 @@
 
 @use'../../../styles/typography.module' as ty;
 @use'../../../styles/functions.module' as fn;
+@use'../../../styles/variables.module' as var;
+
 
 // COMPONENT STYLES
 
 .Container {
-  background-color: var(--color-primary900);
-  color: var(--color-secondary500);
+  background-color: var.$clr-primary900;
+  color: var.$clr-secondary500;
 
   .Content {
     .Title {
@@ -24,8 +26,8 @@
 
       .Card {
         position: relative;
-        background-color: var(--color-primary700);
-        border-radius: var(--corners-md);
+        background-color: var.$clr-primary700;
+        border-radius: var.$crn-md;
         padding: fn.vw(4) fn.vw(2) fn.vw(3);
 
         .CardIcon {
@@ -57,7 +59,7 @@
         }
     
         .CardBody {
-          color: var(--color-neutral200);
+          color: var.$clr-neutral200;
 
           @include ty.cardBody();
         }
