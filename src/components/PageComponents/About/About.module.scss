@@ -12,16 +12,16 @@
   
     .Title {
       color: var(--color-primary500);
-      margin-top: ty.vw(.25);
+      margin-top: ty.vw(.25, --bp-desktop-lg);
 
       @include ty.sectionTitle--big();
     }
 
     .Paragraph {
-      margin-top: ty.vw(9.8);
+      margin-top: ty.vw(9.8, --bp-desktop-lg);
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-gap: ty.vw(2);
+      grid-gap: ty.vw(2, --bp-desktop-lg);
 
       >div {
         grid-column: 6 / 12;
@@ -32,7 +32,7 @@
       }
 
       .Body {
-        margin-top: ty.vw(2);
+        margin-top: ty.vw(2, --bp-desktop-lg);
         @include ty.body--bigger();
       }
     }

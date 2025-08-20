@@ -12,7 +12,7 @@
   background-color: var(--color-primary700);
   color: var(--color-neutral200);
 
-  padding: 0 ty.vw(4);
+  padding: 0 ty.vw(4, --bp-desktop-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +25,8 @@
 
     .Logo {
       display: inline-block;
-      width: ty.vw(2);
-      height: ty.vw(2.18);
+      width: ty.vw(2, --bp-desktop-lg);
+      height: ty.vw(2.18, --bp-desktop-lg);
     }
 
     .Over {
@@ -40,13 +40,13 @@
     }
   
     .Claim {
-      margin-top: ty.vw(1.9);
+      margin-top: ty.vw(1.9, --bp-desktop-lg);
 
       @include ty.heroClaim();
     }
 
     .Cta {
-      margin-top: ty.vw(4.9);
+      margin-top: ty.vw(4.9, --bp-desktop-lg);
       
       @include obj.ctaButton(--color-secondary500, --color-neutral100);
     }

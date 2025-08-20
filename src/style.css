@@ -2,6 +2,14 @@
 @import "tailwindcss";
 
 @theme {
+  /* BREAKPOINTS */
+  --bp-smartphone-md: 440;
+  --bp-tablet-md: 740;
+  --bp-tablet-lg: 1024;
+  --bp-desktop-sm: 1280;
+  --bp-desktop-md: 1440;
+  --bp-desktop-lg: 1920;
+
   /* LAYOUT */
   --corners-sm: .25rem;
   --corners-md: .5rem;
