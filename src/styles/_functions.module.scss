@@ -1,5 +1,13 @@
+// funzioni di utilità
+
+@use 'sass:math';
+
+@function strip-units($number) {
+  @return math.div($number, ($number * 0 + 1));
+}
+
 // funzioni di conversione
 
 @function vw($rem, $breakpoint: 1920) {
-  @return (calc(($rem * 20) / $breakpoint) * 100vw);
-}    
+  @return (calc((strip-units($rem) * 20) / $breakpoint) * 100vw);
+}
