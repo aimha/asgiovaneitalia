@@ -1,20 +1,11 @@
-// funzioni di conversione
+// IMPORTS
 
-/* BREAKPOINTS */
-$bp-smartphone-md: 440;
-$bp-tablet-md: 740;
-$bp-tablet-lg: 1024;
-$bp-desktop-sm: 1280;
-$bp-desktop-md: 1440;
-$bp-desktop-lg: 1920;
-
-@function vw($rem, $breakpoint: 1920) {
-  @return (calc(($rem * 20) / $breakpoint) * 100vw);
-}    
+@use 'variables.module' as var;
+@use 'functions.module' as fn;
 
 // interlinea
 
-$line: vw(1, $bp-desktop-lg);
+$line: fn.vw(1, var.$bp-desktop-lg);
 
 // baseline grid mixin
 

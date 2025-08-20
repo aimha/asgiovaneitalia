@@ -1,6 +1,7 @@
 // IMPORTS
 
 @use'../../../styles/typography.module' as ty;
+@use'../../../styles/functions.module' as fn;
 
 // COMPONENT STYLES
 
@@ -10,7 +11,7 @@
   .Content {
     color: var(--color-neutral200);
     display: flex;
-    gap: ty.vw(2);
+    gap: fn.vw(2);
 
     &>* {
       flex-basis: 50%;
@@ -18,13 +19,13 @@
 
     .Main {
       .Title {
-        margin-top: ty.vw(.15);
+        margin-top: fn.vw(.15);
         @include ty.sectionTitle--small();
       }
 
       .Body {
-        margin-top: ty.vw(4.9);
-        padding: 0 ty.vw(7.5);
+        margin-top: fn.vw(4.9);
+        padding: 0 fn.vw(7.5);
 
         @include ty.body--bigger();
       }
@@ -33,19 +34,19 @@
 
     .Dates {
       color: var(--color-secondary500);
-      padding-top: ty.vw(3);
+      padding-top: fn.vw(3);
 
       .DatesTitle {
-        margin-left: ty.vw(6);
+        margin-left: fn.vw(6);
         @include ty.dateTitle();
       }
 
       .DatesList {
 
         .DatesItem {
-          margin-top: ty.vw(2);
+          margin-top: fn.vw(2);
           display: flex;
-          gap: ty.vw(2);
+          gap: fn.vw(2);
 
           .DatesBody {
             @include ty.dateBody();
@@ -53,7 +54,7 @@
 
           .DatesDate {
             text-align: right;
-            min-width: ty.vw(4);
+            min-width: fn.vw(4);
 
             @include ty.dateDate();
           }

@@ -1,6 +1,7 @@
 // IMPORTS
 
 @use'../../../styles/typography.module' as ty;
+@use'../../../styles/functions.module' as fn;
 
 // COMPONENT STYLES
 
@@ -15,11 +16,11 @@
   .Content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: ty.vw(2);
+    grid-gap: fn.vw(2);
 
     >div {
       grid-column: 9 / 13;
-      margin-top: ty.vw(.05);
+      margin-top: fn.vw(.05);
 
       .Title {
         @include ty.paragTitle();

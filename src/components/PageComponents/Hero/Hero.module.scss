@@ -2,6 +2,7 @@
 
 @use'../../../styles/typography.module' as ty;
 @use'../../../styles/objects.module' as obj;
+@use'../../../styles/functions.module' as fn;
 
 // COMPONENT STYLES
 
@@ -12,7 +13,7 @@
   background-color: var(--color-primary700);
   color: var(--color-neutral200);
 
-  padding: 0 ty.vw(4);
+  padding: 0 fn.vw(4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +26,8 @@
 
     .Logo {
       display: inline-block;
-      width: ty.vw(2);
-      height: ty.vw(2.18);
+      width: fn.vw(2);
+      height: fn.vw(2.18);
     }
 
     .Over {
@@ -40,13 +41,13 @@
     }
   
     .Claim {
-      margin-top: ty.vw(1.9);
+      margin-top: fn.vw(1.9);
 
       @include ty.heroClaim();
     }
 
     .Cta {
-      margin-top: ty.vw(4.9);
+      margin-top: fn.vw(4.9);
       
       @include obj.ctaButton(--color-secondary500, --color-neutral100);
     }

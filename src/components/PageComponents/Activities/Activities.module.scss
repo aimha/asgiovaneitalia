@@ -1,6 +1,7 @@
 // IMPORTS
 
 @use'../../../styles/typography.module' as ty;
+@use'../../../styles/functions.module' as fn;
 
 // COMPONENT STYLES
 
@@ -16,31 +17,31 @@
     }
 
     .CardList {
-      margin-top: ty.vw(13);
+      margin-top: fn.vw(13);
       display: flex;
-      gap: ty.vw(2);
+      gap: fn.vw(2);
       text-align: center;
 
       .Card {
         position: relative;
         background-color: var(--color-primary700);
         border-radius: var(--corners-md);
-        padding: ty.vw(4) ty.vw(2) ty.vw(3);
+        padding: fn.vw(4) fn.vw(2) fn.vw(3);
 
         .CardIcon {
           position: absolute;
-          width: ty.vw(8);
-          height: ty.vw(8);
+          width: fn.vw(8);
+          height: fn.vw(8);
           background-color: inherit;
           border-radius: 100%;
-          top: ty.vw(-4);
+          top: fn.vw(-4);
           left: 50%;
           transform: translate(-50%, 0);
 
           img {
             height: auto;
-            max-height: ty.vw(4);
-            margin: ty.vw(2) auto;
+            max-height: fn.vw(4);
+            margin: fn.vw(2) auto;
           }
         }
 
@@ -50,7 +51,7 @@
         }
 
         .CardTitle {
-          padding-bottom: ty.vw(2);
+          padding-bottom: fn.vw(2);
 
           @include ty.cardTitle();
         }

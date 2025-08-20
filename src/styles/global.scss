@@ -1,6 +1,8 @@
 // IMPORTS
 
 @use'typography.module' as ty;
+@use'variables.module' as var;
+@use'functions.module' as fn;
 
 /* PRESTILING */
 
@@ -36,6 +38,6 @@ body {
 }
 
 .section {
-  padding: ty.vw(10) ty.vw(4);
+  padding: fn.vw(10, var.$bp-desktop-lg) fn.vw(4, var.$bp-desktop-lg);
 }
 
