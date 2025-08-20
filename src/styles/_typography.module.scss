@@ -1,12 +1,12 @@
 // funzioni di conversione
 
-@function vw($rem, $breakpoint) {
-  @return (calc(($rem * 20) / $breakpoint) * 100vw);
+@function vw($rem) {
+  @return (calc(($rem * 20) / 1920) * 100vw);
 }    
 
 // interlinea
 
-$line: vw(1, --bp-desktop-lg);
+$line: vw(1);
 
 // baseline grid mixin
 

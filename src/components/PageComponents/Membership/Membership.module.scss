@@ -12,14 +12,14 @@
   .Content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: ty.vw(2, --bp-desktop-lg);
+    grid-gap: ty.vw(2);
 
     .LeftSide {
       grid-column: 1 / 7;
 
       .Title {
         color: var(--color-secondary500);
-        margin-top: ty.vw(.15, --bp-desktop-lg);
+        margin-top: ty.vw(.15);
 
         @include ty.sectionTitle--small();
       }
@@ -27,20 +27,20 @@
 
     .RightSide {
       grid-column: 8 / 13;
-      margin-top: ty.vw(1.05, --bp-desktop-lg);
+      margin-top: ty.vw(1.05);
       
       .SubTitle {
         @include ty.paragTitle();
       }
 
       .Body {
-        margin-top: ty.vw(2, --bp-desktop-lg);
+        margin-top: ty.vw(2);
 
         @include ty.body--bigger();
       }
 
       .Cta {
-        margin-top: ty.vw(4, --bp-desktop-lg);
+        margin-top: ty.vw(4);
 
         @include obj.ctaButton(--color-primary500, --color-neutral100);
       }
