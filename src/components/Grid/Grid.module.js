@@ -5,6 +5,7 @@ export default class GridClass {
   }
 
   init() {
+    console.log('bang')
     addEventListener('keypress', (event) => {
       if (event.key === 'g') {
         this.toggle();

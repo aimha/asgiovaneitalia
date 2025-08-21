@@ -1,7 +1,8 @@
 // IMPORTS
 
 @use'typography.module' as ty;
-@use'functions.module' as fn;
+@use 'variables.module' as var;
+@use 'functions.module' as fn;
 
 // OBJECTS MIXINS
 
@@ -9,8 +10,8 @@
   color: $text;
 
   display: inline-block;
-  padding: fn.vw(.5) fn.vw(2);
-  border-radius: fn.vw(2);
+  padding: fn.vw(.5, var.$bp-desktop-lg) fn.vw(2, var.$bp-desktop-lg);
+  border-radius: fn.vw(2, var.$bp-desktop-lg);
   background-color: $bg;
 
   @include ty.cta();

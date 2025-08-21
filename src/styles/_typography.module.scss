@@ -25,10 +25,15 @@ $line: fn.vw(1, var.$bp-desktop-lg);
 
 @mixin heroTitle() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-8xl, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$hd-6xl, var.$bp-tablet-lg);
   font-weight: 900;
 
-  @include baseline(7.6, 0);
+  @include baseline(5, 0);
+
+  @media (min-width: 1021px) {
+    font-size: fn.vw(var.$hd-8xl, var.$bp-desktop-lg);
+    @include baseline(7.6, 0);
+  }
 }
 
 @mixin heroClaim() {

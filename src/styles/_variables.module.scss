@@ -1,10 +1,10 @@
 /* BREAKPOINTS */
 
 $bp-smartphone-md: 440;
-$bp-tablet-md: 740;
+// $bp-tablet-md: 740;
 $bp-tablet-lg: 1024;
-$bp-desktop-sm: 1280;
-$bp-desktop-md: 1440;
+// $bp-desktop-sm: 1280;
+// $bp-desktop-md: 1440;
 $bp-desktop-lg: 1920;
 
 /* LAYOUT */
@@ -42,6 +42,9 @@ $txt-3xl: 2.9rem; /* 58px */
 $txt-4xl: 3.7rem; /* 74px */
 $txt-5xl: 4.6rem; /* 92px */
 
+$hd-sm: 1.1rem; /* 22px */
+$hd-base: 1.4rem; /* 28px */
+$hd-lg: 1.8rem; /* 36px */
 $hd-xl: 2.2rem; /* 44px */
 $hd-2xl: 2.7rem; /* 54px */
 $hd-3xl: 3.4rem; /* 68px */
