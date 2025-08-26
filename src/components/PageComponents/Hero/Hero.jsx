@@ -20,9 +20,9 @@ function Hero(props) {
 		<>
 			<div id="hero" className={`${styles.Container}`}>
         <div className={`${styles.Content}`}>
-          <div className={`${styles.Logo}`}>
+          {/* <div className={`${styles.Logo}`}>
             <img src="./icons/logo_asgiovaneitalia.png" alt="" />
-          </div>
+          </div> */}
           <div className={`${styles.Over}`}>
             { heroDB.over }
           </div>

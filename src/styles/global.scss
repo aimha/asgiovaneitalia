@@ -41,3 +41,6 @@ body {
   padding: fn.vw(10, var.$bp-desktop-lg) fn.vw(4, var.$bp-desktop-lg);
 }
 
+.hidden {
+  display: none;
+}

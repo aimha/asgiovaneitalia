@@ -15,21 +15,25 @@
   color: var.$clr-neutral200;
 
   padding: 0 fn.vw(4);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  min-height: 100vh;
+  min-height: 75vh;
+
+  @media (min-width: 1025px) {
+    min-height: 100vh;
+  }
 
   .Content {
     height: fit-content;
     text-align: center;
 
-    .Logo {
-      display: inline-block;
-      width: fn.vw(2, var.$bp-desktop-lg);
-      height: fn.vw(2.18, var.$bp-desktop-lg);
-    }
+    // .Logo {
+    //   display: inline-block;
+    //   width: fn.vw(2, var.$bp-desktop-lg);
+    //   height: fn.vw(2.18, var.$bp-desktop-lg);
+    // }
 
     .Over {
       color: var.$clr-secondary500;
@@ -38,19 +42,33 @@
     }
   
     .Title {
+      margin-top: fn.vw(.5, var.$bp-tablet-lg);
+
       @include ty.heroTitle();
+
+      @media (min-width: 1025px) {
+        margin-top: 0;
+      }
     }
   
     .Claim {
-      margin-top: fn.vw(1.9, var.$bp-desktop-lg);
+      margin-top: fn.vw(1, var.$bp-tablet-lg);
 
       @include ty.heroClaim();
+
+      @media (min-width: 1025px) {
+        margin-top: fn.vw(1.9, var.$bp-desktop-lg);
+      }
     }
 
     .Cta {
-      margin-top: fn.vw(4.9, var.$bp-desktop-lg);
+      margin-top: fn.vw(3, var.$bp-tablet-lg);
       
       @include obj.ctaButton(var.$clr-secondary500, var.$clr-neutral100);
+
+      @media (min-width: 1025px) {
+        margin-top: fn.vw(4.9, var.$bp-desktop-lg);
+      }
     }
   }
 }

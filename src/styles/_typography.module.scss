@@ -3,24 +3,45 @@
 @use 'variables.module' as var;
 @use 'functions.module' as fn;
 
-// interlinea
-
-$line: fn.vw(1, var.$bp-desktop-lg);
-
 // baseline grid mixin
 
-@mixin baseline($line-height, $lines-bottom) {
+@mixin baseline-dsk($line-height, $lines-bottom) {
+  $line: fn.vw(1, var.$bp-desktop-lg);
+
   line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
 }
 
+@mixin baseline-tbl($line-height, $lines-bottom) {
+  $line: fn.vw(1, var.$bp-tablet-lg);
+
+  line-height: $line * $line-height;
+  padding-top: calc(calc($line * $line-height - 1cap) / 2);
+  margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+}
+
+@mixin baseline-smp($line-height, $lines-bottom) {
+  $line: fn.vw(1, var.$bp-tablet-lg);
+
+  line-height: $line * $line-height;
+  padding-top: calc(calc($line * $line-height - 1cap) / 2);
+  margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+}
+
+// typography mixins
+
 @mixin heroOver() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-xl, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$hd-lg, var.$bp-tablet-lg);
   font-weight: 800;
 
-  @include baseline(3.1, 0);
+  @include baseline-tbl(2, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$hd-xl, var.$bp-desktop-lg);
+    @include baseline-dsk(3.1, 0);
+  }
 }
 
 @mixin heroTitle() {
@@ -28,20 +49,25 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$hd-6xl, var.$bp-tablet-lg);
   font-weight: 900;
 
-  @include baseline(5, 0);
+  @include baseline-tbl(5.2, 0);
 
-  @media (min-width: 1021px) {
+  @media (min-width: 1025px) {
     font-size: fn.vw(var.$hd-8xl, var.$bp-desktop-lg);
-    @include baseline(7.6, 0);
+    @include baseline-dsk(7.6, 0);
   }
 }
 
 @mixin heroClaim() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$txt-lg, var.$bp-tablet-lg);
   font-weight: 100;
 
-  @include baseline(2, 0);
+  @include baseline-tbl(2.3, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
+    @include baseline-dsk(2, 0);
+  }
 }
 
 @mixin sectionTitle--big() {
@@ -49,7 +75,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$hd-7xl, var.$bp-desktop-lg);
   font-weight: 900;
 
-  @include baseline(6, 0);
+  @include baseline-dsk(6, 0);
 }
 
 @mixin sectionTitle--small() {
@@ -57,7 +83,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$hd-6xl, var.$bp-desktop-lg);
   font-weight: 900;
 
-  @include baseline(5, 0);
+  @include baseline-dsk(5, 0);
 }
 
 @mixin sectionTitle--small() {
@@ -65,7 +91,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$hd-6xl, var.$bp-desktop-lg);
   font-weight: 900;
 
-  @include baseline(5, 0);
+  @include baseline-dsk(5, 0);
 }
 
 @mixin paragTitle() {
@@ -73,7 +99,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-lg, var.$bp-desktop-lg);
   font-weight: 800;
 
-  @include baseline(2, 0);
+  @include baseline-dsk(2, 0);
 }
 
 @mixin paragTitle--small() {
@@ -81,7 +107,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
   font-weight: 800;
 
-  @include baseline(2, 0);
+  @include baseline-dsk(2, 0);
 }
 
 @mixin body--regular() {
@@ -89,7 +115,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-xs, var.$bp-desktop-lg);
   font-weight: 300;
 
-  @include baseline(1.5, 0);
+  @include baseline-dsk(1.5, 0);
 }
 
 @mixin body--bigger() {
@@ -97,7 +123,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
   font-weight: 300;
 
-  @include baseline(2, 0);
+  @include baseline-dsk(2, 0);
 }
 
 @mixin dateTitle() {
@@ -106,7 +132,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-weight: 800;
   text-transform: uppercase;
 
-  @include baseline(2, 0);
+  @include baseline-dsk(2, 0);
 }
 
 @mixin dateBody() {
@@ -115,7 +141,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-weight: 300;
   font-variant: small-caps;
 
-  @include baseline(1.5, 0);
+  @include baseline-dsk(1.5, 0);
 }
 
 @mixin dateDate() {
@@ -123,7 +149,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
   font-weight: 800;
 
-  @include baseline(1.5, 0);
+  @include baseline-dsk(1.5, 0);
 }
 
 @mixin cardTitle() {
@@ -131,7 +157,7 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
   font-weight: 800;
 
-  @include baseline(2, 0);
+  @include baseline-dsk(2, 0);
 }
 
 @mixin cardBody() {
@@ -139,13 +165,18 @@ $line: fn.vw(1, var.$bp-desktop-lg);
   font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
   font-weight: 100;
 
-  @include baseline(1.5, 0);
+  @include baseline-dsk(1.5, 0);
 }
 
 @mixin cta() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
   font-weight: 500;
 
-  @include baseline(1.95, 0);
+  @include baseline-tbl(1.95, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
+    @include baseline-dsk(1.95, 0);
+  }
 }

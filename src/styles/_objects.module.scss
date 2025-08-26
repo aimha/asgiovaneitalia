@@ -10,9 +10,14 @@
   color: $text;
 
   display: inline-block;
-  padding: fn.vw(.5, var.$bp-desktop-lg) fn.vw(2, var.$bp-desktop-lg);
-  border-radius: fn.vw(2, var.$bp-desktop-lg);
+  padding: fn.vw(.5, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);
+  border-radius: fn.vw(2, var.$bp-tablet-lg);
   background-color: $bg;
 
   @include ty.cta();
+
+  @media (min-width: 1025px) {
+    padding: fn.vw(.5, var.$bp-desktop-lg) fn.vw(2, var.$bp-desktop-lg);
+    border-radius: fn.vw(2, var.$bp-desktop-lg);
+  }
 }
