@@ -11,43 +11,65 @@
 
   .Content {
     color: var.$clr-neutral200;
-    display: flex;
-    gap: fn.vw(2);
+    display: block;
 
-    &>* {
-      flex-basis: 50%;
+    @media (min-width: 1025px) {
+      display: flex;
+      gap: fn.vw(2);
+
+      &>* {
+        flex-basis: 50%;
+      }
     }
 
     .Main {
       .Title {
-        margin-top: fn.vw(.15);
+        margin-top: fn.vw(.15, var.$bp-desktop-lg);
         @include ty.sectionTitle--small();
       }
 
       .Body {
-        margin-top: fn.vw(4.9);
-        padding: 0 fn.vw(7.5);
+        margin-top: fn.vw(4.9, var.$bp-tablet-lg);
+        padding: 0 0 0 fn.vw(8, var.$bp-tablet-lg);
 
         @include ty.body--bigger();
+
+        @media (min-width: 1025px) {
+          margin-top: fn.vw(4.9, var.$bp-desktop-lg);
+          padding: 0 fn.vw(7.5, var.$bp-desktop-lg);
+        }
       }
     }
 
 
     .Dates {
       color: var.$clr-secondary500;
-      padding-top: fn.vw(3);
+      padding-top: fn.vw(6, var.$bp-tablet-lg);
+
+      @media (min-width: 1025px) {
+        padding-top: fn.vw(3, var.$bp-desktop-lg);
+      }
 
       .DatesTitle {
-        margin-left: fn.vw(6);
+        margin-left: fn.vw(8, var.$bp-tablet-lg);
         @include ty.dateTitle();
+
+        @media (min-width: 1025px) {
+          margin-left: fn.vw(6, var.$bp-desktop-lg);
+        }
       }
 
       .DatesList {
 
         .DatesItem {
-          margin-top: fn.vw(2);
+          margin-top: fn.vw(2, var.$bp-tablet-lg);
           display: flex;
-          gap: fn.vw(2);
+          gap: fn.vw(2, var.$bp-tablet-lg);
+
+          @media (min-width: 1025px) {
+            margin-top: fn.vw(2, var.$bp-desktop-lg);
+            gap: fn.vw(2, var.$bp-desktop-lg);
+          }
 
           .DatesBody {
             @include ty.dateBody();
@@ -55,9 +77,13 @@
 
           .DatesDate {
             text-align: right;
-            min-width: fn.vw(4);
+            min-width: fn.vw(6, var.$bp-tablet-lg);
 
             @include ty.dateDate();
+
+            @media (min-width: 1025px) {
+              min-width: fn.vw(4, var.$bp-desktop-lg);
+            }
           }
         }
 
