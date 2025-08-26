@@ -20,13 +20,23 @@
     }
 
     .Paragraph {
-      margin-top: fn.vw(9.8);
+      margin-top: fn.vw(4.4, var.$bp-tablet-lg);
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: fn.vw(2);
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: fn.vw(2, var.$bp-tablet-lg);
+
+      @media (min-width: 1025px) {
+        margin-top: fn.vw(9.8, var.$bp-desktop-lg);
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: fn.vw(2, var.$bp-desktop-lg);
+      }
 
       >div {
-        grid-column: 6 / 12;
+        grid-column: 2 / 7;
+
+        @media (min-width: 1025px) {
+          grid-column: 6 / 12;
+        }
       }
 
       .SubTitle {
@@ -34,8 +44,12 @@
       }
 
       .Body {
-        margin-top: fn.vw(2);
+        margin-top: fn.vw(1.5, var.$bp-tablet-lg);
         @include ty.body--bigger();
+
+        @media (min-width: 1025px) {
+          margin-top: fn.vw(2, var.$bp-desktop-lg);
+        }
       }
     }
   

@@ -72,10 +72,15 @@
 
 @mixin sectionTitle--big() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-7xl, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-lg);
   font-weight: 900;
 
-  @include baseline-dsk(6, 0);
+  @include baseline-tbl(4, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$hd-7xl, var.$bp-desktop-lg);
+    @include baseline-dsk(6, 0);
+  }
 }
 
 @mixin sectionTitle--small() {
@@ -96,10 +101,15 @@
 
 @mixin paragTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-lg, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
   font-weight: 800;
 
-  @include baseline-dsk(2, 0);
+  @include baseline-tbl(2, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-lg, var.$bp-desktop-lg);
+    @include baseline-dsk(2, 0);
+  }
 }
 
 @mixin paragTitle--small() {
@@ -120,10 +130,15 @@
 
 @mixin body--bigger() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
   font-weight: 300;
 
-  @include baseline-dsk(2, 0);
+  @include baseline-tbl(1.5, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
+    @include baseline-dsk(2, 0);
+  }
 }
 
 @mixin dateTitle() {
