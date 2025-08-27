@@ -16,12 +16,22 @@
 
   .Content {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: fn.vw(2);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: fn.vw(2, var.$bp-tablet-lg);
+
+    @media (min-width: 1025px) {
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: fn.vw(2, var.$bp-desktop-lg);
+    }
 
     >div {
-      grid-column: 9 / 13;
-      margin-top: fn.vw(.05);
+      grid-column: 5 / 7;
+      margin-top: fn.vw(.05, var.$bp-tablet-lg);
+
+      @media (min-width: 1025px) {
+        grid-column: 9 / 13;
+        margin-top: fn.vw(.05, var.$bp-desktop-lg);
+      }
 
       .Title {
         @include ty.paragTitle();
