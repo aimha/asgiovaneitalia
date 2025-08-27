@@ -39,8 +39,8 @@ function App() {
       {/* <Hero db={ state.hero }/> */}
       {/* <About db={ state.about }/> */}
       {/* <History db={ state.history }/> */}
-      <Activities db={ state.activities }/>
-      {/* <Membership db={ state.membership }/> */}
+      {/* <Activities db={ state.activities }/> */}
+      <Membership db={ state.membership }/>
       {/* <Where db={ state.where }/>  */}
     </>
   );

@@ -12,39 +12,61 @@
   color: var.$clr-neutral800;
 
   .Content {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: fn.vw(2);
+    display: block;
+
+    @media (min-width: 1025px) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: fn.vw(2, var.$bp-desktop-lg);
+    }
 
     .LeftSide {
-      grid-column: 1 / 7;
+      @media (min-width: 1025px) {
+        grid-column: 1 / 7;
+      }
 
       .Title {
         color: var.$clr-secondary500;
-        margin-top: fn.vw(.15);
+        margin-top: fn.vw(.15, var.$bp-tablet-lg);
 
         @include ty.sectionTitle--small();
+
+        @media (min-width: 1025px) {
+          margin-top: fn.vw(.15, var.$bp-desktop-lg);
+        }
       }
     }
 
     .RightSide {
-      grid-column: 8 / 13;
-      margin-top: fn.vw(1.05);
-      
+      margin-top: fn.vw(2.4, var.$bp-tablet-lg);
+
+      @media (min-width: 1025px) {
+        grid-column: 8 / 13;
+        margin-top: fn.vw(1.05, var.$bp-desktop-lg);
+      }
+
       .SubTitle {
         @include ty.paragTitle();
       }
 
       .Body {
-        margin-top: fn.vw(2);
+        margin-top: fn.vw(2, var.$bp-tablet-lg);
 
         @include ty.body--bigger();
+
+        @media (min-width: 1025px) {
+          margin-top: fn.vw(2, var.$bp-desktop-lg);
+        }
       }
 
       .Cta {
-        margin-top: fn.vw(4);
+        margin-top: fn.vw(3, var.$bp-tablet-lg);
 
         @include obj.ctaButton(var.$clr-primary500, var.$clr-neutral100);
+
+        @media (min-width: 1025px) {
+          margin-top: fn.vw(4, var.$bp-desktop-lg);
+        }
       }
     }
   }
