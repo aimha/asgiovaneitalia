@@ -19,31 +19,54 @@
     }
 
     .CardList {
-      margin-top: fn.vw(13);
+      margin-top: fn.vw(9, var.$bp-tablet-lg);
       display: flex;
-      gap: fn.vw(2);
+      flex-wrap: wrap;
+      gap: fn.vw(6, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);
       text-align: center;
 
+      @media (min-width: 1025px) {
+        margin-top: fn.vw(13, var.$bp-desktop-lg);
+        gap: fn.vw(2, var.$bp-desktop-lg);
+      }
+
       .Card {
+        flex: 40%;
         position: relative;
         background-color: var.$clr-primary700;
         border-radius: var.$crn-md;
-        padding: fn.vw(4) fn.vw(2) fn.vw(3);
+        padding: fn.vw(4, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg) fn.vw(3, var.$bp-tablet-lg);
+
+        @media (min-width: 1025px) {
+          flex: 0%;
+          padding: fn.vw(4, var.$bp-desktop-lg) fn.vw(2, var.$bp-desktop-lg) fn.vw(3, var.$bp-desktop-lg);
+        }
 
         .CardIcon {
           position: absolute;
-          width: fn.vw(8);
-          height: fn.vw(8);
+          width: fn.vw(8, var.$bp-tablet-lg);
+          height: fn.vw(8, var.$bp-tablet-lg);
           background-color: inherit;
           border-radius: 100%;
-          top: fn.vw(-4);
+          top: fn.vw(-4, var.$bp-tablet-lg);
           left: 50%;
           transform: translate(-50%, 0);
 
+          @media (min-width: 1025px) {
+            width: fn.vw(8, var.$bp-desktop-lg);
+            height: fn.vw(8, var.$bp-desktop-lg);
+            top: fn.vw(-4, var.$bp-desktop-lg);
+          }
+
           img {
             height: auto;
-            max-height: fn.vw(4);
-            margin: fn.vw(2) auto;
+            max-height: fn.vw(4, var.$bp-tablet-lg);
+            margin: fn.vw(2, var.$bp-tablet-lg) auto;
+
+            @media (min-width: 1025px) {
+              max-height: fn.vw(4, var.$bp-desktop-lg);
+              margin: fn.vw(2, var.$bp-desktop-lg) auto;
+            }
           }
         }
 
@@ -53,7 +76,7 @@
         }
 
         .CardTitle {
-          padding-bottom: fn.vw(2);
+          padding-bottom: fn.vw(2, var.$bp-desktop-lg);
 
           @include ty.cardTitle();
         }

@@ -181,18 +181,28 @@
 
 @mixin cardTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$txt-xl, var.$bp-tablet-lg);
   font-weight: 800;
 
-  @include baseline-dsk(2, 0);
+  @include baseline-tbl(2, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
+    @include baseline-dsk(2, 0);
+  }
 }
 
 @mixin cardBody() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
+  font-size: fn.vw(var.$txt-xs, var.$bp-tablet-lg);
   font-weight: 100;
 
-  @include baseline-dsk(1.5, 0);
+  @include baseline-tbl(1.5, 0);
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
+    @include baseline-dsk(1.5, 0);
+  }
 }
 
 @mixin cta() {

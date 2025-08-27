@@ -42,6 +42,7 @@ function Activities(props) {
               }
             </For>
           </ul>
+
         </div>
       </div>
 		</>
