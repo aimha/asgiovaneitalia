@@ -113,10 +113,15 @@
 
 @mixin sectionTitle--small() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$hd-3xl, var.$bp-tablet-md);
   font-weight: 900;
 
-  @include baseline-tbl(4, 0);
+  @include baseline-tblmd(3, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-lg);
+    @include baseline-tbl(4, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$hd-6xl, var.$bp-desktop-lg);
@@ -178,11 +183,16 @@
 
 @mixin dateTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-lg, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-lg, var.$bp-tablet-md);
   font-weight: 800;
   text-transform: uppercase;
 
-  @include baseline-tbl(2, 0);
+  @include baseline-tblmd(2, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-lg, var.$bp-tablet-lg);
+    @include baseline-tbl(2, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-lg, var.$bp-desktop-lg);
@@ -192,11 +202,16 @@
 
 @mixin dateBody() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-md);
   font-weight: 300;
   font-variant: small-caps;
 
-  @include baseline-tbl(1.5, 0);
+  @include baseline-tblmd(1.5, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
+    @include baseline-tbl(1.5, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
@@ -206,10 +221,15 @@
 
 @mixin dateDate() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-md);
   font-weight: 800;
 
-  @include baseline-tbl(1.5, 0);
+  @include baseline-tblmd(1.5, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
+    @include baseline-tbl(1.5, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);

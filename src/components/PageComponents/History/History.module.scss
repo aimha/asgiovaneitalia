@@ -24,15 +24,29 @@
 
     .Main {
       .Title {
-        margin-top: fn.vw(.15, var.$bp-desktop-lg);
+        margin-top: fn.vw(0.1, var.$bp-tablet-md);
+
         @include ty.sectionTitle--small();
+
+        @media (min-width: 741px) {
+          margin-top: fn.vw(.15, var.$bp-tablet-lg);
+        }
+
+        @media (min-width: 1025px) {
+          margin-top: fn.vw(.15, var.$bp-desktop-lg);
+        }
       }
 
       .Body {
-        margin-top: fn.vw(4.9, var.$bp-tablet-lg);
-        padding: 0 0 0 fn.vw(8, var.$bp-tablet-lg);
+        margin-top: fn.vw(2.4, var.$bp-tablet-md);
+        padding: 0 fn.vw(1, var.$bp-tablet-md);
 
         @include ty.body--bigger();
+
+        @media (min-width: 741px) {
+          margin-top: fn.vw(4.25, var.$bp-tablet-lg);
+          padding: 0 0 0 fn.vw(8, var.$bp-tablet-lg);
+        }
 
         @media (min-width: 1025px) {
           margin-top: fn.vw(4.9, var.$bp-desktop-lg);
@@ -44,15 +58,24 @@
 
     .Dates {
       color: var.$clr-secondary500;
-      padding-top: fn.vw(6, var.$bp-tablet-lg);
+      padding-top: fn.vw(5, var.$bp-tablet-md);
+
+      @media (min-width: 741px) {
+        padding-top: fn.vw(6, var.$bp-tablet-lg);
+      }
 
       @media (min-width: 1025px) {
         padding-top: fn.vw(3, var.$bp-desktop-lg);
       }
 
       .DatesTitle {
-        margin-left: fn.vw(8, var.$bp-tablet-lg);
+        margin-left: fn.vw(5, var.$bp-tablet-md);
+
         @include ty.dateTitle();
+
+        @media (min-width: 1025px) {
+          margin-left: fn.vw(8, var.$bp-tablet-lg);
+        }
 
         @media (min-width: 1025px) {
           margin-left: fn.vw(6, var.$bp-desktop-lg);
@@ -62,9 +85,14 @@
       .DatesList {
 
         .DatesItem {
-          margin-top: fn.vw(2, var.$bp-tablet-lg);
+          margin-top: fn.vw(2, var.$bp-tablet-md);
           display: flex;
-          gap: fn.vw(2, var.$bp-tablet-lg);
+          gap: fn.vw(1, var.$bp-tablet-md);
+
+          @media (min-width: 741px) {
+            margin-top: fn.vw(2, var.$bp-tablet-lg);
+            gap: fn.vw(2, var.$bp-tablet-lg);
+          }
 
           @media (min-width: 1025px) {
             margin-top: fn.vw(2, var.$bp-desktop-lg);
@@ -77,9 +105,13 @@
 
           .DatesDate {
             text-align: right;
-            min-width: fn.vw(6, var.$bp-tablet-lg);
+            min-width: fn.vw(4, var.$bp-tablet-md);
 
             @include ty.dateDate();
+
+            @media (min-width: 1025px) {
+              min-width: fn.vw(6, var.$bp-tablet-lg);
+            }
 
             @media (min-width: 1025px) {
               min-width: fn.vw(4, var.$bp-desktop-lg);
