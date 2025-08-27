@@ -21,8 +21,16 @@
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
 }
 
+@mixin baseline-tblmd($line-height, $lines-bottom) {
+  $line: fn.vw(1, var.$bp-tablet-md);
+
+  line-height: $line * $line-height;
+  padding-top: calc(calc($line * $line-height - 1cap) / 2);
+  margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+}
+
 @mixin baseline-smp($line-height, $lines-bottom) {
-  $line: fn.vw(1, var.$bp-tablet-lg);
+  $line: fn.vw(1, var.$bp-smartphone-md);
 
   line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
@@ -33,10 +41,15 @@
 
 @mixin heroOver() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-lg, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$hd-base, var.$bp-tablet-md);
   font-weight: 800;
 
-  @include baseline-tbl(2, 0);
+  @include baseline-tblmd(2.1, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$hd-lg, var.$bp-tablet-lg);
+    @include baseline-tbl(2, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$hd-xl, var.$bp-desktop-lg);
@@ -46,10 +59,15 @@
 
 @mixin heroTitle() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-6xl, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-md);
   font-weight: 900;
 
-  @include baseline-tbl(5.2, 0);
+  @include baseline-tblmd(4.6, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$hd-6xl, var.$bp-tablet-lg);
+    @include baseline-tbl(5.2, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$hd-8xl, var.$bp-desktop-lg);
@@ -59,10 +77,15 @@
 
 @mixin heroClaim() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-lg, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
   font-weight: 100;
 
-  @include baseline-tbl(2.3, 0);
+  @include baseline-tblmd(2.1, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-lg, var.$bp-tablet-lg);
+    @include baseline-tbl(2.3, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
@@ -72,10 +95,15 @@
 
 @mixin sectionTitle--big() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$hd-4xl, var.$bp-tablet-md);
   font-weight: 900;
 
-  @include baseline-tbl(4, 0);
+  @include baseline-tblmd(3.5, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-lg);
+    @include baseline-tbl(4, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$hd-7xl, var.$bp-desktop-lg);
@@ -98,10 +126,15 @@
 
 @mixin paragTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
   font-weight: 800;
 
-  @include baseline-tbl(2, 0);
+  @include baseline-tblmd(1.5, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
+    @include baseline-tbl(2, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-lg, var.$bp-desktop-lg);
@@ -127,10 +160,15 @@
 
 @mixin body--bigger() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-md);
   font-weight: 300;
 
-  @include baseline-tbl(1.5, 0);
+  @include baseline-tblmd(1.5, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);
+    @include baseline-tbl(1.5, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
@@ -207,10 +245,15 @@
 
 @mixin cta() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
+  font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
   font-weight: 500;
 
-  @include baseline-tbl(1.95, 0);
+  @include baseline-tblmd(1.9, 0);
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
+    @include baseline-tbl(1.95, 0);
+  }
 
   @media (min-width: 1025px) {
     font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
