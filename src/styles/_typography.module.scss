@@ -41,10 +41,15 @@
 
 @mixin heroOver() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-base, var.$bp-tablet-md);
+  font-size: fn.vw(var.$hd-base, var.$bp-smartphone-md);
   font-weight: 800;
 
-  @include baseline-tblmd(2.1, 0);
+  @include baseline-smp(2, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$hd-base, var.$bp-tablet-md);
+    @include baseline-tblmd(2.1, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$hd-lg, var.$bp-tablet-lg);
@@ -59,10 +64,15 @@
 
 @mixin heroTitle() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-md);
+  font-size: fn.vw(var.$hd-5xl, var.$bp-smartphone-md);
   font-weight: 900;
 
-  @include baseline-tblmd(4.6, 0);
+  @include baseline-smp(4.6, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-md);
+    @include baseline-tblmd(4.6, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$hd-6xl, var.$bp-tablet-lg);
@@ -77,10 +87,15 @@
 
 @mixin heroClaim() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
+  font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
   font-weight: 100;
 
-  @include baseline-tblmd(2.1, 0);
+  @include baseline-smp(2, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
+    @include baseline-tblmd(2.1, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$txt-lg, var.$bp-tablet-lg);
@@ -275,10 +290,15 @@
 
 @mixin cta() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
+  font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
   font-weight: 500;
 
-  @include baseline-tblmd(1.9, 0);
+  @include baseline-smp(1.9, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
+    @include baseline-tblmd(1.9, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);

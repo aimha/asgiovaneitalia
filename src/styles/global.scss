@@ -38,7 +38,11 @@ body {
 }
 
 .section {
-  padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2.5, var.$bp-tablet-md);
+  padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2.5, var.$bp-smartphone-md);
+
+  @media (min-width: 541px) {
+    padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2.5, var.$bp-tablet-md);
+  }
 
   @media (min-width: 741px) {
     padding: fn.vw(8, var.$bp-tablet-lg) fn.vw(2.5, var.$bp-tablet-lg);

@@ -10,11 +10,16 @@
   color: $text;
 
   display: inline-block;
-  padding: fn.vw(.5, var.$bp-tablet-md) fn.vw(2, var.$bp-tablet-md);
-  border-radius: fn.vw(2, var.$bp-tablet-md);
+  padding: fn.vw(.5, var.$bp-smartphone-md) fn.vw(2, var.$bp-smartphone-md);
+  border-radius: fn.vw(2, var.$bp-smartphone-md);
   background-color: $bg;
 
   @include ty.cta();
+
+  @media (min-width: 541px) {
+    padding: fn.vw(.5, var.$bp-tablet-md) fn.vw(2, var.$bp-tablet-md);
+    border-radius: fn.vw(2, var.$bp-tablet-md);
+  }
 
   @media (min-width: 741px) {
     padding: fn.vw(.5, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);

@@ -14,15 +14,25 @@
   background-color: var.$clr-primary700;
   color: var.$clr-neutral200;
 
-  padding: 0 fn.vw(4);
+  padding: 0 fn.vw(1, var.$bp-smartphone-md);
   display: flex;
   align-items: center;
   justify-content: center;
 
-  min-height: 75vh;
+  min-height: 100vh;
+
+  @media (min-width: 541px) {
+    min-height: 75vh;
+    padding: 0 fn.vw(2, var.$bp-tablet-md);
+  }
+
+  @media (min-width: 741px) {
+    padding: 0 fn.vw(2, var.$bp-tablet-lg);
+  }
 
   @media (min-width: 1025px) {
     min-height: 100vh;
+    padding: 0 fn.vw(2, var.$bp-desktop-lg);
   }
 
   .Content {
@@ -36,9 +46,13 @@
     }
   
     .Title {
-      margin-top: fn.vw(0, var.$bp-tablet-md);
+      margin-top: fn.vw(.5, var.$bp-smartphone-md);
 
       @include ty.heroTitle();
+
+      @media (min-width: 541px) {
+        margin-top: 0;
+      }
 
       @media (min-width: 741px) {
         margin-top: fn.vw(.5, var.$bp-tablet-lg);
@@ -50,9 +64,17 @@
     }
   
     .Claim {
-      margin-top: fn.vw(1, var.$bp-tablet-lg);
+      margin-top: fn.vw(1.4, var.$bp-smartphone-md);
 
       @include ty.heroClaim();
+
+      @media (min-width: 541px) {
+        margin-top: fn.vw(1.2, var.$bp-tablet-md);
+      }
+
+      @media (min-width: 741px) {
+        margin-top: fn.vw(1, var.$bp-tablet-lg);
+      }
 
       @media (min-width: 1025px) {
         margin-top: fn.vw(1.9, var.$bp-desktop-lg);
@@ -60,9 +82,13 @@
     }
 
     .Cta {
-      margin-top: fn.vw(4, var.$bp-tablet-md);
+      margin-top: fn.vw(6, var.$bp-smartphone-md);
       
       @include obj.ctaButton(var.$clr-secondary500, var.$clr-neutral100);
+
+      @media (min-width: 541px) {
+        margin-top: fn.vw(4, var.$bp-tablet-md);
+      }
 
       @media (min-width: 741px) {
         margin-top: fn.vw(3, var.$bp-tablet-lg);
