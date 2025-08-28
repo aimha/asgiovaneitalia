@@ -19,11 +19,16 @@
     }
 
     .CardList {
-      margin-top: fn.vw(9, var.$bp-tablet-lg);
+      margin-top: fn.vw(7, var.$bp-tablet-md);
       display: flex;
       flex-wrap: wrap;
-      gap: fn.vw(6, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);
+      gap: fn.vw(4, var.$bp-tablet-md) fn.vw(2, var.$bp-tablet-md);
       text-align: center;
+
+      @media (min-width: 1025px) {
+        margin-top: fn.vw(9, var.$bp-tablet-lg);
+        gap: fn.vw(6, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);
+      }
 
       @media (min-width: 1025px) {
         margin-top: fn.vw(13, var.$bp-desktop-lg);
@@ -35,7 +40,11 @@
         position: relative;
         background-color: var.$clr-primary700;
         border-radius: var.$crn-md;
-        padding: fn.vw(4, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg) fn.vw(3, var.$bp-tablet-lg);
+        padding: fn.vw(2, var.$bp-tablet-md) fn.vw(1, var.$bp-tablet-md) fn.vw(2, var.$bp-tablet-md);
+
+        @media (min-width: 741px) {
+          padding: fn.vw(4, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg) fn.vw(3, var.$bp-tablet-lg);
+        }
 
         @media (min-width: 1025px) {
           flex: 0%;
