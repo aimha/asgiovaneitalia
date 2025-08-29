@@ -16,8 +16,13 @@
 
   .Content {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: fn.vw(1, var.$bp-smartphone-md);
+
+    @media (min-width: 741px) {
+      grid-template-columns: repeat(6, 1fr);
     grid-gap: fn.vw(2, var.$bp-tablet-md);
+    }
 
     @media (min-width: 741px) {
       grid-template-columns: repeat(6, 1fr);
@@ -30,8 +35,13 @@
     }
 
     >div {
-      grid-column: 4 / 7;
-      margin-top: fn.vw(.05, var.$bp-tablet-md);
+      grid-column: 2 / 5;
+      margin-top: fn.vw(0, var.$bp-smartphone-md);
+
+      @media (min-width: 741px) {
+        grid-column: 4 / 7;
+        margin-top: fn.vw(.05, var.$bp-tablet-md);
+      }
 
       @media (min-width: 741px) {
         grid-column: 5 / 7;
