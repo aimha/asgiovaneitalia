@@ -13,6 +13,14 @@
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
 }
 
+@mixin baseline-dsksm($line-height, $lines-bottom) {
+  $line: fn.vw(1, var.$bp-desktop-sm);
+
+  line-height: $line * $line-height;
+  padding-top: calc(calc($line * $line-height - 1cap) / 2);
+  margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+}
+
 @mixin baseline-tbl($line-height, $lines-bottom) {
   $line: fn.vw(1, var.$bp-tablet-lg);
 
@@ -57,6 +65,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$hd-xl, var.$bp-desktop-sm);
+    @include baseline-dsksm(3.1, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$hd-xl, var.$bp-desktop-lg);
     @include baseline-dsk(3.1, 0);
   }
@@ -80,6 +93,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$hd-7xl, var.$bp-desktop-sm);
+    @include baseline-dsksm(6.6, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$hd-8xl, var.$bp-desktop-lg);
     @include baseline-dsk(7.6, 0);
   }
@@ -103,6 +121,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-xl, var.$bp-desktop-sm);
+    @include baseline-dsksm(2.1, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
     @include baseline-dsk(2, 0);
   }
@@ -336,6 +359,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-desktop-sm);
+    @include baseline-dsksm(1.95, 0);
+  }
+
+  @media (min-width: 1281) {
     font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
     @include baseline-dsk(1.95, 0);
   }

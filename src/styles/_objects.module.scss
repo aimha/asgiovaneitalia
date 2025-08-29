@@ -27,6 +27,11 @@
   }
 
   @media (min-width: 1025px) {
+    padding: fn.vw(.5, var.$bp-desktop-sm) fn.vw(2, var.$bp-desktop-sm);
+    border-radius: fn.vw(2, var.$bp-desktop-sm);
+  }
+
+  @media (min-width: 1281px) {
     padding: fn.vw(.5, var.$bp-desktop-lg) fn.vw(2, var.$bp-desktop-lg);
     border-radius: fn.vw(2, var.$bp-desktop-lg);
   }
