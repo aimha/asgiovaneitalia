@@ -69,7 +69,7 @@
       }
 
       .Body {
-        margin-top: fn.vw(1, var.$bp-smartphone-md);
+        margin-top: fn.vw(2, var.$bp-smartphone-md);
 
         @include ty.body--bigger();
 
