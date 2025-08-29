@@ -59,7 +59,7 @@
       }
 
       .Body {
-        margin-top: fn.vw(1.5, var.$bp-smartphone-md);
+        margin-top: fn.vw(1.4, var.$bp-smartphone-md);
         @include ty.body--bigger();
 
         @media (min-width: 541px) {
