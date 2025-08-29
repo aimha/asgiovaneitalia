@@ -110,10 +110,15 @@
 
 @mixin sectionTitle--big() {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-4xl, var.$bp-tablet-md);
+  font-size: fn.vw(var.$hd-4xl, var.$bp-smartphone-md);
   font-weight: 900;
 
-  @include baseline-tblmd(3.5, 0);
+  @include baseline-smp(3.5, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$hd-4xl, var.$bp-tablet-md);
+    @include baseline-tblmd(3.5, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$hd-5xl, var.$bp-tablet-lg);
@@ -146,10 +151,15 @@
 
 @mixin paragTitle() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
+  font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
   font-weight: 800;
 
-  @include baseline-tblmd(1.5, 0);
+  @include baseline-smp(1.5, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-tablet-md);
+    @include baseline-tblmd(1.5, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$txt-base, var.$bp-tablet-lg);
@@ -180,10 +190,15 @@
 
 @mixin body--bigger() {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-sm, var.$bp-tablet-md);
+  font-size: fn.vw(var.$txt-sm, var.$bp-smartphone-md);
   font-weight: 300;
 
-  @include baseline-tblmd(1.5, 0);
+  @include baseline-smp(1.5, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-tablet-md);
+    @include baseline-tblmd(1.5, 0);
+  }
 
   @media (min-width: 741px) {
     font-size: fn.vw(var.$txt-sm, var.$bp-tablet-lg);

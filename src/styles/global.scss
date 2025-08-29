@@ -38,7 +38,7 @@ body {
 }
 
 .section {
-  padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2.5, var.$bp-smartphone-md);
+  padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2, var.$bp-smartphone-md);
 
   @media (min-width: 541px) {
     padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2.5, var.$bp-tablet-md);

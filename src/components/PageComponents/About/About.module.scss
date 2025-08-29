@@ -19,9 +19,14 @@
     }
 
     .Paragraph {
-      margin-top: fn.vw(3, var.$bp-tablet-md);
-      padding: 0 fn.vw(1, var.$bp-tablet-md);
+      margin-top: fn.vw(3, var.$bp-smartphone-md);
+      padding: 0;
       display: block;
+
+      @media (min-width: 541px) {
+        margin-top: fn.vw(3, var.$bp-tablet-md);
+        padding: 0 fn.vw(1, var.$bp-tablet-md);
+      }
 
       @media (min-width: 741px) {
         margin-top: fn.vw(4.4, var.$bp-tablet-lg);
@@ -54,8 +59,12 @@
       }
 
       .Body {
-        margin-top: fn.vw(1.5, var.$bp-tablet-md);
+        margin-top: fn.vw(1.5, var.$bp-smartphone-md);
         @include ty.body--bigger();
+
+        @media (min-width: 541px) {
+          margin-top: fn.vw(1.5, var.$bp-tablet-md);
+        }
 
         @media (min-width: 741px) {
           margin-top: fn.vw(1.5, var.$bp-tablet-lg);

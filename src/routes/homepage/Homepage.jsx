@@ -36,8 +36,8 @@ function App() {
       <Grid />
 
       {/* PAGE CONTENT */}
-      <Hero db={ state.hero }/>
-      {/* <About db={ state.about }/> */}
+      {/* <Hero db={ state.hero }/> */}
+      <About db={ state.about }/>
       {/* <History db={ state.history }/> */}
       {/* <Activities db={ state.activities }/> */}
       {/* <Membership db={ state.membership }/> */}
