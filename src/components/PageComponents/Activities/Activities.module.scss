@@ -19,13 +19,18 @@
     }
 
     .CardList {
-      margin-top: fn.vw(7, var.$bp-tablet-md);
-      display: flex;
-      flex-wrap: wrap;
-      gap: fn.vw(4, var.$bp-tablet-md) fn.vw(2, var.$bp-tablet-md);
+      margin-top: fn.vw(6, var.$bp-smartphone-md);
+      display: block;
       text-align: center;
 
-      @media (min-width: 1025px) {
+      @media (min-width: 541px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: fn.vw(7, var.$bp-tablet-md);
+        gap: fn.vw(6, var.$bp-tablet-md) fn.vw(1, var.$bp-tablet-md);
+      }
+
+      @media (min-width: 741px) {
         margin-top: fn.vw(9, var.$bp-tablet-lg);
         gap: fn.vw(6, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);
       }
@@ -40,7 +45,13 @@
         position: relative;
         background-color: var.$clr-primary700;
         border-radius: var.$crn-md;
-        padding: fn.vw(2, var.$bp-tablet-md) fn.vw(1, var.$bp-tablet-md) fn.vw(3, var.$bp-tablet-md);
+        padding: fn.vw(2, var.$bp-smartphone-md) fn.vw(1, var.$bp-smartphone-md) fn.vw(3, var.$bp-smartphone-md);
+        margin-bottom: fn.vw(6, var.$bp-smartphone-md);
+
+        @media (min-width: 541px) {
+          padding: fn.vw(3, var.$bp-tablet-md) fn.vw(1, var.$bp-tablet-md) fn.vw(3, var.$bp-tablet-md);
+          margin-bottom: 0;
+        }
 
         @media (min-width: 741px) {
           padding: fn.vw(4, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg) fn.vw(3, var.$bp-tablet-lg);
@@ -53,13 +64,25 @@
 
         .CardIcon {
           position: absolute;
-          width: fn.vw(8, var.$bp-tablet-lg);
-          height: fn.vw(8, var.$bp-tablet-lg);
+          width: fn.vw(8, var.$bp-smartphone-md);
+          height: fn.vw(8, var.$bp-smartphone-md);
           background-color: inherit;
           border-radius: 100%;
-          top: fn.vw(-4, var.$bp-tablet-lg);
+          top: fn.vw(-4, var.$bp-smartphone-md);
           left: 50%;
           transform: translate(-50%, 0);
+
+          @media (min-width: 541px) {
+            width: fn.vw(8, var.$bp-tablet-md);
+            height: fn.vw(8, var.$bp-tablet-md);
+            top: fn.vw(-4, var.$bp-tablet-md);
+          }
+
+          @media (min-width: 741px) {
+            width: fn.vw(8, var.$bp-tablet-lg);
+            height: fn.vw(8, var.$bp-tablet-lg);
+            top: fn.vw(-4, var.$bp-tablet-lg);
+          }
 
           @media (min-width: 1025px) {
             width: fn.vw(8, var.$bp-desktop-lg);
@@ -69,8 +92,18 @@
 
           img {
             height: auto;
-            max-height: fn.vw(4, var.$bp-tablet-lg);
-            margin: fn.vw(2, var.$bp-tablet-lg) auto;
+            max-height: fn.vw(3, var.$bp-smartphone-md);
+            margin: fn.vw(2, var.$bp-smartphone-md) auto;
+
+            @media (min-width: 541px) {
+              max-height: fn.vw(3, var.$bp-tablet-md);
+              margin: fn.vw(1.5, var.$bp-tablet-md) auto;
+            }
+
+            @media (min-width: 741px) {
+              max-height: fn.vw(4, var.$bp-tablet-lg);
+              margin: fn.vw(2, var.$bp-tablet-lg) auto;
+            }
 
             @media (min-width: 1025px) {
               max-height: fn.vw(4, var.$bp-desktop-lg);
@@ -92,8 +125,21 @@
     
         .CardBody {
           color: var.$clr-neutral200;
+          margin-top: fn.vw(1, var.$bp-smartphone-md);
 
           @include ty.cardBody();
+
+          @media (min-width: 541px) {
+            margin-top: fn.vw(1, var.$bp-tablet-md);
+          }
+
+          @media (min-width: 741px) {
+            margin-top: fn.vw(1, var.$bp-tablet-lg);
+          }
+
+          @media (min-width: 1025px) {
+            margin-top: fn.vw(1, var.$bp-desktop-lg);
+          }
         }
       }
     }
