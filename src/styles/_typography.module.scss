@@ -177,22 +177,6 @@
   }
 }
 
-@mixin paragTitle--small() {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
-  font-weight: 800;
-
-  @include baseline-dsk(2, 0);
-}
-
-@mixin body--regular() {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: fn.vw(var.$txt-xs, var.$bp-desktop-lg);
-  font-weight: 300;
-
-  @include baseline-dsk(1.5, 0);
-}
-
 @mixin body--bigger() {
   font-family: "Merriweather Sans", sans-serif;
   font-size: fn.vw(var.$txt-sm, var.$bp-smartphone-md);
