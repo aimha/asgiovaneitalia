@@ -77,6 +77,10 @@
       }
 
       @media (min-width: 1025px) {
+        margin-top: fn.vw(2.25, var.$bp-desktop-sm);
+      }
+
+      @media (min-width: 1281px) {
         margin-top: fn.vw(1.9, var.$bp-desktop-lg);
       }
     }

@@ -149,6 +149,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$hd-6xl, var.$bp-desktop-sm);
+    @include baseline-dsksm(6.1, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$hd-7xl, var.$bp-desktop-lg);
     @include baseline-dsk(6, 0);
   }
@@ -195,6 +200,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-lg, var.$bp-desktop-sm);
+    @include baseline-dsksm(2, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$txt-lg, var.$bp-desktop-lg);
     @include baseline-dsk(2, 0);
   }
@@ -218,6 +228,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-base, var.$bp-desktop-sm);
+    @include baseline-dsksm(2, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
     @include baseline-dsk(2, 0);
   }

@@ -49,6 +49,10 @@ body {
   }
 
   @media (min-width: 1025px) {
+    padding: fn.vw(10, var.$bp-desktop-sm) fn.vw(4, var.$bp-desktop-sm);
+  }
+
+  @media (min-width: 1281px) {
     padding: fn.vw(10, var.$bp-desktop-lg) fn.vw(4, var.$bp-desktop-lg);
   }
 }
