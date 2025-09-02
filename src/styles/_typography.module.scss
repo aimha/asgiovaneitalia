@@ -348,6 +348,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-2xl, var.$bp-desktop-sm);
+    @include baseline-dsksm(2, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$txt-xl, var.$bp-desktop-lg);
     @include baseline-dsk(2, 0);
   }
@@ -371,6 +376,11 @@
   }
 
   @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-desktop-sm);
+    @include baseline-dsksm(1.5, 0);
+  }
+
+  @media (min-width: 1281px) {
     font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
     @include baseline-dsk(1.5, 0);
   }
