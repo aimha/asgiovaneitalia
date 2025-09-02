@@ -31,6 +31,11 @@
 
     @media (min-width: 1025px) {
       grid-template-columns: repeat(12, 1fr);
+      grid-gap: fn.vw(2, var.$bp-desktop-sm);
+    }
+
+    @media (min-width: 1281px) {
+      grid-template-columns: repeat(12, 1fr);
       grid-gap: fn.vw(2, var.$bp-desktop-lg);
     }
 
@@ -49,6 +54,11 @@
       }
 
       @media (min-width: 1025px) {
+        grid-column: 9 / 13;
+        margin-top: fn.vw(.05, var.$bp-desktop-sm);
+      }
+
+      @media (min-width: 1281px) {
         grid-column: 9 / 13;
         margin-top: fn.vw(.05, var.$bp-desktop-lg);
       }

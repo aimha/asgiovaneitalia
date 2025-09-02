@@ -40,8 +40,8 @@ function App() {
       {/* <About db={ state.about }/> */}
       {/* <History db={ state.history }/> */}
       {/* <Activities db={ state.activities }/> */}
-      <Membership db={ state.membership }/>
-      {/* <Where db={ state.where }/>  */}
+      {/* <Membership db={ state.membership }/> */}
+      <Where db={ state.where }/> 
     </>
   );
 }
