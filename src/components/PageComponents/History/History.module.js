@@ -6,6 +6,5 @@ export default class HistoryClass {
 	}
 
   init() {
-    console.log('History component loaded!');
   }
 }

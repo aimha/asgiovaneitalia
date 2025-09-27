@@ -6,6 +6,5 @@ export default class WhereClass {
 	}
 
   init() {
-    console.log('Where component loaded!');
   }
 }

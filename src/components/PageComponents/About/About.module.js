@@ -6,6 +6,5 @@ export default class AboutClass {
 	}
 
 	init() {
-		console.log('About component loaded!')
 	}
 }

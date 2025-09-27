@@ -6,6 +6,5 @@ export default class MembershipClass {
 	}
 
   init() {
-    console.log('Membership component loaded!');
   }
 }

@@ -6,6 +6,5 @@ export default class ActivitiesClass {
 	}
 
   init() {
-    console.log('Activities component loaded!');
   }
 }

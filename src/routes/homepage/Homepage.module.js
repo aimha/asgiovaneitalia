@@ -7,6 +7,5 @@ export default class HomepageClass {
   }
 
   init() {
-    console.log('Homepage route loaded!');
   }
 }

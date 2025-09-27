@@ -6,6 +6,5 @@ export default class FooterClass {
 	}
 
   init() {
-    console.log('Footer component loaded!');
   }
 }

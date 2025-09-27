@@ -6,6 +6,5 @@ export default class HeroClass {
 	}
 
 	init() {
-		console.log('Hero component loaded!')
 	}
 }
