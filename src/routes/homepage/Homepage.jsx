@@ -28,7 +28,9 @@ function App() {
   onMount(() => {
     // initialize scroller
     globalScroller = new NativeScroller({
-      damping: 0.8
+      damping: 0.1,
+      touchMultiplier: 2,
+      touchVelocity: 25
     });
 
     // initialize homepage logic
