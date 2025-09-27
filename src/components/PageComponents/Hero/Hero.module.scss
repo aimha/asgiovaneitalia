@@ -8,6 +8,7 @@
 // COMPONENT STYLES
 
 .Container {
+  opacity: 0;
   background-image: url('/imgs/hero_bg.png');
   background-size: cover;
 
@@ -38,6 +39,13 @@
   .Content {
     height: fit-content;
     text-align: center;
+
+    .Over,
+    .Title,
+    .Claim,
+    .Cta {
+      opacity: 0;
+    }
 
     .Over {
       color: var.$clr-secondary500;

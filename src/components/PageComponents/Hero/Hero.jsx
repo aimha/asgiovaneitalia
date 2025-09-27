@@ -8,17 +8,18 @@ import HeroClass from './Hero.module';
 
 function Hero(props) {
   const heroDB = props.db;
+  let root;
 
 	onMount(() => {
 		// initialize hero logic
-		const heroComponent = new HeroClass();
+		const heroComponent = new HeroClass(root, styles);
 
 		heroComponent.init();
 	});
 
 	return (
 		<>
-			<div id="hero" class={`${styles.Container}`}>
+			<div ref={root} id="hero" class={`${styles.Container}`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.Over}`}>
             { heroDB.over }
