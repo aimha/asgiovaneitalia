@@ -15,8 +15,8 @@ function Footer(props) {
 
 	return (
 		<>
-      <div id="footer" className={`${styles.Container} section`}>
-        <div className={`${styles.Content}`}>
+      <div id="footer" class={`${styles.Container} section`}>
+        <div class={`${styles.Content}`}>
           <h2>{ footerDB.title }</h2>
         </div>
       </div>

@@ -16,28 +16,28 @@ function History(props) {
 
 	return (
 		<>
-      <div id="history" className={`${styles.Container} section`}>
-        <div className={`${styles.Content}`}>
-          <div className={`${styles.Main}`}>
-            <h2 className={`${styles.Title}`}>
+      <div id="history" class={`${styles.Container} section`}>
+        <div class={`${styles.Content}`}>
+          <div class={`${styles.Main}`}>
+            <h2 class={`${styles.Title}`}>
               { historyDB.title }
             </h2>
-            <p className={`${styles.Body}`}>
+            <p class={`${styles.Body}`}>
               { historyDB.body }
             </p>
           </div>
-          <div className={`${styles.Dates}`}>
-            <h3 className={`${styles.DatesTitle}`}>
+          <div class={`${styles.Dates}`}>
+            <h3 class={`${styles.DatesTitle}`}>
               { historyDB.dateTitle }
             </h3>
-            <ul className={`${styles.DatesList}`}>
+            <ul class={`${styles.DatesList}`}>
               <For each={ historyDB.dateList }>
                 {(item, index) =>
-                  <li className={`${styles.DatesItem}`}>
-                    <div className={`${styles.DatesDate}`}>
+                  <li class={`${styles.DatesItem}`}>
+                    <div class={`${styles.DatesDate}`}>
                       { item.date }
                     </div>
-                    <div className={`${styles.DatesBody}`}>
+                    <div class={`${styles.DatesBody}`}>
                       { item.body }
                     </div>
                   </li>
