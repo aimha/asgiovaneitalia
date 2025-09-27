@@ -19,7 +19,7 @@ function Hero(props) {
 
 	return (
 		<>
-			<div ref={root} id="hero" class={`${styles.Container}`}>
+			<div ref={root} id="hero" class={`${styles.Container} slide`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.Over}`}>
             { heroDB.over }

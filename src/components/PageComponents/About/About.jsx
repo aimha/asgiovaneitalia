@@ -8,15 +8,16 @@ import AboutClass from './About.module';
 
 function About(props) {
   const aboutDB = props.db;
+  let root;
 
 	onMount(() => {
-    const aboutComponent = new AboutClass();
+    const aboutComponent = new AboutClass(root, styles);
     aboutComponent.init();
 	});
 
 	return (
 		<>
-      <div id="about" class={`${styles.Container} section`}>
+      <div ref={root} id="about" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <h2 class={`${styles.Title}`}>
             { aboutDB.title }

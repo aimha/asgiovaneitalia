@@ -16,7 +16,7 @@ function Membership(props) {
 
 	return (
 		<>
-      <div id="membership" class={`${styles.Container} section`}>
+      <div id="membership" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.LeftSide}`}>
             <h2 class={`${styles.Title}`}>

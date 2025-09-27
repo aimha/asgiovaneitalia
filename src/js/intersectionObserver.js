@@ -7,11 +7,12 @@ export default class IntersectionObsClass {
     // create intersection event
     this.event = new Event('intersect');
 
-    // defaukt options
+    // default options
     this.options = {
       ...{
-        threshold: .5,
-        rootMargin: '-100px',
+        threshold: .25,
+        rootMargin: '0px 0px -50px 0px',
+        logging: false,
       },
       ...options
     }
@@ -21,9 +22,15 @@ export default class IntersectionObsClass {
       list.forEach( (el) => {
         // if element is intersecting dispatch "intersect" event
         if (el.isIntersecting) {
+          // dispatch event
           el.target.dispatchEvent(this.event);
           // remove element from observed list
           this.observer.unobserve(el.target);
+          // logging
+          if (this.options.logging) {
+            console.log('Event dispatched', this.event);
+            console.log('Element removed.', el.target);
+          } 
         }
       });
     },

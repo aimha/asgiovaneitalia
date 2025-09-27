@@ -1,16 +1,12 @@
 // JS CLASS
 
 // imports
-
-import IntersectionObsClass from "../../../js/intersectionObserver";
 import AnimationClass from "../../../js/animation";
 
 export default class HeroClass {
 	constructor(_root, _styles) {
     this.root = _root;
     this.styles = _styles;
-
-    this.intObs = new IntersectionObsClass([this.root]);
 
     this.tl_bg = new AnimationClass({
       duration: 1500,
@@ -28,8 +24,6 @@ export default class HeroClass {
 	}
 
 	init() {
-    window.addEventListener('scroll', this.scrollHandler);
-
     this.root.addEventListener('intersect', (e) => {
       const list = [
         e.target.querySelector(`.${this.styles.Over}`),

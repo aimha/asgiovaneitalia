@@ -16,7 +16,7 @@ function Where(props) {
 
 	return (
 		<>
-      <div id="where" class={`${styles.Container} section`}>
+      <div id="where" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <div>
             <h2 class={`${styles.Title}`}>

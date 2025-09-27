@@ -16,7 +16,7 @@ function Activities(props) {
 
 	return (
 		<>
-      <div id="activities" class={`${styles.Container} section`}>
+      <div id="activities" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <h2 class={`${styles.Title}`}>
             { actDB.title }
