@@ -26,8 +26,11 @@ function App() {
   let globalScroller;
 
   onMount(() => {
-    // initialize scroller
-    globalScroller = new NativeScroller({});
+    // initialize scroller for desktop
+    const mql = window.matchMedia("(min-width: 1025px)");
+    if (mql.matches) {
+      globalScroller = new NativeScroller({});
+    }
 
     // initialize homepage logic
     const hp = new HomepageClass();
