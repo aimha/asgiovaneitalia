@@ -16,25 +16,25 @@ function Activities(props) {
 
 	return (
 		<>
-      <div id="activities" className={`${styles.Container} section`}>
-        <div className={`${styles.Content}`}>
-          <h2 className={`${styles.Title}`}>
+      <div id="activities" class={`${styles.Container} section`}>
+        <div class={`${styles.Content}`}>
+          <h2 class={`${styles.Title}`}>
             { actDB.title }
           </h2>
 
-          <ul className={`${styles.CardList}`}>
+          <ul class={`${styles.CardList}`}>
             <For each={ actDB.cards }>
               {(item, index) =>
 
-                <li className={`${styles.Card}`}>
-                  <div className={`${styles.CardIcon}`}>
+                <li class={`${styles.Card}`}>
+                  <div class={`${styles.CardIcon}`}>
                     <img src={ item.img } alt="" />
                   </div>
 
-                  <h3 className={`${styles.CardTitle}`}>
+                  <h3 class={`${styles.CardTitle}`}>
                     { item.title }
                   </h3>
-                  <p className={`${styles.CardBody}`}>
+                  <p class={`${styles.CardBody}`}>
                     { item.body }
                   </p>
                 </li>

@@ -16,13 +16,13 @@ function Where(props) {
 
 	return (
 		<>
-      <div id="where" className={`${styles.Container} section`}>
-        <div className={`${styles.Content}`}>
+      <div id="where" class={`${styles.Container} section`}>
+        <div class={`${styles.Content}`}>
           <div>
-            <h2 className={`${styles.Title}`}>
+            <h2 class={`${styles.Title}`}>
               { whereDB.title }
             </h2>
-            <p innerHTML={ whereDB.body } className={`${styles.Body}`}></p>
+            <p innerHTML={ whereDB.body } class={`${styles.Body}`}></p>
           </div>
         </div>
       </div>

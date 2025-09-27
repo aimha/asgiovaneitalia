@@ -10,10 +10,8 @@ import History from '../../components/PageComponents/History/History';
 import Activities from '../../components/PageComponents/Activities/Activities';
 import Membership from '../../components/PageComponents/Membership/Membership';
 import Where from '../../components/PageComponents/Where/Where';
-import Footer from '../../components/PageComponents/Footer/Footer';
 
 // import style
-import styles from './Homepage.module.scss';
 
 // import logic
 import HomepageClass from './Homepage.module';

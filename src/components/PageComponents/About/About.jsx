@@ -16,19 +16,19 @@ function About(props) {
 
 	return (
 		<>
-      <div id="about" className={`${styles.Container} section`}>
-        <div className={`${styles.Content}`}>
-          <h2 className={`${styles.Title}`}>
+      <div id="about" class={`${styles.Container} section`}>
+        <div class={`${styles.Content}`}>
+          <h2 class={`${styles.Title}`}>
             { aboutDB.title }
           </h2>
-          <div className={`${styles.Paragraph}`}>
+          <div class={`${styles.Paragraph}`}>
             <div>
-              <h3 className={`${styles.SubTitle}`}>
+              <h3 class={`${styles.SubTitle}`}>
                 { aboutDB.subtitle }
               </h3>
               <For each={ aboutDB.body }>
                   {(item, index) =>
-                  <p innerHTML={ item } className={`${styles.Body}`}>
+                  <p innerHTML={ item } class={`${styles.Body}`}>
                   </p>
                   }
               </For>
