@@ -27,10 +27,7 @@ function App() {
 
   onMount(() => {
     // initialize scroller
-    globalScroller = new NativeScroller({
-      touchMultiplier: 4,
-      touchVelocity: 25,
-    });
+    globalScroller = new NativeScroller({});
 
     // initialize homepage logic
     const hp = new HomepageClass();
