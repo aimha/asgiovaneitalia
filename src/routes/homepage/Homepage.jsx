@@ -23,15 +23,8 @@ import stateManagement from "../../data/stores/Store";
 
 function App() {
   const { state } = stateManagement;
-  let globalScroller;
 
   onMount(() => {
-    // initialize scroller for desktop
-    const mql = window.matchMedia("(min-width: 1025px)");
-    if (mql.matches) {
-      globalScroller = new NativeScroller({});
-    }
-
     // initialize homepage logic
     const hp = new HomepageClass();
     hp.init();
