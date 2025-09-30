@@ -13,8 +13,8 @@ export default class MouseHighlightClass {
     document.addEventListener('mousemove', (e) => {
       const containerScroll = document.querySelector('.app-container').scrollTop;
 
-      const x = e.clientX - 20;
-      const y = e.clientY - 20;
+      const x = e.clientX - 30;
+      const y = e.clientY - 30;
 
       this.highLight.style.transform = "translate(" + x + 'px,' + y + "px)";
 

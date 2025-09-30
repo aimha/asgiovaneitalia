@@ -5,7 +5,8 @@ import { onMount } from 'solid-js';
 import { NativeScroller } from '@smoovy/scroller/native';
 
 // import utility components
-import Grid from '../../components/Grid/Grid';
+// import Grid from '../../components/Grid/Grid';
+import MouseHighlight from '../../components/MouseHighlight/MouseHighlight';
 
 // import page components
 import Hero from '../../components/PageComponents/Hero/Hero';
@@ -33,7 +34,8 @@ function App() {
   return (
     <>
       {/* UTILITY */}
-      <Grid />
+      {/* <Grid /> */}
+      <MouseHighlight />
 
       <div>
         {/* PAGE CONTENT */}
