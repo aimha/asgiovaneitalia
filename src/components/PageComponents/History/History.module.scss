@@ -163,7 +163,7 @@
 
           .DatesDate {
             text-align: left;
-            min-width: fn.vw(3, var.$bp-smartphone-md);
+            min-width: fn.vw(4, var.$bp-smartphone-md);
 
             @include ty.dateDate();
 
