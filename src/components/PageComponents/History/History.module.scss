@@ -27,6 +27,11 @@
     }
 
     .Main {
+      .Title,
+      .Body {
+        opacity: 0;
+      }
+
       .Title {
         margin-top: fn.vw(0.1, var.$bp-smartphone-md);
 
@@ -96,6 +101,11 @@
 
       @media (min-width: 1281px) {
         padding-top: fn.vw(3, var.$bp-desktop-lg);
+      }
+
+      .DatesTitle,
+      .DatesItem {
+        opacity: 0;
       }
 
       .DatesTitle {

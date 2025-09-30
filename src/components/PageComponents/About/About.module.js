@@ -18,7 +18,19 @@ export default class AboutClass {
 
 	init() {
     this.root.addEventListener('intersect', (e) => {
-      
+      const list = [
+        e.target.querySelector(`.${this.styles.Title}`),
+        e.target.querySelector(`.${this.styles.SubTitle}`),
+        ...e.target.querySelectorAll(`.${this.styles.Body}`),
+      ];
+
+      this.tl_elements.animateElement(
+        list,
+        [
+          {opacity: 0, transform: 'translateY(20px)'},
+          {opacity: 1, transform: 'translateY(0)'}
+        ]
+      );
     });
 	}
 }

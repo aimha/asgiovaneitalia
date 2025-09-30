@@ -8,15 +8,16 @@ import HistoryClass from './History.module';
 
 function History(props) {
   const historyDB = props.db;
+  let root;
 
 	onMount(() => {
-    const historyComponent = new HistoryClass();
+    const historyComponent = new HistoryClass(root, styles);
     historyComponent.init();
 	});
 
 	return (
 		<>
-      <div id="history" class={`${styles.Container} section slide`}>
+      <div ref={root} id="history" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.Main}`}>
             <h2 class={`${styles.Title}`}>

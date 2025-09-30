@@ -28,6 +28,7 @@
       }
 
       .Title {
+        opacity: 0;
         color: var.$clr-secondary500;
         margin-top: fn.vw(.1, var.$bp-smartphone-md);
 
@@ -72,6 +73,12 @@
         grid-column: 8 / 13;
         margin-top: fn.vw(1.05, var.$bp-desktop-lg);
         padding: 0;
+      }
+
+      .SubTitle,
+      .Body,
+      .Cta {
+        opacity: 0;
       }
 
       .SubTitle {

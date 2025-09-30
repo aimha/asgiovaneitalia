@@ -8,15 +8,16 @@ import ActivitiesClass from './Activities.module';
 
 function Activities(props) {
   const actDB = props.db;
+  let root;
 
 	onMount(() => {
-    const activitiesComponent = new ActivitiesClass();
+    const activitiesComponent = new ActivitiesClass(root, styles);
     activitiesComponent.init();
 	});
 
 	return (
 		<>
-      <div id="activities" class={`${styles.Container} section slide`}>
+      <div ref={root} id="activities" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <h2 class={`${styles.Title}`}>
             { actDB.title }

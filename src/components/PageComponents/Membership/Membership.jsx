@@ -8,15 +8,16 @@ import MembershipClass from './Membership.module';
 
 function Membership(props) {
   const memDB = props.db;
+  let root;
 
 	onMount(() => {
-    const membershipComponent = new MembershipClass();
+    const membershipComponent = new MembershipClass(root, styles);
     membershipComponent.init();
 	});
 
 	return (
 		<>
-      <div id="membership" class={`${styles.Container} section slide`}>
+      <div ref={root} id="membership" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.LeftSide}`}>
             <h2 class={`${styles.Title}`}>
