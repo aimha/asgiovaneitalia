@@ -87,12 +87,12 @@ $clr-neutral200: oklch(0.8942 0.0014 106.43);
 $clr-neutral100: oklch(0.9791 0 0);
 
 /* ANIMATIONS */
-$bzr-productiveEaseInOut: cubic-bzr(0.2, 0.2, 0.38, 0.9);
-$bzr-productiveEaseIn: cubic-bzr(0.2, 0, 1, 0.9);
-$bzr-productiveEaseOut: cubic-bzr(0, 0, 0.38, 0.9);
-$bzr-expressiveEaseInOut: cubic-bzr(0.4, 0.14, 0.3, 1);
-$bzr-expressiveEaseIn: cubic-bzr(0.4, 0.14, 1, 1);
-$bzr-expressiveEaseOut: cubic-bzr(0, 0, 0.3, 1);
-$bzr-celebratoryEaseInOut: cubic-bzr(0.29, 0.04, 0.23, 1);
-$bzr-celebratoryEaseIn: cubic-bzr(0.39, .06, 1, 1);
-$bzr-celebratoryEaseOut: cubic-bzr(0, 0, 0.3, 1);
+$bzr-productiveEaseInOut: cubic-bezier(0.2, 0.2, 0.38, 0.9);
+$bzr-productiveEaseIn: cubic-bezier(0.2, 0, 1, 0.9);
+$bzr-productiveEaseOut: cubic-bezier(0, 0, 0.38, 0.9);
+$bzr-expressiveEaseInOut: cubic-bezier(0.4, 0.14, 0.3, 1);
+$bzr-expressiveEaseIn: cubic-bezier(0.4, 0.14, 1, 1);
+$bzr-expressiveEaseOut: cubic-bezier(0, 0, 0.3, 1);
+$bzr-celebratoryEaseInOut: cubic-bezier(0.29, 0.04, 0.23, 1);
+$bzr-celebratoryEaseIn: cubic-bezier(0.39, .06, 1, 1);
+$bzr-celebratoryEaseOut: cubic-bezier(0, 0, 0.3, 1);

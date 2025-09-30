@@ -8,6 +8,8 @@ export default class HeroClass {
     this.root = _root;
     this.styles = _styles;
 
+    this.cta = this.root.querySelector(`.${this.styles.Cta}`);
+
     this.tl_bg = new AnimationClass({
       duration: 1500,
       initialDelay: 125,
@@ -24,9 +26,11 @@ export default class HeroClass {
 	}
 
 	init() {
+
+    this.scollHandler();
+
     this.root.addEventListener('intersect', (e) => {
       const list = [
-        e.target.querySelector(`.${this.styles.Over}`),
         e.target.querySelector(`.${this.styles.Title}`),
         e.target.querySelector(`.${this.styles.Claim}`),
         e.target.querySelector(`.${this.styles.Cta}`),
@@ -47,6 +51,17 @@ export default class HeroClass {
           {opacity: 1, transform: 'translateY(0)'}
         ]
       );
+    });
+  }
+
+  scollHandler() {
+    this.cta.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector('#about');
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     });
   }
 }

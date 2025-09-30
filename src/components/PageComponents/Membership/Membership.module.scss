@@ -109,6 +109,7 @@
 
       .Cta {
         margin-top: fn.vw(4, var.$bp-smartphone-md);
+        transition: all .25s var.$bzr-expressiveEaseInOut;
 
         @include obj.ctaButton(var.$clr-primary500, var.$clr-neutral100);
 
@@ -126,6 +127,15 @@
 
         @media (min-width: 1281px) {
           margin-top: fn.vw(4, var.$bp-desktop-lg);
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        &:hover {
+          color: var.$clr-primary500;
+          background-color: var.$clr-secondary500;
         }
       }
     }

@@ -23,8 +23,7 @@ function History(props) {
             <h2 class={`${styles.Title}`}>
               { historyDB.title }
             </h2>
-            <p class={`${styles.Body}`}>
-              { historyDB.body }
+            <p innerHTML={historyDB.body} class={`${styles.Body}`}>
             </p>
           </div>
           <div class={`${styles.Dates}`}>

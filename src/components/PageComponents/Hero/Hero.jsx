@@ -21,9 +21,6 @@ function Hero(props) {
 		<>
 			<div ref={root} id="hero" class={`${styles.Container} slide`}>
         <div class={`${styles.Content}`}>
-          <div class={`${styles.Over}`}>
-            { heroDB.over }
-          </div>
           <h1 class={`${styles.Title}`}>
             { heroDB.title }
           </h1>

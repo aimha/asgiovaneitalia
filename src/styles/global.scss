@@ -37,6 +37,15 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  color: inherit;
+  transition: color 0.25s var.$bzr-expressiveEaseInOut;
+
+  &:hover {
+    color: var.$clr-secondary500;
+  }
+}
+
 .section {
   padding: fn.vw(6, var.$bp-tablet-md) fn.vw(2, var.$bp-smartphone-md);
 

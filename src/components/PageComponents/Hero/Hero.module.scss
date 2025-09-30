@@ -40,19 +40,12 @@
     height: fit-content;
     text-align: center;
 
-    .Over,
     .Title,
     .Claim,
     .Cta {
       opacity: 0;
     }
 
-    .Over {
-      color: var.$clr-secondary500;
-
-      @include ty.heroOver();
-    }
-  
     .Title {
       margin-top: fn.vw(.5, var.$bp-smartphone-md);
 
@@ -95,6 +88,8 @@
 
     .Cta {
       margin-top: fn.vw(6, var.$bp-smartphone-md);
+      cursor: pointer;
+      transition: all .25s var.$bzr-expressiveEaseInOut;
       
       @include obj.ctaButton(var.$clr-secondary500, var.$clr-neutral100);
 
@@ -112,6 +107,10 @@
 
       @media (min-width: 1281px) {
         margin-top: fn.vw(4.9, var.$bp-desktop-lg);
+      }
+
+      &:hover {
+        background-color: var.$clr-secondary300;
       }
     }
   }

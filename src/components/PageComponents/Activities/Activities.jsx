@@ -35,8 +35,7 @@ function Activities(props) {
                   <h3 class={`${styles.CardTitle}`}>
                     { item.title }
                   </h3>
-                  <p class={`${styles.CardBody}`}>
-                    { item.body }
+                  <p innerHTML={ item.body } class={`${styles.CardBody}`}>
                   </p>
                 </li>
 

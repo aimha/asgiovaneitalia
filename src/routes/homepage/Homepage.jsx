@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       {/* UTILITY */}
-      {/* <Grid /> */}
+      <Grid />
 
       <div>
         {/* PAGE CONTENT */}

@@ -30,14 +30,15 @@ function Membership(props) {
             </h3>
             <For each={ memDB.body }>
               {(item, index) =>
-                <p class={`${styles.Body}`}>
-                  { item }
+                <p innerHTML={ item } class={`${styles.Body}`}>
                 </p>
               }
             </For>
-            <div class={`${styles.Cta}`}>
-              { memDB.cta }
-            </div>
+            <a href={memDB.link} target="_blank" rel="nofollow">
+              <div class={`${styles.Cta}`}>
+                  { memDB.cta }
+              </div>
+            </a>
           </div>
         </div>
       </div>

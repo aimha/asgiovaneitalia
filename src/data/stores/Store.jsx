@@ -5,8 +5,7 @@ import { createStore } from "solid-js/store"
 function createStateManagement() {
   const [state, setState] = createStore({
     hero: {
-      over: 'Associazione Sportiva',
-      title: 'Giovane Italia',
+      title: 'Giovane Italia 1927',
       claim: 'Sport, Musica e Cultura a Parma. Dal 1927.',
       cta: 'Esplora'
     },
@@ -21,36 +20,28 @@ function createStateManagement() {
     },
     history: {
       title: 'Cento anni di storie, volti e passioni',
-      body: 'Era il 1927 quando, sotto lo scudo bianco-amaranto, prese vita Giovane Italia. Nei decenni, abbiamo visto passare grandi nomi come Alberto Michelotti e Bruno Mora, ma soprattutto generazioni di parmigiani che qui hanno trovato casa.',
+      body: 'Era il 1927 quando, sotto lo scudo bianco-amaranto, prese vita <b>Giovane Italia</b>. Nei decenni, abbiamo visto passare grandi nomi come <b>Alberto Michelotti</b> e <b>Bruno Mora</b>, ma soprattutto generazioni di parmigiani che qui hanno trovato casa.',
       dateTitle: "GIOVANE ITALIA IN TAPPE",
       dateList: [
         {
           date: 1927,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
+          body: 'Una sera di Settembre, nella trattoria di Borgo S.Domenico , nasce la \'Giovane Italia\', la prima società calcistica dell\"Oltretorrente.'
         },
         {
-          date: 1950,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
+          date: 'Anni \'50-\'60',
+          body: 'La Giovane Italia diviene celebre grazie ai suoi successi calcistici, nelle sue fila passarono anche grandi campioni come Alberto Michelotti  e Bruno Mora. Sotto la presidenza di Enrico Ziveri  la Giovane Italia seppe distinguersi anche in altri sport come nuoto, podismo e ciclismo.'
         },
         {
-          date: 1973,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
+          date: 'Anni \'80-\'90',
+          body: 'Lo spostamento del Circolo alla fine degli anni \'80 segna l\'inizio di un temporaneo declino dell\'attività sportiva. Mancanza di fondi e personale porta  a fine anni \'90 alla progressiva perdita della categoria Figc, delle giovanili e delle altre attività sportive.'
         },
         {
-          date: 1996,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
+          date: 'Anni \'00-\'00',
+          body: 'Dal 2003 ci fu un rilancio dell\'attività calcistica amatoriale a 11 con la presa in gestione del campo di via Taro . Questo ciclo durò più di una decade e si concluse, dopo qualche anno interlocutorio, fondendosi con il Rapid nella stagione 2014/2015. '
         },
         {
-          date: 2008,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
-        },
-        {
-          date: 2019,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
-        },
-        {
-          date: 2025,
-          body: 'Lorem ipsum dolor sit amet consectetur. Sed euismod suscipit quam vitae ullamcorper et. Duis pellentesque condimentum feugiat eget suspendisse tortor ac enim. Lacus dui sed lectus suspendisse pretium dui congue ipsum tempus. Bibendum mi eu nunc phasellus. Convallis sit sapien velit et a.'
+          date: 'Anni \'20',
+          body: 'Il Circolo Giovane Italia ricalibra le proprie risorse in termini di personale e fondi, concentrandosi sul calcio a 7 con una squadra iscritta al campionato UISP e sul calcio a 5 con una squadra iscritta al campionato CSI.'
         }
       ]
     },
@@ -59,22 +50,22 @@ function createStateManagement() {
       cards: [
         {
           title: 'Sport',
-          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          body: 'Lo sport fa parte del nostro DNA da <b>quasi 100 anni</b>. Oggi la <b>Giovane Italia</b> può contare su una <b>squadra di calcio a 7 UISP</b> e una di <b>calcio a 5 CSI</b>.Il Circolo è inoltre fresco di una inedita partnership con Energy Volley.<br><br>Dal lato eventi, possiamo contare una una forte collaborazione con Parma Calcio.',
           img: './icons/icon_sport.svg'
         },
         {
           title: 'Cultura',
-          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          body: 'Le mura di <b>Porta Santa Croce</b> han visto susseguirsi <b>mostre pittoriche</b> e <b>fotografiche</b>, <b>dibattiti</b> e <b>presentazioni</b>.<br><br>Il <b>Circolo</b> è stato inoltre pioniere nell\'incoraggiare e indirizzare i <b>giovani under 30</b> all\'ascolto della <b>musica lirica</b> avvalendosi dello stretto rapporto che si è instaurato con la <b>Fondazione Teatro Regio</b>.',
           img: './icons/icon_cultura.svg'
         },
         {
           title: 'Musica',
-          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          body: 'Fin dalla sua fondazione il <b>Circolo</b> è stato molto sensibile alla musica nelle sue più diverse espressioni.<br><br>Nel corso della sua storia, la sua sede di <b>Porta Santa Croce</b> è diventata una istituzione nella vita musicale della città, ospitando concerti di musica <b>jazz</b>, <b>classica</b>, <b>folk</b> e <b>rock/pop</b>.',
           img: './icons/icon_music.svg'
         },
         {
           title: 'Ristorazione',
-          body: 'Lorem ipsum dolor sit amet consectetur. Quis amet vulputate rutrum egestas arcu. Mauris tincidunt et velit sodales. Pellentesque arcu id eu id dictum nisi quisque volutpat. Ornare enim vestibulum pretium massa mauris eget morbi felis volutpat. Id nibh lectus id tempor eros diam lacinia eleifend nulla. Et orci enim donec urna auctor felis gravida.',
+          body: 'La ristorazione nel <b>Circolo</b> è affidata a <b><a href="https://www.damatparma.it/" target="_blank" rel="nofollow">DaMat</a></b>, realtà giovane ma ben affermata nel panorama parmigiano.<br><br>L\'offerta gastronomica ruota attorno alla <b>cucina tradizionale rivisitata in chiave contemporanea</b>, con un preciso focus sulle <b>materie prime</b>.',
           img: './icons/icon_ristorazione.svg'
         }
       ]
@@ -83,10 +74,11 @@ function createStateManagement() {
       title: 'Diventa parte di una storia che continua a crescere',
       subtitle: 'Diventa socio ed entra in una comunità che da quasi cento anni coltiva sport, cultura e passione.',
       body: [
-        "Ac hendrerit in elit est quisque ultrices amet. Et sit phasellus cras orci bibendum. Aenean ullamcorper ut vulputate tellus donec mattis. In eleifend purus pharetra ipsum amet dui. Et amet condimentum nunc metus sit magna felis condimentum",
-        "Ac hendrerit in elit est quisque ultrices amet. Et sit phasellus cras orci bibendum. Aenean ullamcorper ut vulputate tellus donec mattis. In eleifend purus pharetra ipsum amet dui. Et amet condimentum nunc metus sit magna felis condimentum"
+        "Tutti le attività del <b>Circolo Giovane Italia</b>, dallo sport alla cultura, fino agli eventi musicali e la ristorazione, sono riservate ai soci. È necessario quindi <b>essere in possesso della tessera associativa</b>, un piccolo gesto che apre le porte al mondo di iniziative della <b>Giovane Italia</b>.",
+        "Il tessaremento può essere eseguito <b>online</b> seguendo le istruzioni al link qui sotto."
       ],
-      cta: 'Tesserati ora'
+      cta: 'Tesserati ora',
+      link: 'https://www.google.com'
     },
     where: {
       title: 'A.S. Giovane Italia',

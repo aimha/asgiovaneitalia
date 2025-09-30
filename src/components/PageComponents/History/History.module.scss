@@ -179,10 +179,6 @@
             @media (min-width: 1025px) {
               min-width: fn.vw(4, var.$bp-desktop-sm);
             }
-
-            @media (min-width: 1281px) {
-              min-width: fn.vw(4, var.$bp-desktop-lg);
-            }
           }
         }
 
