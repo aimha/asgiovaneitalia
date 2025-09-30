@@ -10,7 +10,7 @@ export default class AboutClass {
 
     this.tl_elements = new AnimationClass({
       duration: 500,
-      initialDelay: 0,
+      initialDelay: 250,
       stagger: 250,
       easing: 'cubic-bezier(0, 0, 0.3, 1)'
     });

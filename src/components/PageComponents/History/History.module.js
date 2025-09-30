@@ -10,7 +10,7 @@ export default class HistoryClass {
 
     this.tl_elements = new AnimationClass({
       duration: 500,
-      initialDelay: 0,
+      initialDelay: 125,
       stagger: 125,
       easing: 'cubic-bezier(0, 0, 0.3, 1)'
     });
