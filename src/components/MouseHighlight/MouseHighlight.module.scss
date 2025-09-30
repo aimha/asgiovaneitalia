@@ -16,5 +16,11 @@
     height: 3rem;
     border-radius: 3rem;
     background-blend-mode: difference;
+
+    display: none;
+
+    @media (min-width: 1020px) {
+      display: block;
+    }
   }
 }
