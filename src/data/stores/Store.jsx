@@ -15,7 +15,7 @@ function createStateManagement() {
       body: [
         "Fondata nel 1927, <b>Giovane Italia</b> è molto più di un'associazione sportiva: è un presidio di comunità, un punto di incontro e <b>un simbolo dell'Oltretorrente</b>.",
         "Oggi riuniamo soci storici e nuovi simpatizzanti, legati dal desiderio di condividere momenti di <b>sport</b>, <b>cultura</b> e <b>musica</b>. Organizziamo incontri, rassegne e attività che mantengono viva la tradizione creando, nel contempo, un'alternativa solida al centro del tessuto sociale dell'Oltretorrente. Collaboriamo inoltre con <b>Parma Club</b> per gli eventi sportivi.</p>",
-        "L'ospitalità gastronomica è affidata a <b>DaMat</b>, partner di lunga data e certezza del settore nel panorama parmigiano."
+        "L'ospitalità gastronomica è affidata a <b><a href=\"https://www.damatparma.it\" target=\"_blank\" rel=\"nofollow\">DaMat</a></b>, partner di lunga data e certezza del settore nel panorama parmigiano."
       ]
     },
     history: {
@@ -50,7 +50,7 @@ function createStateManagement() {
       cards: [
         {
           title: 'Sport',
-          body: 'Lo sport fa parte del nostro DNA da <b>quasi 100 anni</b>. Oggi la <b>Giovane Italia</b> può contare su una <b>squadra di calcio a 7 UISP</b> e una di <b>calcio a 5 CSI</b>.Il Circolo è inoltre fresco di una inedita partnership con Energy Volley.<br><br>Dal lato eventi, possiamo contare una una forte collaborazione con Parma Calcio.',
+          body: 'Lo sport fa parte del nostro DNA da <b>quasi 100 anni</b>. Oggi la <b>Giovane Italia</b> può contare su una <b>squadra di calcio a 7 UISP</b> e una di <b>calcio a 5 CSI</b>.Il Circolo è inoltre fresco di una inedita partnership con <b>Energy Volley</b>.<br><br>Dal lato eventi, possiamo contare una una forte collaborazione con <b>Parma Calcio</b>.',
           img: './icons/icon_sport.svg'
         },
         {
@@ -74,11 +74,13 @@ function createStateManagement() {
       title: 'Diventa parte di una storia che continua a crescere',
       subtitle: 'Diventa socio ed entra in una comunità che da quasi cento anni coltiva sport, cultura e passione.',
       body: [
-        "Tutti le attività del <b>Circolo Giovane Italia</b>, dallo sport alla cultura, fino agli eventi musicali e la ristorazione, sono riservate ai soci. È necessario quindi <b>essere in possesso della tessera associativa</b>, un piccolo gesto che apre le porte al mondo di iniziative della <b>Giovane Italia</b>.",
-        "Il tessaremento può essere eseguito <b>online</b> seguendo le istruzioni al link qui sotto."
+        "Tutti le attività del <b>Circolo Giovane Italia</b>, dallo <b>sport</b> alla <b>cultura</b>, fino agli <b>eventi musicali</b> e la <b>ristorazione</b>, sono riservate ai soci.",
+        "La <b>tessera associativa</b> da accesso inoltre alle <b>convenzioni</b> riservate ai soci:<br>- <b>10%</b> di sconto al <b>daMATBistrot</b> e al <b>daMATChiosco Ducale</b><br>- <b>10%</b> di sconto al <b>centro Euromed</b>.",
+        "Inoltre durante le partite del <b>Parma</b> i soci <b>Parma Club</b> usufruiranno di uno <b>sconto sulla birra media chiara</b>",
+        "Il tesseramento può essere eseguito <b>online</b> accedendo al form dal link qui sotto: una volta <b>inseriti i dati</b> e <b>completato il pagamento</b> della quota pari a <b>2€</b> si riceverà la <b>tessera associativa via mail</b>."
       ],
       cta: 'Tesserati ora',
-      link: 'https://www.google.com'
+      link: 'https://www.damatparma.it/tesseramento'
     },
     where: {
       title: 'A.S. Giovane Italia',
