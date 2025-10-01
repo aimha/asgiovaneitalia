@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --mode staging",
+    "buildProd": "vite build --mode production",
     "serve": "vite preview"
   },
   "license": "MIT",
