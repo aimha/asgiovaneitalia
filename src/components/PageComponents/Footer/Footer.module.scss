@@ -75,6 +75,8 @@
       text-transform: uppercase;
       padding-bottom: fn.vw(1, var.$bp-smartphone-md);
 
+      @include ty.body--bigger();
+
       @media (min-width: 541px) {
         padding-bottom: fn.vw(1, var.$bp-tablet-md);
       }
@@ -89,8 +91,6 @@
       @media (min-width: 1281px) {
         padding-bottom: fn.vw(1, var.$bp-desktop-lg);
       }
-
-      @include ty.body--bigger();
     }
 
     .Body {
