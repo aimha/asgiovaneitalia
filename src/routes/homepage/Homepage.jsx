@@ -36,7 +36,7 @@ function App() {
     <>
       {/* UTILITY */}
       {/* <Grid /> */}
-      {/* <MouseHighlight /> */}
+      <MouseHighlight />
 
       <div>
         {/* PAGE CONTENT */}
@@ -45,7 +45,7 @@ function App() {
         <History db={ state.history }/>
         <Activities db={ state.activities }/>
         <Membership db={ state.membership }/>
-        <Where db={ state.where }/>
+        {/* <Where db={ state.where }/> */}
         <Footer db={ state.footer }/>
       </div>
     </>
