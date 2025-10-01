@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     publicDir: './static/',
-    base: env.VITE_ROUTER_BASE,
+    base: env.VITE_BASE,
     plugins: [solid()],
     server: {
       port: 3000,
