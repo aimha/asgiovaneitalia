@@ -5,6 +5,8 @@ import { Router, Route } from "@solidjs/router";
 // Routes
 import Homepage from "./routes/homepage/Homepage";
 
+const base = import.meta.env.VITE_ROUTER_BASE;
+
 // Styles
 import './styles/global.scss';
 
@@ -19,7 +21,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(() => 
   <div class="app-container">
     <Router>
-      <Route path="/asgiovaneitalia/" component={Homepage} />
+      <Route path={base} component={Homepage} />
     </Router>
   </div>
   , root);
