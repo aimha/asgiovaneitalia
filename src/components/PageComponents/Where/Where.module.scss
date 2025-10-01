@@ -7,69 +7,14 @@
 // COMPONENT STYLES
 
 .Container {
-  background-image: url('/imgs/mappa.png');
-  background-size: cover;
-  background-position: 0% 55%;
-
   background-color: var.$clr-primary900;
-  color: var.$clr-neutral100;
 
   .Content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: fn.vw(1, var.$bp-smartphone-md);
-
-    @media (min-width: 541px) {
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: fn.vw(2, var.$bp-tablet-md);
-    }
-
-    @media (min-width: 741px) {
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: fn.vw(2, var.$bp-tablet-lg);
-    }
-
-    @media (min-width: 1025px) {
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: fn.vw(2, var.$bp-desktop-sm);
-    }
-
-    @media (min-width: 1281px) {
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: fn.vw(2, var.$bp-desktop-lg);
-    }
+    min-height: 20rem;
 
     >div {
-      grid-column: 2 / 5;
-      margin-top: fn.vw(0, var.$bp-smartphone-md);
-
-      @media (min-width: 541px) {
-        grid-column: 4 / 7;
-        margin-top: fn.vw(.05, var.$bp-tablet-md);
-      }
-
-      @media (min-width: 741px) {
-        grid-column: 5 / 7;
-        margin-top: fn.vw(.05, var.$bp-tablet-lg);
-      }
-
-      @media (min-width: 1025px) {
-        grid-column: 9 / 13;
-        margin-top: fn.vw(.05, var.$bp-desktop-sm);
-      }
-
-      @media (min-width: 1281px) {
-        grid-column: 9 / 13;
-        margin-top: fn.vw(.05, var.$bp-desktop-lg);
-      }
-
-      .Title {
-        @include ty.paragTitle();
-      }
-
-      .Body {
-        @include ty.body--bigger();
-      }
+      height: 20rem;
+      width: 100%;
     }
   }
 }
