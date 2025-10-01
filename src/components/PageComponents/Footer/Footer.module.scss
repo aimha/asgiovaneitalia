@@ -1,5 +1,100 @@
+// IMPORTS
+
+@use'../../../styles/typography.module' as ty;
+@use'../../../styles/functions.module' as fn;
+@use'../../../styles/variables.module' as var;
+
 // COMPONENT STYLES
 
 .Container {
-  background-color: var(--color-primary500);
+  background-color: var.$clr-primary900;
+  color: var.$clr-neutral200;
+
+  padding: fn.vw(4, var.$bp-tablet-md) fn.vw(2, var.$bp-smartphone-md);
+
+  @media (min-width: 541px) {
+    padding: fn.vw(4, var.$bp-tablet-md) fn.vw(2.5, var.$bp-tablet-md);
+  }
+
+  @media (min-width: 741px) {
+    padding: fn.vw(4, var.$bp-tablet-lg) fn.vw(2.5, var.$bp-tablet-lg);
+  }
+
+  @media (min-width: 1025px) {
+    padding: fn.vw(4, var.$bp-desktop-sm) fn.vw(4, var.$bp-desktop-sm);
+  }
+
+  @media (min-width: 1281px) {
+    padding: fn.vw(6, var.$bp-desktop-lg) fn.vw(4, var.$bp-desktop-lg);
+  }
+
+  .Content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: fn.vw(1, var.$bp-smartphone-md);
+
+    @media (min-width: 541px) {
+      grid-gap: fn.vw(1, var.$bp-tablet-md);
+    }
+
+    @media (min-width: 741px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: fn.vw(2, var.$bp-tablet-lg);
+    }
+
+    @media (min-width: 1025px) {
+      grid-gap: fn.vw(2, var.$bp-desktop-sm);
+    }
+
+    @media (min-width: 1281px) {
+      grid-gap: fn.vw(2, var.$bp-desktop-lg);
+    }
+
+    >div:not(:first-child) {
+      padding-top: fn.vw(1, var.$bp-smartphone-md);
+
+      @media (min-width: 541px) {
+        padding-top: fn.vw(1, var.$bp-tablet-md);
+      }
+
+      @media (min-width: 741px) {
+        padding-top: fn.vw(2.5, var.$bp-tablet-lg);
+      }
+
+      @media (min-width: 1025px) {
+        padding-top: fn.vw(3, var.$bp-desktop-sm);
+      }
+
+      @media (min-width: 1281px) {
+        padding-top: fn.vw(3, var.$bp-desktop-lg);
+      }
+    }
+
+    .Title {
+      text-transform: uppercase;
+      padding-bottom: fn.vw(1, var.$bp-smartphone-md);
+
+      @include ty.body--bigger();
+
+      @media (min-width: 541px) {
+        padding-bottom: fn.vw(1, var.$bp-tablet-md);
+      }
+      @media (min-width: 741px) {
+        padding-bottom: fn.vw(1, var.$bp-tablet-lg);
+      }
+
+      @media (min-width: 1025px) {
+        padding-bottom: fn.vw(1, var.$bp-desktop-sm);
+      }
+
+      @media (min-width: 1281px) {
+        padding-bottom: fn.vw(1, var.$bp-desktop-lg);
+      }
+    }
+
+    .Body {
+      @include ty.body--small();
+    }
+  }
 }
