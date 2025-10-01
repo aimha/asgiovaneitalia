@@ -3,7 +3,7 @@ import solidPlugin from 'vite-plugin-solid';
 
 export default defineConfig({
   publicDir: './static/',
-  base: "./",
+  base: "/asgiovaneitalia/",
   plugins: [
     solidPlugin()
   ],
