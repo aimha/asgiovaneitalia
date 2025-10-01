@@ -5,7 +5,7 @@ import { onMount } from 'solid-js';
 import { NativeScroller } from '@smoovy/scroller/native';
 
 // import utility components
-// import Grid from '../../components/Grid/Grid';
+import Grid from '../../components/Grid/Grid';
 import MouseHighlight from '../../components/MouseHighlight/MouseHighlight';
 
 // import page components
@@ -15,6 +15,7 @@ import History from '../../components/PageComponents/History/History';
 import Activities from '../../components/PageComponents/Activities/Activities';
 import Membership from '../../components/PageComponents/Membership/Membership';
 import Where from '../../components/PageComponents/Where/Where';
+import Footer from '../../components/PageComponents/Footer/Footer';
 
 // import logic
 import HomepageClass from './Homepage.module';
@@ -35,7 +36,7 @@ function App() {
     <>
       {/* UTILITY */}
       {/* <Grid /> */}
-      <MouseHighlight />
+      {/* <MouseHighlight /> */}
 
       <div>
         {/* PAGE CONTENT */}
@@ -44,7 +45,8 @@ function App() {
         <History db={ state.history }/>
         <Activities db={ state.activities }/>
         <Membership db={ state.membership }/>
-        <Where db={ state.where }/> 
+        {/* <Where db={ state.where }/> */}
+        <Footer db={ state.footer }/>
       </div>
     </>
   );

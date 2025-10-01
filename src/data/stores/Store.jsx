@@ -83,11 +83,16 @@ function createStateManagement() {
       link: 'https://www.damatparma.it/tesseramento'
     },
     where: {
-      title: 'A.S. Giovane Italia',
+      title: 'Giovane Italia APS',
       body: 'Via John Fitzgerald Kennedy 7<br>43125<br>Parma (PR)'
     },
     footer: {
-      title: 'this is a footer'
+      title: 'Giovane Italia APS',
+      address: 'Via John Fitzgerald Kennedy 7<br>43125 Parma (PR)',
+      cf: 'C.F. 80011680347',
+      runts: 'Numero repertorio RUNTS: 35095',
+      email: 'email: as.giovaneitalia@libero.it',
+      pec: 'pec: giovaneitalia.aps@pec.it'
     }
   });
 
