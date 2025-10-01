@@ -243,6 +243,34 @@
   }
 }
 
+@mixin body--small() {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: fn.vw(var.$txt-xs, var.$bp-smartphone-md);
+  font-weight: 300;
+
+  @include baseline-smp(1.5, 0);
+
+  @media (min-width: 541px) {
+    font-size: fn.vw(var.$txt-xs, var.$bp-tablet-md);
+    @include baseline-tblmd(1.5, 0);
+  }
+
+  @media (min-width: 741px) {
+    font-size: fn.vw(var.$txt-xs, var.$bp-tablet-lg);
+    @include baseline-tbl(1.5, 0);
+  }
+
+  @media (min-width: 1025px) {
+    font-size: fn.vw(var.$txt-xs, var.$bp-desktop-sm);
+    @include baseline-dsksm(1.5, 0);
+  }
+
+  @media (min-width: 1281px) {
+    font-size: fn.vw(var.$txt-sm, var.$bp-desktop-lg);
+    @include baseline-dsk(2, 0);
+  }
+}
+
 @mixin dateTitle() {
   font-family: "Merriweather Sans", sans-serif;
   font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);

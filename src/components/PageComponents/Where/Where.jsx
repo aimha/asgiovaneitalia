@@ -3,27 +3,26 @@ import { onMount } from 'solid-js';
 // import style
 import styles from './Where.module.scss'
 
-// import logic
-import WhereClass from './Where.module';
-
 function Where(props) {
-  const whereDB = props.db;
+  let mapContainer;
 
 	onMount(() => {
-    const whereComponent = new WhereClass();
-    whereComponent.init();
+    // google maps
+    const map = new google.maps.Map(mapContainer, {
+      center: { lat: 44.80495763493976, lng: 10.314462684538228 },
+      zoom: 16,
+      disableDefaultUI: true,
+      gestureHandling: "none",
+      zoomControl: false,
+      draggable: false,
+    });
 	});
 
 	return (
 		<>
-      <div id="where" class={`${styles.Container} section slide`}>
+      <div id="where" class={`${styles.Container}`}>
         <div class={`${styles.Content}`}>
-          <div>
-            <h2 class={`${styles.Title}`}>
-              { whereDB.title }
-            </h2>
-            <p innerHTML={ whereDB.body } class={`${styles.Body}`}></p>
-          </div>
+          <div ref={mapContainer}></div>
         </div>
       </div>
 		</>
