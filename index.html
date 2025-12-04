@@ -11,46 +11,38 @@
 
     <meta name="keywords" content="Giovane Italia Parma, Associazione Sportiva Parma, sport Parma, calcio UISP Parma, calcio CSI Parma, Energy Volley, Parma Club, eventi Parma, associazione culturale Parma, circolo Giovane Italia, DaMat Parma, ristorazione Parma">
 
-    <!-- GOOGLE MAPS -->
-
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbSdXrcqMygf2asP2ixfi0dNc6YtoTl3s" async defer></script> -->
-
     <!-- PRE LOADER STYLING -->
-    <style>
-      #loader {
-        position: fixed;
-        inset: 0;
-        background: oklch(0.7859 0.1647 74.68);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-      }
+    <style>#loader{position:fixed;inset:0;background:oklch(.7859 .1647 74.68);display:flex;align-items:center;justify-content:center;z-index:9999}.line{position:relative;width:60%;height:5px;overflow:hidden;background:oklch(.654 .134 77.56);border-radius:2px}.line::before{content:"";position:absolute;height:100%;width:40%;background:oklch(.9791 0 0);border-radius:2px;animation:1s linear infinite loading}@keyframes loading{from{transform:translateX(-100%)}to{transform:translateX(250%)}}</style>
 
-      .line {
-        position: relative;
-        width: 60%;
-        height: 5px;
-        overflow: hidden;
-        background: oklch(0.654 0.134 77.56);
-        border-radius: 2px;
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Giovane Italia",
+        "url": "https://asgiovaneitalia1927.it/",
+        "logo": "https://asgiovaneitalia1927.it/icons/logo_asgiovaneitalia.png",
+        "description": "Associazione Giovane Italia Parma: dal 1927 promuoviamo sport, cultura e musica. Squadre di calcio UISP e CSI, eventi con Parma Calcio, partnership con Energy Volley e ristorazione curata da DaMat. Scopri come tesserarti e vivere la comunità.",
+        "foundingDate": "1927",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via John Fitzgerald Kennedy 7",
+          "addressLocality": "Parma",
+          "addressRegion": "PR",
+          "postalCode": "43125",
+          "addressCountry": "IT"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Informazioni",
+          "email": "info@asgiovaneitalia1927.it"
+        },
+        "sameAs": [
+          "https://www.instagram.com/damat.giovane/",
+          "https://www.facebook.com/circologiovaneitalia/"
+        ]
       }
-
-      .line::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 40%;
-        background: oklch(0.9791 0 0);
-        border-radius: 2px;
-        animation: loading 1.0s linear infinite;
-      }
-
-      @keyframes loading {
-        from { transform: translateX(-100%); }
-        to   { transform: translateX(250%); }
-      }
-    </style>
+    </script>
   </head>
 
   <body>
