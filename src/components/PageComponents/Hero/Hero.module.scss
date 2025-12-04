@@ -12,8 +12,8 @@
 }
 
 .Container {
-  // opacity: 0;
-  background-image: url('/imgs/hero_bg.jpg');
+  opacity: 0;
+  background-image: url('/imgs/hero_bg.png');
   background-size: cover;
 
   background-color: var.$clr-primary700;
@@ -47,7 +47,7 @@
     .Title,
     .Claim,
     .Cta {
-      // opacity: 0;
+      opacity: 0;
     }
 
     .Title {

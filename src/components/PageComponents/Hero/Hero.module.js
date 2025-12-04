@@ -36,21 +36,21 @@ export default class HeroClass {
         e.target.querySelector(`.${this.styles.Cta}`),
       ];
 
-      // this.tl_bg.animateElement(
-      //   [this.root],
-      //   [
-      //     {opacity: 0},
-      //     {opacity: 1}
-      //   ]
-      // );
+      this.tl_bg.animateElement(
+        [this.root],
+        [
+          {opacity: 0},
+          {opacity: 1}
+        ]
+      );
 
-      // this.tl_elements.animateElement(
-      //   list,
-      //   [
-      //     {opacity: 0, transform: 'translateY(20px)'},
-      //     {opacity: 1, transform: 'translateY(0)'}
-      //   ]
-      // );
+      this.tl_elements.animateElement(
+        list,
+        [
+          {opacity: 0, transform: 'translateY(20px)'},
+          {opacity: 1, transform: 'translateY(0)'}
+        ]
+      );
     });
   }
 
