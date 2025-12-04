@@ -19,6 +19,7 @@ function Hero(props) {
 
 	return (
 		<>
+    <div class={`${styles.Outer}`}>
 			<div ref={root} id="hero" class={`${styles.Container} slide`}>
         <div class={`${styles.Content}`}>
           <h1 class={`${styles.Title}`}>
@@ -32,6 +33,7 @@ function Hero(props) {
           </div>
         </div>
       </div>
+    </div>
 		</>
 	)
 }
