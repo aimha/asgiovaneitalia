@@ -26,10 +26,9 @@ render(() =>
   </div>
   , root);
 
-// quando Solid ha montato, togli il loader
+// REMOVE LOADER WHEN READY
 const loader = document.getElementById("loader");
 if (loader) {
-  // fade-out per non sembrare un’abrasione chirurgica
   loader.style.transition = "opacity 0.3s ease";
   loader.style.opacity = "0";
   setTimeout(() => loader.remove(), 100000);
