@@ -15,7 +15,7 @@ function Footer(props) {
 
 	return (
 		<>
-      <div id="footer" class={`${styles.Container}`}>
+      <footer id="footer" class={`${styles.Container}`}>
         <div class={`${styles.Content}`}>
           <div>
             <p class={`${styles.Title}`}>{ footerDB.title }</p>
@@ -30,7 +30,7 @@ function Footer(props) {
             <p class={`${styles.Body}`}>{ footerDB.pec }</p>
           </div>
         </div>
-      </div>
+      </footer>
 		</>
 	)
 }

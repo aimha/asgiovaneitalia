@@ -17,7 +17,7 @@ function Membership(props) {
 
 	return (
 		<>
-      <div ref={root} id="membership" class={`${styles.Container} section slide`}>
+      <section ref={root} id="membership" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.LeftSide}`}>
             <h2 class={`${styles.Title}`}>
@@ -41,7 +41,7 @@ function Membership(props) {
             </a>
           </div>
         </div>
-      </div>
+      </section>
 		</>
 	)
 }

@@ -17,7 +17,7 @@ function History(props) {
 
 	return (
 		<>
-      <div ref={root} id="history" class={`${styles.Container} section slide`}>
+      <section ref={root} id="history" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <div class={`${styles.Main}`}>
             <h2 class={`${styles.Title}`}>
@@ -46,7 +46,7 @@ function History(props) {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 		</>
 	)
 }

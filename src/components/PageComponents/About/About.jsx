@@ -17,7 +17,7 @@ function About(props) {
 
 	return (
 		<>
-      <div ref={root} id="about" class={`${styles.Container} section slide`}>
+      <section ref={root} id="about" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <h2 class={`${styles.Title}`}>
             { aboutDB.title }
@@ -36,7 +36,7 @@ function About(props) {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 		</>
 	)
 }
