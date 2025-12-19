@@ -1,0 +1,26 @@
+// IMPORTS
+
+@use'../../styles/typography.module' as ty;
+@use'../../styles/objects.module' as obj;
+@use'../../styles/functions.module' as fn;
+@use'../../styles/variables.module' as var;
+
+// HEADER STYLES
+
+.Header {
+  position: fixed;
+  width: 100%;
+  padding: 0 2rem 1rem;
+  background-color: transparent;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.Toggle {
+  cursor: pointer;
+  color: var.$clr-neutral200;
+
+  @include ty.headerToggle();
+}
