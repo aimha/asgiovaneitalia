@@ -31,5 +31,5 @@ const loader = document.getElementById("loader");
 if (loader) {
   loader.style.transition = "opacity 0.3s ease";
   loader.style.opacity = "0";
-  setTimeout(() => loader.remove(), 100000);
+  setTimeout(() => loader.remove(), 1000);
 }

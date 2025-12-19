@@ -10,8 +10,9 @@
 .Header {
   position: fixed;
   width: 100%;
-  padding: 0 2rem 1rem;
+  padding: 2rem 2rem;
   background-color: transparent;
+  // mix-blend-mode: difference;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -20,7 +21,71 @@
 
 .Toggle {
   cursor: pointer;
-  color: var.$clr-neutral200;
+  color: var.$clr-secondary500;
+  width: 2rem;
+  height: 2rem;
 
-  @include ty.headerToggle();
+  .ToggleIcon {
+    max-height: 100%;
+  }
+}
+
+.MenuOverlay {
+  position: fixed;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 400;
+
+  color: var.$clr-secondary500;
+  background-color: var.$clr-neutral900;
+}
+
+.MenuOverlay__hidden {
+  display: none;
+}
+
+.MenuClose {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  .MenuCloseIcon {
+    max-height: 100%;
+  }
+}
+
+.MenuList {
+  .MenuEl {
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: fn.vw(2, var.$bp-smartphone-md) 0;
+    @include ty.sectionTitle--small();
+
+    @media (min-width: 541px) {
+      padding: fn.vw(2, var.$bp-tablet-md) 0;
+    }
+
+    @media (min-width: 741px) {
+      padding: fn.vw(3, var.$bp-tablet-lg) 0;
+    }
+
+    @media (min-width: 1025px) {
+      padding: fn.vw(2, var.$bp-desktop-sm) 0;
+    }
+
+    @media (min-width: 1281px) {
+      padding: fn.vw(3, var.$bp-desktop-lg) 0;
+    }
+  }
 }

@@ -400,10 +400,3 @@
     @include baseline-dsk(1.95, 0);
   }
 }
-
-@mixin headerToggle() {
-  font-family: 'Merriweather_800';
-  font-size: fn.vw(var.$txt-base, var.$bp-desktop-lg);
-
-  @include baseline-dsk(2, 0);
-}
