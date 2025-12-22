@@ -7,9 +7,13 @@
 
 // COMPONENT STYLES
 
+.Outer {
+  background-color: var.$clr-primary700;
+}
+
 .Container {
   opacity: 0;
-  background-image: url('/imgs/hero_bg.png');
+  background-image: url('/imgs/hero_bg.jpg');
   background-size: cover;
 
   background-color: var.$clr-primary700;

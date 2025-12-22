@@ -2,6 +2,7 @@
 
 @use 'variables.module' as var;
 @use 'functions.module' as fn;
+@use 'fonts.module' as fonts;
 
 // baseline grid mixin
 
@@ -47,38 +48,9 @@
 
 // typography mixins
 
-@mixin heroOver() {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: fn.vw(var.$hd-base, var.$bp-smartphone-md);
-  font-weight: 800;
-
-  @include baseline-smp(2, 0);
-
-  @media (min-width: 541px) {
-    font-size: fn.vw(var.$hd-base, var.$bp-tablet-md);
-    @include baseline-tblmd(2.1, 0);
-  }
-
-  @media (min-width: 741px) {
-    font-size: fn.vw(var.$hd-lg, var.$bp-tablet-lg);
-    @include baseline-tbl(2, 0);
-  }
-
-  @media (min-width: 1025px) {
-    font-size: fn.vw(var.$hd-xl, var.$bp-desktop-sm);
-    @include baseline-dsksm(3.1, 0);
-  }
-
-  @media (min-width: 1281px) {
-    font-size: fn.vw(var.$hd-xl, var.$bp-desktop-lg);
-    @include baseline-dsk(3.1, 0);
-  }
-}
-
 @mixin heroTitle() {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya_900";
   font-size: fn.vw(var.$hd-5xl, var.$bp-smartphone-md);
-  font-weight: 900;
 
   @include baseline-smp(4.6, 0);
 
@@ -104,9 +76,8 @@
 }
 
 @mixin heroClaim() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather_300";
   font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
-  font-weight: 100;
 
   @include baseline-smp(2, 0);
 
@@ -132,9 +103,8 @@
 }
 
 @mixin sectionTitle--big() {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya_900";
   font-size: fn.vw(var.$hd-4xl, var.$bp-smartphone-md);
-  font-weight: 900;
 
   @include baseline-smp(3.5, 0);
 
@@ -160,9 +130,8 @@
 }
 
 @mixin sectionTitle--small() {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya_900";
   font-size: fn.vw(var.$hd-3xl, var.$bp-smartphone-md);
-  font-weight: 900;
 
   @include baseline-smp(3, 0);
 
@@ -188,9 +157,8 @@
 }
 
 @mixin paragTitle() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_800';
   font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
-  font-weight: 800;
 
   @include baseline-smp(1.5, 0);
 
@@ -216,9 +184,8 @@
 }
 
 @mixin body--bigger() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_300';
   font-size: fn.vw(var.$txt-sm, var.$bp-smartphone-md);
-  font-weight: 300;
 
   @include baseline-smp(1.5, 0);
 
@@ -244,9 +211,8 @@
 }
 
 @mixin body--small() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_300';
   font-size: fn.vw(var.$txt-xs, var.$bp-smartphone-md);
-  font-weight: 300;
 
   @include baseline-smp(1.5, 0);
 
@@ -272,9 +238,8 @@
 }
 
 @mixin dateTitle() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_800';
   font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
-  font-weight: 800;
   text-transform: uppercase;
 
   @include baseline-smp(2, 0);
@@ -301,9 +266,8 @@
 }
 
 @mixin dateBody() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_300';
   font-size: fn.vw(var.$txt-sm, var.$bp-smartphone-md);
-  font-weight: 300;
   font-variant: normal;
 
   @include baseline-smp(1.5, 0);
@@ -331,10 +295,8 @@
 }
 
 @mixin dateDate() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_800';
   font-size: fn.vw(var.$txt-sm, var.$bp-smartphone-md);
-  font-weight: 800;
-
   @include baseline-smp(1.5, 0);
 
   @media (min-width: 541px) {
@@ -359,9 +321,8 @@
 }
 
 @mixin cardTitle() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_800';
   font-size: fn.vw(var.$txt-xl, var.$bp-smartphone-md);
-  font-weight: 800;
 
   @include baseline-smp(3, 0);
 
@@ -387,9 +348,8 @@
 }
 
 @mixin cardBody() {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather_300';
   font-size: fn.vw(var.$txt-xs, var.$bp-smartphone-md);
-  font-weight: 100;
 
   @include baseline-smp(1.5, 0);
 
@@ -415,9 +375,8 @@
 }
 
 @mixin cta() {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya_500';
   font-size: fn.vw(var.$txt-base, var.$bp-smartphone-md);
-  font-weight: 500;
 
   @include baseline-smp(1.9, 0);
 

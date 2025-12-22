@@ -20,11 +20,11 @@ function Where(props) {
 
 	return (
 		<>
-      <div id="where" class={`${styles.Container}`}>
+      <section id="where" class={`${styles.Container}`}>
         <div class={`${styles.Content}`}>
           <div ref={mapContainer}></div>
         </div>
-      </div>
+      </section>
 		</>
 	)
 }

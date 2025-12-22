@@ -17,7 +17,7 @@ function Activities(props) {
 
 	return (
 		<>
-      <div ref={root} id="activities" class={`${styles.Container} section slide`}>
+      <section ref={root} id="activities" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
           <h2 class={`${styles.Title}`}>
             { actDB.title }
@@ -44,7 +44,7 @@ function Activities(props) {
           </ul>
 
         </div>
-      </div>
+      </section>
 		</>
 	)
 }
