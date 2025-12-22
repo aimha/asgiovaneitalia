@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "vite build --mode staging",
     "buildProd": "vite build --mode production",
+    "deploy": "npm run buildProd && firebase deploy",
     "serve": "vite preview"
   },
   "license": "MIT",
