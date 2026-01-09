@@ -4,8 +4,10 @@ import { Router, Route } from "@solidjs/router";
 
 // Routes
 import Homepage from "./routes/homepage/Homepage";
+import Gallery from "./routes/gallery/Gallery"
 
 const base = import.meta.env.VITE_ROUTER_BASE;
+const gallery = import.meta.env.VITE_ROUTER_GALLERY;
 
 // Styles
 import './styles/global.scss';
@@ -22,6 +24,7 @@ render(() =>
   <div class="app-container">
     <Router>
       <Route path={base} component={Homepage} />
+      <Route path={gallery} component={Gallery} />
     </Router>
   </div>
   , root);

@@ -1,9 +1,5 @@
 import { onMount } from 'solid-js';
 
-// libraries
-
-import { NativeScroller } from '@smoovy/scroller/native';
-
 // import utility components
 import Grid from '../../components/Grid/Grid';
 import MouseHighlight from '../../components/MouseHighlight/MouseHighlight';
