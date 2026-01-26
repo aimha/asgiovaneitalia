@@ -7,6 +7,7 @@ import styles from './Header.module.scss'
 import HeaderClass from './Header.module';
 
 function Header() {
+  let root;
 
 	onMount(() => {
 		// initialize grid logic
