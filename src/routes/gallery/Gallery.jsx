@@ -3,6 +3,9 @@ import { onMount, createSignal } from 'solid-js';
 // import style
 import styles from './Gallery.module.scss'
 
+// import page components
+import Footer from '../../components/PageComponents/Footer/Footer';
+
 // import logic
 import GalleryClass from './Gallery.module';
 
@@ -37,6 +40,8 @@ function Gallery() {
           </ul>
         </section>
       </div>
+
+      <Footer db={ state.footer }/>
       
       <Portal>
         <div class={`${styles.Modal} ${styles.Modal__Hidden}`}>

@@ -25,6 +25,12 @@
   width: 18rem;
   overflow: hidden;
   border-radius: .5rem;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 10px 10px 2px rgba(0,0,0,0.25);
+    transform: scale(1.01);
+  }
 
   * {
     pointer-events: none;
@@ -51,24 +57,25 @@
   }
 
   h3 {
-    @include ty.cardBody();
-
     position: absolute;
     left: 1rem;
     bottom: 1rem;
     color: #ffffff;
     z-index: 4;
+    
+    @include ty.cardBody();
   } 
 }
 
 .Modal {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .66);
+  background-color: rgba(255, 255, 255, .90);
   z-index: 10;
+  opacity: 0;
 
   &__Hidden {
     display: none;

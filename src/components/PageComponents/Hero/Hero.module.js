@@ -4,8 +4,8 @@
 import AnimationClass from "../../../js/animation";
 
 export default class HeroClass {
-	constructor(_root, _styles) {
-    this.root = _root;
+constructor(_root, _styles) {
+  this.root = _root;
     this.styles = _styles;
 
     this.cta = this.root.querySelector(`.${this.styles.Cta}`);
@@ -23,9 +23,9 @@ export default class HeroClass {
       stagger: 250,
       easing: 'cubic-bezier(0, 0, 0.3, 1)'
     });
-	}
+  }
 
-	init() {
+  init() {
 
     this.scollHandler();
 

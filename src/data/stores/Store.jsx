@@ -96,28 +96,172 @@ function createStateManagement() {
     },
     gallery: [
       {
-        title: "My Awesome Photo",
-        description: "This is an avarage description",
-        url: "https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--000.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--000.webp"
       },
       {
-        title: "My Awesome Photo",
-        description: "This is an avarage description",
-        url: "https://images.unsplash.com/photo-1769090396232-8074ed9c07f7?q=80&w=1708&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--001.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--001.webp"
       },
       {
-        title: "My Awesome Photo",
-        description: "This is an avarage description",
-        url: "https://images.unsplash.com/photo-1768657659263-f85b92daf0ad?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--002.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--002.webp"
       },
       {
-        title: "My Awesome Photo",
-        description: "This is an avarage description",
-        url: "https://images.unsplash.com/photo-1762600749688-8dfc960d86c5?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--003.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--003.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--004.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--004.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--005.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--005.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--006.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--006.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--007.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--007.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--008.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--008.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--009.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--009.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--010.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--010.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--011.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--011.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--012.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--012.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--013.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--013.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--014.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--014.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--015.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--015.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--016.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--016.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--017.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--017.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--018.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--018.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--019.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--019.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--020.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--020.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--021.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--021.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--022.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--022.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--023.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--023.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--024.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--024.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--025.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--025.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--026.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--026.webp"
+      },
+      {
+        title: "Serata Parma Club",
+        description: "",
+        url: "./gallery/full/parma_club--027.jpg",
+        thumbnail_url: "./gallery/thumbs/parma_club--thumb--027.webp"
       }
     ] 
   });

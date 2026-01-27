@@ -5,7 +5,7 @@ import Grid from '../../components/Grid/Grid';
 import MouseHighlight from '../../components/MouseHighlight/MouseHighlight';
 
 // import page components
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header/Header';
 import Hero from '../../components/PageComponents/Hero/Hero';
 import About from '../../components/PageComponents/About/About';
 import History from '../../components/PageComponents/History/History';
