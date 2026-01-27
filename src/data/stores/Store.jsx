@@ -98,25 +98,25 @@ function createStateManagement() {
       {
         title: "My Awesome Photo",
         description: "This is an avarage description",
-        url: "",
+        url: "https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         title: "My Awesome Photo",
         description: "This is an avarage description",
-        url: "",
+        url: "https://images.unsplash.com/photo-1769090396232-8074ed9c07f7?q=80&w=1708&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         title: "My Awesome Photo",
         description: "This is an avarage description",
-        url: "",
+        url: "https://images.unsplash.com/photo-1768657659263-f85b92daf0ad?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         title: "My Awesome Photo",
         description: "This is an avarage description",
-        url: "",
+        url: "https://images.unsplash.com/photo-1762600749688-8dfc960d86c5?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         thumbnail_url: "https://images.unsplash.com/photo-1535506197904-e5c09c0e5619?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ] 
