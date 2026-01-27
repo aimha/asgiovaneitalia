@@ -27,6 +27,13 @@ function Gallery() {
     <>
       <div ref={root}>
         <section class={`${styles.GalleryContainer} section slide`}>
+          {/* Title Section */}
+          <div class={`${styles.GalleryTitle}`}>
+            <h1>
+              Galleria Eventi
+            </h1>
+          </div>
+          {/* Gallery Section */}
           <ul class={`${styles.Gallery}`}>
             <For each={state.gallery}>
               {(item, index) =>
@@ -39,10 +46,12 @@ function Gallery() {
             </For>
           </ul>
         </section>
+        
+        {/* Footer */}
+        <Footer db={ state.footer }/>
       </div>
 
-      <Footer db={ state.footer }/>
-      
+     {/* Modal */} 
       <Portal>
         <div class={`${styles.Modal} ${styles.Modal__Hidden}`}>
           <div class={`${styles.ModalImageContainer}`}>
