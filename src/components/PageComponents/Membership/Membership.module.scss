@@ -8,8 +8,8 @@
 // COMPONENT STYLES
 
 .Container {
-  background-color: var.$clr-neutral100;
   color: var.$clr-neutral800;
+  background-color: var.$clr-neutral100;
 
   .Content {
     display: block;
@@ -28,9 +28,9 @@
       }
 
       .Title {
-        opacity: 0;
-        color: var.$clr-secondary500;
         margin-top: fn.vw(.1, var.$bp-smartphone-md);
+        color: var.$clr-secondary500;
+        opacity: 0;
 
         @include ty.sectionTitle--small();
 
@@ -65,14 +65,14 @@
       }
 
       @media (min-width: 1025px) {
-        margin-top: fn.vw(3.9, var.$bp-desktop-sm);
         padding: 0 fn.vw(1, var.$bp-desktop-sm);
+        margin-top: fn.vw(3.9, var.$bp-desktop-sm);
       }
 
       @media (min-width: 1281px) {
         grid-column: 8 / 13;
-        margin-top: fn.vw(1.05, var.$bp-desktop-lg);
         padding: 0;
+        margin-top: fn.vw(1.05, var.$bp-desktop-lg);
       }
 
       .SubTitle,

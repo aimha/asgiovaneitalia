@@ -7,12 +7,12 @@
 // OBJECTS MIXINS
 
 @mixin ctaButton($bg, $text) {
-  color: $text;
 
   display: inline-block;
   padding: fn.vw(.5, var.$bp-smartphone-md) fn.vw(2, var.$bp-smartphone-md);
-  border-radius: fn.vw(2, var.$bp-smartphone-md);
+  color: $text;
   background-color: $bg;
+  border-radius: fn.vw(2, var.$bp-smartphone-md);
 
   @include ty.cta();
 

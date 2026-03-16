@@ -10,32 +10,32 @@ function Hero(props) {
   const heroDB = props.db;
   let root;
 
-	onMount(() => {
-		// initialize hero logic
-		const heroComponent = new HeroClass(root, styles);
+  onMount(() => {
+    // initialize hero logic
+    const heroComponent = new HeroClass(root, styles);
 
-		heroComponent.init();
-	});
+    heroComponent.init();
+  });
 
-	return (
-		<>
-    <main class={`${styles.Outer}`}>
-			<div ref={root} id="hero" class={`${styles.Container} slide`}>
-        <div class={`${styles.Content}`}>
-          <h1 class={`${styles.Title}`}>
-            { heroDB.title }
-          </h1>
-          <p class={`${styles.Claim}`}>
-            { heroDB.claim }
-          </p>
-          <div class={`${styles.Cta}`}>
-            { heroDB.cta }
+  return (
+    <>
+      <main class={`${styles.Outer}`}>
+        <div ref={root} id="hero" class={`${styles.Container} slide`}>
+          <div class={`${styles.Content}`}>
+            <h1 class={`${styles.Title}`}>
+              {heroDB.title}
+            </h1>
+            <p class={`${styles.Claim}`}>
+              {heroDB.claim}
+            </p>
+            <div class={`${styles.Cta}`}>
+              {heroDB.cta}
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-		</>
-	)
+      </main>
+    </>
+  )
 }
 
 export default Hero;

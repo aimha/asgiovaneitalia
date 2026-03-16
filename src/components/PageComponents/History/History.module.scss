@@ -10,8 +10,8 @@
   background-color: var.$clr-neutral900;
 
   .Content {
-    color: var.$clr-neutral200;
     display: block;
+    color: var.$clr-neutral200;
 
     @media (min-width: 1025px) {
       display: flex;
@@ -55,37 +55,37 @@
       }
 
       .Body {
-        margin-top: fn.vw(2.4, var.$bp-smartphone-md);
         padding: 0;
+        margin-top: fn.vw(2.4, var.$bp-smartphone-md);
 
         @include ty.body--bigger();
 
         @media (min-width: 541px) {
-          margin-top: fn.vw(2.4, var.$bp-tablet-md);
           padding: 0 fn.vw(1, var.$bp-tablet-md);
+          margin-top: fn.vw(2.4, var.$bp-tablet-md);
         }
 
         @media (min-width: 741px) {
-          margin-top: fn.vw(4.25, var.$bp-tablet-lg);
           padding: 0 0 0 fn.vw(8, var.$bp-tablet-lg);
+          margin-top: fn.vw(4.25, var.$bp-tablet-lg);
         }
 
         @media (min-width: 1025px) {
-          margin-top: fn.vw(3.9, var.$bp-desktop-sm);
           padding: 0 fn.vw(2, var.$bp-desktop-sm);
+          margin-top: fn.vw(3.9, var.$bp-desktop-sm);
         }
 
         @media (min-width: 1281px) {
-          margin-top: fn.vw(4.9, var.$bp-desktop-lg);
           padding: 0 fn.vw(7.5, var.$bp-desktop-lg);
+          margin-top: fn.vw(4.9, var.$bp-desktop-lg);
         }
       }
     }
 
 
     .Dates {
-      color: var.$clr-secondary500;
       padding-top: fn.vw(4, var.$bp-smartphone-md);
+      color: var.$clr-secondary500;
 
       @media (min-width: 541px) {
         padding-top: fn.vw(5, var.$bp-tablet-md);
@@ -133,28 +133,28 @@
       .DatesList {
 
         .DatesItem {
-          margin-top: fn.vw(2, var.$bp-smartphone-md);
           display: flex;
           gap: fn.vw(1, var.$bp-smartphone-md);
+          margin-top: fn.vw(2, var.$bp-smartphone-md);
 
           @media (min-width: 541px) {
-            margin-top: fn.vw(2, var.$bp-tablet-md);
             gap: fn.vw(1, var.$bp-tablet-md);
+            margin-top: fn.vw(2, var.$bp-tablet-md);
           }
 
           @media (min-width: 741px) {
-            margin-top: fn.vw(2, var.$bp-tablet-lg);
             gap: fn.vw(2, var.$bp-tablet-lg);
+            margin-top: fn.vw(2, var.$bp-tablet-lg);
           }
 
           @media (min-width: 1025px) {
-            margin-top: fn.vw(2, var.$bp-desktop-sm);
             gap: fn.vw(1, var.$bp-desktop-sm);
+            margin-top: fn.vw(2, var.$bp-desktop-sm);
           }
 
           @media (min-width: 1281px) {
-            margin-top: fn.vw(2, var.$bp-desktop-lg);
             gap: fn.vw(2, var.$bp-desktop-lg);
+            margin-top: fn.vw(2, var.$bp-desktop-lg);
           }
 
           .DatesBody {
@@ -162,14 +162,14 @@
           }
 
           .DatesDate {
-            text-align: left;
             min-width: fn.vw(4, var.$bp-smartphone-md);
+            text-align: left;
 
             @include ty.dateDate();
 
             @media (min-width: 741px) {
-              text-align: right;
               min-width: fn.vw(4, var.$bp-tablet-md);
+              text-align: right;
             }
 
             @media (min-width: 741px) {

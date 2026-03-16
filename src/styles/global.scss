@@ -7,9 +7,9 @@
 /* PRESTILING */
 
 *, ::after, ::before, ::backdrop, ::file-selector-button {
-  margin: 0;
+  box-sizing: border-box;
   padding: 0;
-  box-sizing: border-box; 
+  margin: 0; 
   border: 0 solid;
 }
 
@@ -31,10 +31,10 @@ ol, ul, menu {
 
 html,
 body {
-  margin: 0;
   padding: 0;
-  font-size: 125%;
+  margin: 0;
   scroll-behavior: smooth;
+  font-size: 125%;
 }
 
 a {

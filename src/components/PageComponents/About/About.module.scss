@@ -13,39 +13,39 @@
     color: var.$clr-neutral800;
   
     .Title {
-      opacity: 0;
       color: var.$clr-primary500;
+      opacity: 0;
 
       @include ty.sectionTitle--big();
     }
 
     .Paragraph {
-      margin-top: fn.vw(3, var.$bp-smartphone-md);
-      padding: 0;
       display: block;
+      padding: 0;
+      margin-top: fn.vw(3, var.$bp-smartphone-md);
 
       @media (min-width: 541px) {
-        margin-top: fn.vw(3, var.$bp-tablet-md);
         padding: 0 fn.vw(1, var.$bp-tablet-md);
+        margin-top: fn.vw(3, var.$bp-tablet-md);
       }
 
       @media (min-width: 741px) {
-        margin-top: fn.vw(4.4, var.$bp-tablet-lg);
-        padding: 0;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: fn.vw(2, var.$bp-tablet-lg);
+        padding: 0;
+        margin-top: fn.vw(4.4, var.$bp-tablet-lg);
       }
 
       @media (min-width: 1025px) {
-        margin-top: fn.vw(5.8, var.$bp-desktop-sm);
         grid-template-columns: repeat(12, 1fr);
         grid-gap: fn.vw(2, var.$bp-desktop-sm);
+        margin-top: fn.vw(5.8, var.$bp-desktop-sm);
       }
 
       @media (min-width: 1281px) {
-        margin-top: fn.vw(9.8, var.$bp-desktop-lg);
         grid-gap: fn.vw(2, var.$bp-desktop-lg);
+        margin-top: fn.vw(9.8, var.$bp-desktop-lg);
       }
 
       >div {

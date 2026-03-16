@@ -7,10 +7,10 @@
 // COMPONENT STYLES
 
 .Container {
-  background-color: var.$clr-primary900;
-  color: var.$clr-neutral200;
 
   padding: fn.vw(4, var.$bp-tablet-md) fn.vw(2, var.$bp-smartphone-md);
+  color: var.$clr-neutral200;
+  background-color: var.$clr-primary900;
 
   @media (min-width: 541px) {
     padding: fn.vw(4, var.$bp-tablet-md) fn.vw(2.5, var.$bp-tablet-md);
@@ -29,10 +29,10 @@
   }
 
   .Content {
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: fn.vw(1, var.$bp-smartphone-md);
+    text-align: center;
 
     @media (min-width: 541px) {
       grid-gap: fn.vw(1, var.$bp-tablet-md);
@@ -72,8 +72,8 @@
     }
 
     .Title {
-      text-transform: uppercase;
       padding-bottom: fn.vw(1, var.$bp-smartphone-md);
+      text-transform: uppercase;
 
       @include ty.body--bigger();
 

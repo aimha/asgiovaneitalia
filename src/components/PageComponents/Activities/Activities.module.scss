@@ -8,52 +8,52 @@
 // COMPONENT STYLES
 
 .Container {
-  background-color: var.$clr-primary900;
   color: var.$clr-secondary500;
+  background-color: var.$clr-primary900;
 
   .Content {
     .Title {
-      opacity: 0;
       text-align: center;
+      opacity: 0;
 
       @include ty.sectionTitle--small();
     }
 
     .CardList {
-      margin-top: fn.vw(6, var.$bp-smartphone-md);
       display: block;
+      margin-top: fn.vw(6, var.$bp-smartphone-md);
       text-align: center;
 
       @media (min-width: 541px) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: fn.vw(7, var.$bp-tablet-md);
         gap: fn.vw(6, var.$bp-tablet-md) fn.vw(1, var.$bp-tablet-md);
+        margin-top: fn.vw(7, var.$bp-tablet-md);
       }
 
       @media (min-width: 741px) {
-        margin-top: fn.vw(9, var.$bp-tablet-lg);
         gap: fn.vw(6, var.$bp-tablet-lg) fn.vw(2, var.$bp-tablet-lg);
+        margin-top: fn.vw(9, var.$bp-tablet-lg);
       }
 
       @media (min-width: 1025px) {
-        margin-top: fn.vw(10, var.$bp-desktop-sm);
         gap: fn.vw(6, var.$bp-desktop-sm);
+        margin-top: fn.vw(10, var.$bp-desktop-sm);
       }
 
       @media (min-width: 1281px) {
-        margin-top: fn.vw(13, var.$bp-desktop-lg);
         gap: fn.vw(2, var.$bp-desktop-lg);
+        margin-top: fn.vw(13, var.$bp-desktop-lg);
       }
 
       .Card {
-        opacity: 0;
-        flex: 40%;
         position: relative;
-        background-color: var.$clr-primary700;
-        border-radius: var.$crn-md;
+        flex: 40%;
         padding: fn.vw(2, var.$bp-smartphone-md) fn.vw(1, var.$bp-smartphone-md) fn.vw(3, var.$bp-smartphone-md);
         margin-bottom: fn.vw(6, var.$bp-smartphone-md);
+        background-color: var.$clr-primary700;
+        border-radius: var.$crn-md;
+        opacity: 0;
 
         @media (min-width: 541px) {
           padding: fn.vw(3, var.$bp-tablet-md) fn.vw(1, var.$bp-tablet-md) fn.vw(3, var.$bp-tablet-md);
@@ -75,36 +75,36 @@
 
         .CardIcon {
           position: absolute;
+          top: fn.vw(-4, var.$bp-smartphone-md);
+          left: 50%;
           width: fn.vw(8, var.$bp-smartphone-md);
           height: fn.vw(8, var.$bp-smartphone-md);
           background-color: inherit;
           border-radius: 100%;
-          top: fn.vw(-4, var.$bp-smartphone-md);
-          left: 50%;
           transform: translate(-50%, 0);
 
           @media (min-width: 541px) {
+            top: fn.vw(-4, var.$bp-tablet-md);
             width: fn.vw(8, var.$bp-tablet-md);
             height: fn.vw(8, var.$bp-tablet-md);
-            top: fn.vw(-4, var.$bp-tablet-md);
           }
 
           @media (min-width: 741px) {
+            top: fn.vw(-4, var.$bp-tablet-lg);
             width: fn.vw(8, var.$bp-tablet-lg);
             height: fn.vw(8, var.$bp-tablet-lg);
-            top: fn.vw(-4, var.$bp-tablet-lg);
           }
 
           @media (min-width: 1025px) {
+            top: fn.vw(-5, var.$bp-desktop-sm);
             width: fn.vw(10, var.$bp-desktop-sm);
             height: fn.vw(10, var.$bp-desktop-sm);
-            top: fn.vw(-5, var.$bp-desktop-sm);
           }
 
           @media (min-width: 1281px) {
+            top: fn.vw(-4, var.$bp-desktop-lg);
             width: fn.vw(8, var.$bp-desktop-lg);
             height: fn.vw(8, var.$bp-desktop-lg);
-            top: fn.vw(-4, var.$bp-desktop-lg);
           }
 
           img {
@@ -136,8 +136,8 @@
 
         .CardTitle,
         .CardBody {
-          opacity: 0;
           position: relative;
+          opacity: 0;
         }
 
         .CardTitle {
@@ -147,8 +147,8 @@
         }
     
         .CardBody {
-          color: var.$clr-neutral200;
           margin-top: fn.vw(1, var.$bp-smartphone-md);
+          color: var.$clr-neutral200;
 
           @include ty.cardBody();
 

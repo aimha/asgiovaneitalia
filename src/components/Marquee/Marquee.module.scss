@@ -6,18 +6,17 @@
 
 .Wrapper {
   position: fixed;
-  width: 100%;
   bottom: 0;
   left: 0;
-  // overflow: clip;
-
   z-index: 900;
+  width: 100%;
+  // overflow: clip;
 
   .Track {
     display: flex;
     gap: 2rem;
-    padding-left: 2rem;
     width: max-content;
+    padding-left: 2rem;
     animation: marquee-animation 40s linear infinite;
 
     li {

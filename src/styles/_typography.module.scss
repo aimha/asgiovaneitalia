@@ -8,42 +8,42 @@
 
 @mixin baseline-dsk($line-height, $lines-bottom) {
   $line: fn.vw(1, var.$bp-desktop-lg);
-
-  line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+
+  line-height: $line * $line-height;
 }
 
 @mixin baseline-dsksm($line-height, $lines-bottom) {
   $line: fn.vw(1, var.$bp-desktop-sm);
-
-  line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+
+  line-height: $line * $line-height;
 }
 
 @mixin baseline-tbl($line-height, $lines-bottom) {
   $line: fn.vw(1, var.$bp-tablet-lg);
-
-  line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+
+  line-height: $line * $line-height;
 }
 
 @mixin baseline-tblmd($line-height, $lines-bottom) {
   $line: fn.vw(1, var.$bp-tablet-md);
-
-  line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+
+  line-height: $line * $line-height;
 }
 
 @mixin baseline-smp($line-height, $lines-bottom) {
   $line: fn.vw(1, var.$bp-smartphone-md);
-
-  line-height: $line * $line-height;
   padding-top: calc(calc($line * $line-height - 1cap) / 2);
   margin-bottom: calc($line * $lines-bottom - calc(calc($line * $line-height - 1cap) / 2));
+
+  line-height: $line * $line-height;
 }
 
 // typography mixins

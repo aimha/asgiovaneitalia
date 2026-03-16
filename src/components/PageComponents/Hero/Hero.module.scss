@@ -12,19 +12,16 @@
 }
 
 .Container {
-  opacity: 0;
-  background-image: url('/imgs/hero_bg.jpg');
-  background-size: cover;
-
-  background-color: var.$clr-primary700;
-  color: var.$clr-neutral200;
-
-  padding: 0 fn.vw(1, var.$bp-smartphone-md);
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 100vh;
+  padding: 0 fn.vw(1, var.$bp-smartphone-md);
+  color: var.$clr-neutral200;
+  background-color: var.$clr-primary700;
+  background-image: url('/imgs/hero_bg.jpg');
+  background-size: cover;
+  opacity: 0;
 
   @media (min-width: 541px) {
     min-height: 75vh;
