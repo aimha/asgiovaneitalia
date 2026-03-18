@@ -1,10 +1,7 @@
 // JS CLASS
 
 export default class FooterClass {
-	constructor() {
+  constructor() {}
 
-	}
-
-  init() {
-  }
+  init() {}
 }

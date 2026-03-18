@@ -1,32 +1,33 @@
-import { onMount } from 'solid-js';
+import { onMount } from 'solid-js'
 
 // import style
 import styles from './Where.module.scss'
 
-function Where(props) {
-  let mapContainer;
+function Where() {
+  let mapContainer
 
-	onMount(() => {
+  onMount(() => {
     // google maps
+    // eslint-disable-next-line no-undef, no-unused-vars
     const map = new google.maps.Map(mapContainer, {
       center: { lat: 44.80495763493976, lng: 10.314462684538228 },
       zoom: 16,
       disableDefaultUI: true,
-      gestureHandling: "none",
+      gestureHandling: 'none',
       zoomControl: false,
       draggable: false,
-    });
-	});
+    })
+  })
 
-	return (
-		<>
+  return (
+    <>
       <section id="where" class={`${styles.Container}`}>
         <div class={`${styles.Content}`}>
-          <div ref={mapContainer}></div>
+          <div ref={mapContainer} />
         </div>
       </section>
-		</>
-	)
+    </>
+  )
 }
 
-export default Where;
+export default Where

@@ -9,37 +9,37 @@ export default class AnimationClass {
         iterations: 1,
         easing: 'linear',
         delay: 0,
-        fill: "forwards",
+        fill: 'forwards',
         stagger: 0,
         initialDelay: 0,
         clearProps: false,
-        callback: () => {}
+        callback: () => {},
       },
-      ...defaults
+      ...defaults,
     }
   }
 
   animateElement(target, customProps = [], optns = {}) {
     // merge with defaults
-    const options = { ...this.defaults, ...optns};
+    const options = { ...this.defaults, ...optns }
 
     // loop through elements
     target.forEach((el, index) => {
       // calc stagger
-      options.delay = index * options.stagger + options.initialDelay;
+      options.delay = index * options.stagger + options.initialDelay
       // animate
-      const a = el.animate(customProps, options);
+      const a = el.animate(customProps, options)
       // callback
-      a.onfinish = (e) => {
+      a.onfinish = e => {
         // clearprops
         if (!options.clearProps) {
-          a.commitStyles();
+          a.commitStyles()
         }
         // custom callback
-        options.callback();
-      };
-    });
+        options.callback()
+      }
+    })
 
-    return this;
+    return this
   }
 }

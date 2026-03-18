@@ -1,20 +1,15 @@
-import { onMount } from 'solid-js';
+import { onMount } from 'solid-js'
 
 // import style
 import styles from './Component.module.scss'
 
 // import logic
-import ComponentClass from './Component.module';
+import ComponentClass from './Component.module'
 
 function Component() {
+  onMount(() => {})
 
-	onMount(() => {
-	});
-
-	return (
-		<>
-		</>
-	)
+  return <></>
 }
 
-export default Component;
+export default Component

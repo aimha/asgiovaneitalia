@@ -1,10 +1,7 @@
 // JS CLASS
 
 export default class WhereClass {
-	constructor() {
+  constructor() {}
 
-	}
-
-  init() {
-  }
+  init() {}
 }

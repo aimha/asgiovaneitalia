@@ -1,23 +1,23 @@
-import { onMount } from 'solid-js';
+import { onMount, For } from 'solid-js'
 
 // import style
 import styles from './Gallery.module.scss'
 
 // import logic
-import GalleryClass from './Gallery.module';
+import GalleryClass from './Gallery.module'
 
 // import state management store
-import stateManagement from "../../data/stores/Store";
+import stateManagement from '../../data/stores/Store'
 
 function Gallery() {
-  const { state } = stateManagement;
-  let root;
+  const { state } = stateManagement
+  let root
 
   onMount(() => {
     // initialize gallery logic
-    const gllry = new GalleryClass(root, styles);
-    gllry.init();
-  });
+    const gllry = new GalleryClass(root, styles)
+    gllry.init()
+  })
 
   return (
     <>
@@ -26,13 +26,13 @@ function Gallery() {
         <section class={`${styles.GalleryContainer} section slide`}>
           <ul class={`${styles.Gallery}`}>
             <For each={state.gallery}>
-              {(item, index) =>
+              {item => (
                 <li class={`${styles.GalleryEl}`}>
-                  <div class={`${styles.Overlay}`}></div>
+                  <div class={`${styles.Overlay}`} />
                   <img src={item.thumbnail_url} alt="" />
                   <h3>{item.title}</h3>
                 </li>
-              }
+              )}
             </For>
           </ul>
         </section>
@@ -41,4 +41,4 @@ function Gallery() {
   )
 }
 
-export default Gallery;
+export default Gallery

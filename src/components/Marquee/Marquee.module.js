@@ -1,10 +1,9 @@
 // MARQUEE CLASS
 
 export default class MarqueeClass {
-  constructor() {
-  }
+  constructor() {}
 
-  init () {
-    console.log('init marquee');
+  init() {
+    console.log('init marquee')
   }
 }

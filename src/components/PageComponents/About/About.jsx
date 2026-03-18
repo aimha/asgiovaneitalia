@@ -1,44 +1,37 @@
-import { onMount, splitProps } from 'solid-js';
+import { onMount, For } from 'solid-js'
 
 // import style
 import styles from './About.module.scss'
 
 // import logic
-import AboutClass from './About.module';
+import AboutClass from './About.module'
 
 function About(props) {
-  const aboutDB = props.db;
-  let root;
+  const aboutDB = props.db
+  let root
 
-	onMount(() => {
-    const aboutComponent = new AboutClass(root, styles);
-    aboutComponent.init();
-	});
+  onMount(() => {
+    const aboutComponent = new AboutClass(root, styles)
+    aboutComponent.init()
+  })
 
-	return (
-		<>
+  return (
+    <>
       <section ref={root} id="about" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
-          <h2 class={`${styles.Title}`}>
-            { aboutDB.title }
-          </h2>
+          <h2 class={`${styles.Title}`}>{aboutDB.title}</h2>
           <div class={`${styles.Paragraph}`}>
             <div>
-              <h3 class={`${styles.SubTitle}`}>
-                { aboutDB.subtitle }
-              </h3>
-              <For each={ aboutDB.body }>
-                  {(item, index) =>
-                  <p innerHTML={ item } class={`${styles.Body}`}>
-                  </p>
-                  }
+              <h3 class={`${styles.SubTitle}`}>{aboutDB.subtitle}</h3>
+              <For each={aboutDB.body}>
+                {item => <p innerHTML={item} class={`${styles.Body}`} />}
               </For>
             </div>
           </div>
         </div>
       </section>
-		</>
-	)
+    </>
+  )
 }
 
-export default About;
+export default About

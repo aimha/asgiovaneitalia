@@ -1,52 +1,44 @@
-import { onMount } from 'solid-js';
+import { onMount, For } from 'solid-js'
 
 // import style
 import styles from './Activities.module.scss'
 
 // import logic
-import ActivitiesClass from './Activities.module';
+import ActivitiesClass from './Activities.module'
 
 function Activities(props) {
-  const actDB = props.db;
-  let root;
+  const actDB = props.db
+  let root
 
-	onMount(() => {
-    const activitiesComponent = new ActivitiesClass(root, styles);
-    activitiesComponent.init();
-	});
+  onMount(() => {
+    const activitiesComponent = new ActivitiesClass(root, styles)
+    activitiesComponent.init()
+  })
 
-	return (
-		<>
+  return (
+    <>
       <section ref={root} id="activities" class={`${styles.Container} section slide`}>
         <div class={`${styles.Content}`}>
-          <h2 class={`${styles.Title}`}>
-            { actDB.title }
-          </h2>
+          <h2 class={`${styles.Title}`}>{actDB.title}</h2>
 
           <ul class={`${styles.CardList}`}>
-            <For each={ actDB.cards }>
-              {(item, index) =>
-
+            <For each={actDB.cards}>
+              {item => (
                 <li class={`${styles.Card}`}>
                   <div class={`${styles.CardIcon}`}>
-                    <img src={ item.img } alt="" />
+                    <img src={item.img} alt="" />
                   </div>
 
-                  <h3 class={`${styles.CardTitle}`}>
-                    { item.title }
-                  </h3>
-                  <p innerHTML={ item.body } class={`${styles.CardBody}`}>
-                  </p>
+                  <h3 class={`${styles.CardTitle}`}>{item.title}</h3>
+                  <p innerHTML={item.body} class={`${styles.CardBody}`} />
                 </li>
-
-              }
+              )}
             </For>
           </ul>
-
         </div>
       </section>
-		</>
-	)
+    </>
+  )
 }
 
-export default Activities;
+export default Activities

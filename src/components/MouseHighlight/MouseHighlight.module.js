@@ -1,28 +1,27 @@
-
 export default class MouseHighlightClass {
   constructor(mousecontainer, mousehighlight) {
-    this.container = document.getElementsByClassName(mousecontainer)[0];
-    this.highLight = document.getElementsByClassName(mousehighlight)[0];
+    this.container = document.getElementsByClassName(mousecontainer)[0]
+    this.highLight = document.getElementsByClassName(mousehighlight)[0]
   }
 
   init() {
-    this.highLightManagement();
+    this.highLightManagement()
   }
 
   highLightManagement() {
-    document.addEventListener('mousemove', (e) => {
-      const containerScroll = document.querySelector('.app-container').scrollTop;
+    document.addEventListener('mousemove', e => {
+      const containerScroll = document.querySelector('.app-container').scrollTop
 
-      const x = e.clientX - 30;
-      const y = e.clientY - 30;
+      const x = e.clientX - 30
+      const y = e.clientY - 30
 
-      this.highLight.style.transform = "translate(" + x + 'px,' + y + "px)";
+      this.highLight.style.transform = 'translate(' + x + 'px,' + y + 'px)'
 
       if (containerScroll >= 1080) {
-        this.highLight.style.backgroundColor = "#000000";
+        this.highLight.style.backgroundColor = '#000000'
       } else {
-        this.highLight.style.backgroundColor = "#ffffff";
+        this.highLight.style.backgroundColor = '#ffffff'
       }
-    });
+    })
   }
 }
