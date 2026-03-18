@@ -1,3 +1,21 @@
 node_modules
 dist
 firebase-debug.log
+
+# Environment variables
+.env*
+
+# Coverage
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
