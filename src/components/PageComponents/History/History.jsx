@@ -1,9 +1,13 @@
+// ============================================================
+// ROLE: History section with timeline of key dates
+// DEPENDS ON: HistoryClass, Store (history data)
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount, For } from 'solid-js'
 
-// import style
 import styles from './History.module.scss'
 
-// import logic
 import HistoryClass from './History.module'
 
 function History(props) {

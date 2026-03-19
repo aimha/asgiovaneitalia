@@ -1,6 +1,11 @@
-// JS CLASS
-
-// imports
+// ============================================================
+// ROLE: Slider implementation with click nav, pointer gestures, and auto-advance
+// DEPENDS ON: AnimationClass, cubicBezier
+// USED BY: Slider.jsx
+// KEY DECISIONS: range = slides.length - 2 accounts for duplicated edge slides
+// GOTCHAS: status.index clamped to [0, range]; offset clamped to [0, -range*step]
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import AnimationClass from '../../js/animation'
 import cubicBezier from '../../js/cubicBezier'
 
@@ -40,7 +45,6 @@ export default class SliderClass {
       clearProps: true,
     })
 
-    // fn for event removal
     this.clickFunction = e => this.clickManagement(e)
     this.movementStartFunction = e => this.movementStart(e)
     this.movementEndFunction = e => this.movementEnd(e)
@@ -50,10 +54,7 @@ export default class SliderClass {
   }
 
   init() {
-    // Click managment
     document.addEventListener('click', this.clickFunction, { capture: true })
-
-    // gestures
 
     document.addEventListener('pointerdown', this.movementStartFunction)
 
@@ -62,10 +63,7 @@ export default class SliderClass {
     document.addEventListener('pointermove', this.movementMoveFunction)
   }
 
-  // click management
-
   clickManagement(e) {
-    // normal nav
     if (e.target.matches(this.navPrevClass)) {
       this.retractSlider()
     } else if (e.target.matches(this.navNextClass)) {
@@ -76,14 +74,10 @@ export default class SliderClass {
       this.goToEndSlider()
     }
 
-    // popup
     if (this.slider.contains(e.target) && !this.status.disableClick) {
-      // popup logic
       console.log('open popup')
     }
   }
-
-  // Slider interaction
 
   movementStart(e) {
     if (this.slider.contains(e.target)) {
@@ -126,8 +120,6 @@ export default class SliderClass {
     }
   }
 
-  // manual navigation
-
   goToStartSlider() {
     this.status.index = 0
     this.setPositionByIndex()
@@ -151,8 +143,6 @@ export default class SliderClass {
       this.setPositionByIndex()
     }
   }
-
-  // utility
 
   getPositionX(event) {
     return event.clientX

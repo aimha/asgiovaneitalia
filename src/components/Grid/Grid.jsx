@@ -1,14 +1,17 @@
+// ============================================================
+// ROLE: Typographic grid overlay (currently disabled in Homepage)
+// DEPENDS ON: GridClass
+// USED BY: Homepage (commented out)
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount } from 'solid-js'
 
-// import style
 import styles from './Grid.module.scss'
 
-// import logic
 import GridClass from './Grid.module'
 
 function Grid() {
   onMount(() => {
-    // initialize grid logic
     const grd = new GridClass()
     grd.init()
   })

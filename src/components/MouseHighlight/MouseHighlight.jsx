@@ -1,14 +1,17 @@
+// ============================================================
+// ROLE: Mouse-following highlight effect on Homepage
+// DEPENDS ON: MouseHighlightClass
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount } from 'solid-js'
 
-// import style
 import styles from './MouseHighlight.module.scss'
 
-// import logic
 import MouseHighlightClass from './MouseHighlight.module'
 
 function MouseHighlight() {
   onMount(() => {
-    // initialize grid logic
     const mouse = new MouseHighlightClass(styles.MouseContainer, styles.MouseHighlight)
     mouse.init()
   })

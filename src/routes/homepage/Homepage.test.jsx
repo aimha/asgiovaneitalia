@@ -1,8 +1,13 @@
+// ============================================================
+// ROLE: Homepage unit tests
+// DEPENDS ON: Homepage component, all PageComponents, Store
+// USED BY: Vitest test runner
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { render, screen } from '@solidjs/testing-library'
 import { describe, it, expect, vi } from 'vitest'
 import Homepage from './Homepage'
 
-// Mock the state management store
 vi.mock('../../data/stores/Store', () => ({
   default: {
     state: {
@@ -29,14 +34,12 @@ vi.mock('../../data/stores/Store', () => ({
   },
 }))
 
-// Mock the HomepageClass module
 vi.mock('./Homepage.module', () => ({
   default: class MockHomepageClass {
     init = vi.fn()
   },
 }))
 
-// Mock all imported components to avoid deep mocking of their dependencies
 vi.mock('../../components/Grid/Grid', () => ({
   default: () => <div>Grid</div>,
 }))
@@ -71,14 +74,12 @@ vi.mock('../../components/PageComponents/Footer/Footer', () => ({
 describe('Homepage', () => {
   it('should render the homepage', () => {
     const { container } = render(() => <Homepage />)
-    // Check if a component from the homepage is rendered
     const heroElement = screen.getByText('Test Hero Title')
     expect(heroElement).toBeInTheDocument()
   })
 
   it('should render all main sections', () => {
     render(() => <Homepage />)
-    // Check for titles from different sections
     expect(screen.getByText('Test Hero Title')).toBeInTheDocument()
     expect(screen.getByText('Test About Title')).toBeInTheDocument()
     expect(screen.getByText('Test History Title')).toBeInTheDocument()

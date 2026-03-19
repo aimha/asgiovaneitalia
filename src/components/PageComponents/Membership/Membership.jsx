@@ -1,9 +1,13 @@
+// ============================================================
+// ROLE: Membership CTA section with external link to tesseramento
+// DEPENDS ON: MembershipClass, Store (membership data)
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount, For } from 'solid-js'
 
-// import style
 import styles from './Membership.module.scss'
 
-// import logic
 import MembershipClass from './Membership.module'
 
 function Membership(props) {

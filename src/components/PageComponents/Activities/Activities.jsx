@@ -1,9 +1,13 @@
+// ============================================================
+// ROLE: Activities section displaying cards for Sport, Cultura, Musica, Ristorazione
+// DEPENDS ON: ActivitiesClass, Store (activities data)
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount, For } from 'solid-js'
 
-// import style
 import styles from './Activities.module.scss'
 
-// import logic
 import ActivitiesClass from './Activities.module'
 
 function Activities(props) {

@@ -1,9 +1,14 @@
+// ============================================================
+// ROLE: Image slider with gesture/touch support and navigation controls
+// DEPENDS ON: SliderClass
+// USED BY: None (placeholder - not rendered anywhere)
+// KEY DECISIONS: Module-level slider variable for cleanup access
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onCleanup, onMount } from 'solid-js'
 
-// import style
 import styles from './Slider.module.scss'
 
-// import logic
 import SliderClass from './Slider.module'
 let slider
 

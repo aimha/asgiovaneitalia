@@ -1,9 +1,13 @@
+// ============================================================
+// ROLE: About section with subtitle and body paragraphs
+// DEPENDS ON: AboutClass, Store (about data)
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount, For } from 'solid-js'
 
-// import style
 import styles from './About.module.scss'
 
-// import logic
 import AboutClass from './About.module'
 
 function About(props) {

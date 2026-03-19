@@ -149,6 +149,26 @@ Pre-commit hooks (Husky + lint-staged) automatically run linting and formatting 
 - Global styles go in `src/styles/`
 - Do not use inline styles unless strictly necessary for dynamic values
 
+### File Headers
+
+Every source file must have a structured header at the top:
+
+```
+// ============================================================
+// ROLE: [cosa fa questo file, 1 riga]
+// DEPENDS ON: [file/moduli da cui dipende]
+// USED BY: [chi usa questo modulo]
+// KEY DECISIONS: [perché alcune scelte non ovvie]
+// GOTCHAS: [trappole, edge case, comportamenti inattesi]
+// LAST UPDATED: [data + breve descrizione]
+// ============================================================
+```
+
+- `ROLE` must be a single line
+- `GOTCHAS` is the most important section - only write things that bite
+- Never comment obvious code
+- Update `LAST UPDATED` only if the change is semantically relevant
+
 ---
 
 ## 4. Environment Variables

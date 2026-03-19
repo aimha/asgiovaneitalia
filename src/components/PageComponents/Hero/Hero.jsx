@@ -1,9 +1,13 @@
+// ============================================================
+// ROLE: Hero section with title, claim and CTA button
+// DEPENDS ON: HeroClass, Store (hero data)
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount } from 'solid-js'
 
-// import style
 import styles from './Hero.module.scss'
 
-// import logic
 import HeroClass from './Hero.module'
 
 function Hero(props) {
@@ -11,7 +15,6 @@ function Hero(props) {
   let root
 
   onMount(() => {
-    // initialize hero logic
     const heroComponent = new HeroClass(root, styles)
 
     heroComponent.init()

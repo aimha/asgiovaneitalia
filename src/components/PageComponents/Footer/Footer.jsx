@@ -1,9 +1,13 @@
+// ============================================================
+// ROLE: Site footer with address, CF, RUNTS, email and PEC
+// DEPENDS ON: FooterClass, Store (footer data)
+// USED BY: Homepage
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount } from 'solid-js'
 
-// import style
 import styles from './Footer.module.scss'
 
-// import logic
 import FooterClass from './Footer.module'
 
 function Footer(props) {

@@ -1,14 +1,17 @@
+// ============================================================
+// ROLE: Scrolling text marquee (placeholder content)
+// DEPENDS ON: MarqueeClass
+// USED BY: None (not rendered anywhere)
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount } from 'solid-js'
 
-// import style
 import styles from './Marquee.module.scss'
 
-// import logic
 import MarqueeClass from './Marquee.module'
 
 function Marquee() {
   onMount(() => {
-    // initialize grid logic
     const marquee = new MarqueeClass()
     marquee.init()
   })

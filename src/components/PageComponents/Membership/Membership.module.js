@@ -1,6 +1,9 @@
-// JS CLASS
-
-// imports
+// ============================================================
+// ROLE: Membership section scroll-triggered animations
+// DEPENDS ON: AnimationClass
+// USED BY: Membership.jsx
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import AnimationClass from '../../../js/animation'
 
 export default class MembershipClass {

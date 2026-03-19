@@ -1,15 +1,19 @@
-/* @refresh reload */
+// ============================================================
+// ROLE: Application entry point and router configuration
+// DEPENDS ON: solid-js/web, @solidjs/router
+// USED BY: Browser (index.html)
+// KEY DECISIONS: Routes configured via VITE_ROUTER_BASE and VITE_ROUTER_GALLERY env vars
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { render } from 'solid-js/web'
 import { Router, Route } from '@solidjs/router'
 
-// Routes
 import Homepage from './routes/homepage/Homepage'
 import Gallery from './routes/gallery/Gallery'
 
 const base = import.meta.env.VITE_ROUTER_BASE
 const gallery = import.meta.env.VITE_ROUTER_GALLERY
 
-// Styles
 import './styles/global.scss'
 
 const root = document.getElementById('root')
@@ -32,7 +36,6 @@ render(
   root
 )
 
-// REMOVE LOADER WHEN READY
 const loader = document.getElementById('loader')
 if (loader) {
   loader.style.transition = 'opacity 0.3s ease'

@@ -1,14 +1,19 @@
+// ============================================================
+// ROLE: Google Maps embed showing location (currently disabled/commented out)
+// DEPENDS ON: google.maps API (loaded externally)
+// USED BY: Homepage (commented out)
+// GOTCHAS: map variable assigned but unused; /* global google */ required for lint
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
+/* global google */
 import { onMount } from 'solid-js'
 
-// import style
 import styles from './Where.module.scss'
 
 function Where() {
   let mapContainer
 
   onMount(() => {
-    // google maps
-    // eslint-disable-next-line no-undef, no-unused-vars
     const map = new google.maps.Map(mapContainer, {
       center: { lat: 44.80495763493976, lng: 10.314462684538228 },
       zoom: 16,

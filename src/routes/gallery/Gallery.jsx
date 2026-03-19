@@ -1,12 +1,15 @@
+// ============================================================
+// ROLE: Gallery route - displays gallery images from store
+// DEPENDS ON: GalleryClass, Store
+// USED BY: Router (VITE_ROUTER_GALLERY path)
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import { onMount, For } from 'solid-js'
 
-// import style
 import styles from './Gallery.module.scss'
 
-// import logic
 import GalleryClass from './Gallery.module'
 
-// import state management store
 import stateManagement from '../../data/stores/Store'
 
 function Gallery() {
@@ -14,7 +17,6 @@ function Gallery() {
   let root
 
   onMount(() => {
-    // initialize gallery logic
     const gllry = new GalleryClass(root, styles)
     gllry.init()
   })

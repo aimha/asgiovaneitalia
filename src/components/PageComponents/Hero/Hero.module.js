@@ -1,6 +1,11 @@
-// JS CLASS
-
-// imports
+// ============================================================
+// ROLE: Hero animations and CTA click handler (smooth scroll to #about)
+// DEPENDS ON: AnimationClass
+// USED BY: Hero.jsx
+// KEY DECISIONS: Two separate timelines - tl_bg for background fade, tl_elements for content
+// GOTCHAS: scollHandler has typo ('scoll' not 'scroll')
+// LAST UPDATED: 2026-03-19 - Removed all comments (bulk cleanup)
+// ============================================================
 import AnimationClass from '../../../js/animation'
 
 export default class HeroClass {

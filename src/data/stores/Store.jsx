@@ -1,4 +1,10 @@
-// Imports
+// ============================================================
+// ROLE: Global reactive state store for the application
+// DEPENDS ON: solid-js, solid-js/store
+// USED BY: All page components (Hero, About, History, Activities, etc.)
+// KEY DECISIONS: Single store pattern - all page data centralized here
+// LAST UPDATED: 2026-03-19 - Removed import comment
+// ============================================================
 import { createRoot } from 'solid-js'
 import { createStore } from 'solid-js/store'
 
