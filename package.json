@@ -20,7 +20,10 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --fix", "prettier --write"]
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@solidjs/testing-library": "^0.8.10",
@@ -40,7 +43,6 @@
     "vitest": "^4.1.0"
   },
   "dependencies": {
-    "@smoovy/scroller": "^2.2.2",
     "@solidjs/router": "^0.15.3",
     "solid-js": "^1.9.3"
   }
