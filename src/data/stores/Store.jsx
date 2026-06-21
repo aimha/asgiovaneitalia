@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Global reactive state store — content data for all page sections
+// DEPENDS ON: none
+// USED BY: Homepage.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // Imports
 import { createRoot } from "solid-js"
 import { createStore } from "solid-js/store"

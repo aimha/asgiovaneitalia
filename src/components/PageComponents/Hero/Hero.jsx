@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Hero section — title, claim, CTA button
+// DEPENDS ON: Hero.module.scss, ./Hero.module
+// USED BY: Homepage.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 import { onMount } from 'solid-js';
 
 // import style

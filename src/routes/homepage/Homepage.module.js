@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Homepage scroll/snap behavior via NativeScroller + IntersectionObserver
+// DEPENDS ON: ../../js/intersectionObserver
+// USED BY: Homepage.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // HOMEPAGE CLASS
 
 // imports

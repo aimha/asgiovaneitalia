@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Curated set of cubic-bezier easing curves (productive, expressive, celebratory)
+// DEPENDS ON: none
+// USED BY: animation.js, Header.module.js, Slider.module.js
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 export const cubicBezier = {
     'productiveEaseInOut': 'cubic-bezier(0.2, 0.2, 0.38, 0.9)',
     'productiveEaseIn': 'cubic-bezier(0.2, 0, 1, 0.9)',

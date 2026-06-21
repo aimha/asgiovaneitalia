@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: IntersectionObserver wrapper — dispatches custom "intersect" events
+// DEPENDS ON: none
+// USED BY: Homepage.module.js, all PageComponents/*.module.js
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // INTERSECTION OBSERVER CLASS
 
 export class IntersectionObsClass {

@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Debug grid overlay component — toggle with "g" key
+// DEPENDS ON: Grid.module.scss, ./Grid.module
+// USED BY: Homepage.jsx (commented out)
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 import { onMount } from 'solid-js';
 
 // import style

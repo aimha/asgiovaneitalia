@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Global styles — CSS reset, custom properties, element defaults
+// DEPENDS ON: typography.module, variables.module, functions.module
+// USED BY: index.jsx (global import)
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // IMPORTS
 
 @use 'typography.module' as ty;

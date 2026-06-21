@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: ParallaxClass — image parallax effect on scroll
+// DEPENDS ON: none
+// USED BY: Hero.module.js (parallax)
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // Image Parallax CLASS
 
 export class ParallaxClass {

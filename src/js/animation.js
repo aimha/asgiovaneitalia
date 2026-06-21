@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: AnimationClass — wrapper for Web Animations API element.animate()
+// DEPENDS ON: none
+// USED BY: All *.module.js animation consumers
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // ANIMATION CLASS
 
 export class AnimationClass {

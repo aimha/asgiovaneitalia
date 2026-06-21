@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: SCSS utility functions — strip-units, vw() responsive unit
+// DEPENDS ON: none
+// USED BY: All *.module.scss via @use
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // utility functions
 
 @use 'sass:math';

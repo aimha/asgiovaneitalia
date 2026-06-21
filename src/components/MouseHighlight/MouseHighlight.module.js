@@ -1,3 +1,11 @@
+// ============================================================
+// ROLE: MouseHighlight mousemove tracking + glow rendering
+// DEPENDS ON: none
+// USED BY: MouseHighlight.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
 
 export class MouseHighlightClass {
   constructor(mousecontainer, mousehighlight) {

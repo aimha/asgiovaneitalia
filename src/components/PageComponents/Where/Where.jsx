@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Where section — Google Maps embed
+// DEPENDS ON: Where.module.scss
+// USED BY: Homepage.jsx (commented out)
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 import { onMount } from 'solid-js';
 
 // import style

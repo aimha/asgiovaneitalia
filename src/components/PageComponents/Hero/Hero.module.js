@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Hero intersection animation + parallax effect
+// DEPENDS ON: ../../../js/animation
+// USED BY: Hero.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // JS CLASS
 
 // imports

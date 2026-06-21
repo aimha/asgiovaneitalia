@@ -1,3 +1,11 @@
+// ============================================================
+// ROLE: Grid toggle logic — keypress listener
+// DEPENDS ON: none
+// USED BY: Grid.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
 
 export class GridClass {
   constructor() {

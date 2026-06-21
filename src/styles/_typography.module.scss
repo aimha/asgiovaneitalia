@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Typography mixins — baseline grid alignment, responsive font scaling
+// DEPENDS ON: variables.module, functions.module, fonts.module
+// USED BY: All component *.module.scss
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // IMPORTS
 
 @use 'variables.module' as var;

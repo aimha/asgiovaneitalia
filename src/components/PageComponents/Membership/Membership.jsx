@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Membership CTA section — member benefits and subscription link
+// DEPENDS ON: Membership.module.scss, ./Membership.module
+// USED BY: Homepage.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 import { onMount } from 'solid-js';
 
 // import style

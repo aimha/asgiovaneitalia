@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Reusable object mixins — ctaButton()
+// DEPENDS ON: typography.module, variables.module, functions.module
+// USED BY: Hero, Header, Membership *.module.scss
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // IMPORTS
 
 @use 'typography.module' as ty;

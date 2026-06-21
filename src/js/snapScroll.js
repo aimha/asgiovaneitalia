@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: SnapScrollClass — snap-to-section scrolling via NativeScroller
+// DEPENDS ON: none
+// USED BY: Homepage.module.js (legacy, replaced by native)
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // Image Parallax CLASS
 
 export class SnapScrollClass {

@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Slider drag, click, navigation logic + animation
+// DEPENDS ON: ../../js/animation, ../../js/cubicBezier
+// USED BY: Slider.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // JS CLASS
 
 // imports

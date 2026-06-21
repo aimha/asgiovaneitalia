@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Footer section — address, tax info, contact
+// DEPENDS ON: Footer.module.scss
+// USED BY: Homepage.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // import style
 import styles from './Footer.module.scss'
 

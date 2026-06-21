@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Application entry point — renders SolidJS app with Router
+// DEPENDS ON: ./routes/homepage/Homepage
+// USED BY: index.html
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 /* @refresh reload */
 import { render } from 'solid-js/web';
 import { Router, Route } from "@solidjs/router";

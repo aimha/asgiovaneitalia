@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: Scrolling marquee component — lorem ipsum placeholder
+// DEPENDS ON: Marquee.module.scss
+// USED BY: Homepage.jsx (currently unused)
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // import style
 import styles from './Marquee.module.scss'
 

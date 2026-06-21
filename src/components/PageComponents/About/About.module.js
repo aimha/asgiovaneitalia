@@ -1,3 +1,12 @@
+// ============================================================
+// ROLE: About intersection animation triggers
+// DEPENDS ON: ../../../js/animation
+// USED BY: About.jsx
+// KEY DECISIONS: TODO
+// GOTCHAS: TODO
+// LAST UPDATED: 2026-06-21 — added file header
+// ============================================================
+
 // JS CLASS
 
 // imports
