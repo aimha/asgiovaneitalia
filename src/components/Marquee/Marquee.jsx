@@ -1,18 +1,7 @@
-import { onMount } from 'solid-js';
-
 // import style
 import styles from './Marquee.module.scss'
 
-// import logic
-import MarqueeClass from './Marquee.module';
-
 function Marquee() {
-
-  onMount(() => {
-    // initialize grid logic
-    const marquee = new MarqueeClass();
-    marquee.init();
-  });
 
   return (
     <>
