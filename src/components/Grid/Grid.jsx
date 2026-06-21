@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './Grid.module.scss'
 
 // import logic
-import GridClass from './Grid.module';
+import { GridClass } from './Grid.module';
 
-function Grid() {
+export function Grid() {
 
   onMount(() => {
     // initialize grid logic
@@ -22,4 +22,3 @@ function Grid() {
   )
 }
 
-export default Grid;

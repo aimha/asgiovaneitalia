@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './History.module.scss'
 
 // import logic
-import HistoryClass from './History.module';
+import { HistoryClass } from './History.module';
 
-function History(props) {
+export function History(props) {
   const historyDB = props.db;
   let root;
 
@@ -51,4 +51,3 @@ function History(props) {
 	)
 }
 
-export default History;

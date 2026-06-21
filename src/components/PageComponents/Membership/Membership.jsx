@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './Membership.module.scss'
 
 // import logic
-import MembershipClass from './Membership.module';
+import { MembershipClass } from './Membership.module';
 
-function Membership(props) {
+export function Membership(props) {
   const memDB = props.db;
   let root;
 
@@ -46,4 +46,3 @@ function Membership(props) {
 	)
 }
 
-export default Membership;

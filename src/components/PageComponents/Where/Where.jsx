@@ -3,7 +3,7 @@ import { onMount } from 'solid-js';
 // import style
 import styles from './Where.module.scss'
 
-function Where(props) {
+export function Where(props) {
   let mapContainer;
 
 	onMount(() => {
@@ -29,4 +29,3 @@ function Where(props) {
 	)
 }
 
-export default Where;

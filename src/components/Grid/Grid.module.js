@@ -1,5 +1,5 @@
 
-export default class GridClass {
+export class GridClass {
   constructor() {
     this.grid = document.querySelector('#grid');
   }

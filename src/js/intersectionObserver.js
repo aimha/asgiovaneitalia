@@ -1,6 +1,6 @@
 // INTERSECTION OBSERVER CLASS
 
-export default class IntersectionObsClass {
+export class IntersectionObsClass {
   constructor(target = [], options = {}) {
     // get target elements
     this.target = target;

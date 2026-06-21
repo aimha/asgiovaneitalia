@@ -1,6 +1,6 @@
 // ANIMATION CLASS
 
-export default class AnimationClass {
+export class AnimationClass {
   constructor(defaults = {}) {
     // sub defaults if user defined
     this.defaults = {

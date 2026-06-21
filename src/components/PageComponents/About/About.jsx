@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './About.module.scss'
 
 // import logic
-import AboutClass from './About.module';
+import { AboutClass } from './About.module';
 
-function About(props) {
+export function About(props) {
   const aboutDB = props.db;
   let root;
 
@@ -41,4 +41,3 @@ function About(props) {
 	)
 }
 
-export default About;

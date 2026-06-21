@@ -1,10 +1,10 @@
 // JS CLASS
 
 // imports
-import AnimationClass from "../../js/animation";
-import cubicBezier from "../../js/cubicBezier";
+import { AnimationClass } from '../../js/animation';
+import { cubicBezier } from '../../js/cubicBezier';
 
-export default class SliderClass {
+export class SliderClass {
 	constructor(slider, slides, prev, next, start, end) {
 		this.slider = document.querySelector(`.${slider}`);
 		this.slides = document.querySelectorAll(`.${slides}`);

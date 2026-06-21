@@ -4,10 +4,10 @@ import { onCleanup, onMount } from 'solid-js';
 import styles from './Slider.module.scss'
 
 // import logic
-import SliderClass from './Slider.module';
+import { SliderClass } from './Slider.module';
 let slider;
 
-function Slider() {
+export function Slider() {
 
 	onMount(() => {
 		slider = new SliderClass( styles.Slider, styles.Card, styles.SideNavPrev, styles.SideNavNext, styles.SideNavStart, styles.SideNavEnd);
@@ -74,4 +74,3 @@ function Slider() {
 	)
 }
 
-export default Slider;

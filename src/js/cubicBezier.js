@@ -1,4 +1,4 @@
-const cubicBezier = {
+export const cubicBezier = {
     'productiveEaseInOut': 'cubic-bezier(0.2, 0.2, 0.38, 0.9)',
     'productiveEaseIn': 'cubic-bezier(0.2, 0, 1, 0.9)',
     'productiveEaseOut': 'cubic-bezier(0, 0, 0.38, 0.9)',
@@ -11,5 +11,3 @@ const cubicBezier = {
     'celebratoryEaseIn': 'cubic-bezier(0.39, .06, 1, 1)',
     'celebratoryEaseOut': 'cubic-bezier(0, 0, 0.3, 1)',
 };
-
-export default cubicBezier;

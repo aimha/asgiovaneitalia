@@ -1,7 +1,7 @@
 // import style
 import styles from './Footer.module.scss'
 
-function Footer(props) {
+export function Footer(props) {
   const footerDB = props.db;
 
 	return (
@@ -26,4 +26,3 @@ function Footer(props) {
 	)
 }
 
-export default Footer;

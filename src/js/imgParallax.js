@@ -1,6 +1,6 @@
 // Image Parallax CLASS
 
-export default class ParallaxClass {
+export class ParallaxClass {
   constructor(imgsArray) {
     this.imgs = [...imgsArray];
   }

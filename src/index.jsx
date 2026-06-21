@@ -3,7 +3,7 @@ import { render } from 'solid-js/web';
 import { Router, Route } from "@solidjs/router";
 
 // Routes
-import Homepage from "./routes/homepage/Homepage";
+import { Homepage } from './routes/homepage/Homepage';
 
 const base = import.meta.env.VITE_ROUTER_BASE;
 

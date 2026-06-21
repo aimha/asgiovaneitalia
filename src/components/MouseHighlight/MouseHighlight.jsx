@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './MouseHighlight.module.scss'
 
 // import logic
-import MouseHighlightClass from './MouseHighlight.module';
+import { MouseHighlightClass } from './MouseHighlight.module';
 
-function MouseHighlight() {
+export function MouseHighlight() {
 
   onMount(() => {
     // initialize grid logic
@@ -21,4 +21,3 @@ function MouseHighlight() {
   )
 }
 
-export default MouseHighlight;

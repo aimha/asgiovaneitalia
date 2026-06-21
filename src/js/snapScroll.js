@@ -1,6 +1,6 @@
 // Image Parallax CLASS
 
-export default class SnapScrollClass {
+export class SnapScrollClass {
   constructor(SlidesArray, scroller) {
     this.slides = [...SlidesArray];
     this.idleTimeout = null;

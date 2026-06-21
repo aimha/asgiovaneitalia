@@ -1,7 +1,7 @@
 // import style
 import styles from './Marquee.module.scss'
 
-function Marquee() {
+export function Marquee() {
 
   return (
     <>
@@ -49,4 +49,3 @@ function Marquee() {
   )
 }
 
-export default Marquee;

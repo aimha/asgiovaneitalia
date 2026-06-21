@@ -1,9 +1,9 @@
 // JS CLASS
 
 // imports
-import AnimationClass from "../../../js/animation";
+import { AnimationClass } from '../../../js/animation';
 
-export default class HistoryClass {
+export class HistoryClass {
 	constructor(_root, _styles) {
     this.root = _root;
     this.styles = _styles;

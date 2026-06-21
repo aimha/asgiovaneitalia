@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './Activities.module.scss'
 
 // import logic
-import ActivitiesClass from './Activities.module';
+import { ActivitiesClass } from './Activities.module';
 
-function Activities(props) {
+export function Activities(props) {
   const actDB = props.db;
   let root;
 
@@ -49,4 +49,3 @@ function Activities(props) {
 	)
 }
 
-export default Activities;

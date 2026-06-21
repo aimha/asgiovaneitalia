@@ -99,4 +99,5 @@ function createStateManagement() {
   return { state };
 }
 
-export default createRoot(createStateManagement);
+export const store = createRoot(createStateManagement);
+

@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './Header.module.scss'
 
 // import logic
-import HeaderClass from './Header.module';
+import { HeaderClass } from './Header.module';
 
-function Header() {
+export function Header() {
   let root;
 
 	onMount(() => {
@@ -48,4 +48,3 @@ function Header() {
 	)
 }
 
-export default Header;

@@ -1,10 +1,10 @@
 // JS CLASS
 
 // imports
-import AnimationClass from "../../js/animation";
-import cubicBezier from "../../js/cubicBezier";
+import { AnimationClass } from '../../js/animation';
+import { cubicBezier } from '../../js/cubicBezier';
 
-export default class HeaderClass {
+export class HeaderClass {
 	constructor(_root, _styles) {
 		this.root = _root;
     this.styles = _styles;

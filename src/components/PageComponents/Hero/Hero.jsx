@@ -4,9 +4,9 @@ import { onMount } from 'solid-js';
 import styles from './Hero.module.scss'
 
 // import logic
-import HeroClass from './Hero.module';
+import { HeroClass } from './Hero.module';
 
-function Hero(props) {
+export function Hero(props) {
   const heroDB = props.db;
   let root;
 
@@ -38,4 +38,3 @@ function Hero(props) {
 	)
 }
 
-export default Hero;

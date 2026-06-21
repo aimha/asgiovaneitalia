@@ -1,5 +1,5 @@
 
-export default class MouseHighlightClass {
+export class MouseHighlightClass {
   constructor(mousecontainer, mousehighlight) {
     this.container = document.getElementsByClassName(mousecontainer)[0];
     this.highLight = document.getElementsByClassName(mousehighlight)[0];

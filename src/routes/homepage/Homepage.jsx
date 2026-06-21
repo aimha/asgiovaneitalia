@@ -5,27 +5,27 @@ import { onMount } from 'solid-js';
 import { NativeScroller } from '@smoovy/scroller/native';
 
 // import utility components
-import Grid from '../../components/Grid/Grid';
-import MouseHighlight from '../../components/MouseHighlight/MouseHighlight';
+import { Grid } from '../../components/Grid/Grid';
+import { MouseHighlight } from '../../components/MouseHighlight/MouseHighlight';
 
 // import page components
-import Header from '../../components/Header/Header'
-import Hero from '../../components/PageComponents/Hero/Hero';
-import About from '../../components/PageComponents/About/About';
-import History from '../../components/PageComponents/History/History';
-import Activities from '../../components/PageComponents/Activities/Activities';
-import Membership from '../../components/PageComponents/Membership/Membership';
-import Where from '../../components/PageComponents/Where/Where';
-import Footer from '../../components/PageComponents/Footer/Footer';
+import { Header } from '../../components/Header/Header';
+import { Hero } from '../../components/PageComponents/Hero/Hero';
+import { About } from '../../components/PageComponents/About/About';
+import { History } from '../../components/PageComponents/History/History';
+import { Activities } from '../../components/PageComponents/Activities/Activities';
+import { Membership } from '../../components/PageComponents/Membership/Membership';
+import { Where } from '../../components/PageComponents/Where/Where';
+import { Footer } from '../../components/PageComponents/Footer/Footer';
 
 // import logic
-import HomepageClass from './Homepage.module';
+import { HomepageClass } from './Homepage.module';
 
 // import state management store
-import stateManagement from "../../data/stores/Store";
+import { store } from '../../data/stores/Store';
 
-function App() {
-  const { state } = stateManagement;
+export function Homepage() {
+  const { state } = store;
 
   onMount(() => {
     // initialize homepage logic
@@ -54,4 +54,3 @@ function App() {
   );
 }
 
-export default App;
