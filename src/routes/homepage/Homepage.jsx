@@ -1,6 +1,6 @@
 // ============================================================
 // ROLE: Homepage route component — composes all page sections and wires store data
-// DEPENDS ON: ../../components/Grid/Grid, ../../components/MouseHighlight/MouseHighlight, ../../components/Header/Header, ../../components/PageComponents/Hero/Hero, ../../components/PageComponents/About/About, ../../components/PageComponents/History/History, ../../components/PageComponents/Activities/Activities, ../../components/PageComponents/Membership/Membership, ../../components/PageComponents/Where/Where, ../../components/PageComponents/Footer/Footer, ./Homepage.module, ../../data/stores/Store
+// DEPENDS ON: ../../components/Grid/Grid, ../../components/MouseHighlight/MouseHighlight, ../../components/Header/Header, ../../components/PageComponents/Hero/Hero, ../../components/PageComponents/About/About, ../../components/PageComponents/History/History, ../../components/PageComponents/Activities/Activities, ../../components/PageComponents/Membership/Membership, ../../components/PageComponents/Where/Where, ../../components/PageComponents/Footer/Footer, ./Homepage.module, ../../store/app.store
 // USED BY: index.jsx (Router)
 // KEY DECISIONS: TODO
 // GOTCHAS: TODO
@@ -31,7 +31,7 @@ import { Footer } from '../../components/PageComponents/Footer/Footer';
 import { HomepageClass } from './Homepage.module';
 
 // import state management store
-import { store } from '../../data/stores/Store';
+import { store } from '../../store/app.store';
 
 export function Homepage() {
   const { state } = store;
