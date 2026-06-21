@@ -1,10 +1,10 @@
 // ============================================================
 // ROLE: Hero intersection animation + parallax effect
-// DEPENDS ON: ../../../js/animation, ../../../js/cubicBezier
+// DEPENDS ON: ../../../js/scrollAnimation
 // USED BY: Hero.jsx
 // KEY DECISIONS: TODO
 // GOTCHAS: TODO
-// LAST UPDATED: 2026-06-21 — added file header
+// LAST UPDATED: 2026-06-21 — refactored to use shared createScrollAnimation factory
 // ============================================================
 
 // JS CLASS
