@@ -34,12 +34,24 @@ export class AnimationClass {
 
     // loop through elements
     target.forEach((el, index) => {
+      // optimize compositing
+      const animatedProps = customProps.reduce((acc, frame) => {
+        Object.keys(frame).forEach((prop) => {
+          if (!acc.includes(prop)) acc.push(prop);
+        });
+        return acc;
+      }, []);
+      const prevWillChange = el.style.willChange;
+      el.style.willChange = animatedProps.join(', ');
+
       // calc stagger
       options.delay = index * options.stagger + options.initialDelay;
       // animate
       const a = el.animate(customProps, options);
       // callback
       a.onfinish = (e) => {
+        // restore will-change
+        el.style.willChange = prevWillChange;
         // clearprops
         if (!options.clearProps) {
           a.commitStyles();
