@@ -1,6 +1,6 @@
 // IMPORTS
 
-@use'../../styles/typography.module' as typography;
+@use'../../styles/typography.module' as ty;
 
 // STYLES
 
@@ -21,7 +21,7 @@
     animation: marquee-animation 40s linear infinite;
 
     li {
-      @include typography.baseline(1, 0);
+      @include ty.baseline(1, 0);
       font-size: 3rem;
       font-weight: 100;
       color: var(--color__White);
