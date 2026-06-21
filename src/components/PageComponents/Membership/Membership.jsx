@@ -7,7 +7,7 @@
 // LAST UPDATED: 2026-06-21 — added file header
 // ============================================================
 
-import { onMount } from 'solid-js';
+import { For, onMount } from 'solid-js';
 
 // import style
 import styles from './Membership.module.scss'
