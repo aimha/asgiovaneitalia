@@ -83,8 +83,7 @@ export default class SliderClass {
 
 		// popup 
 		if (this.slider.contains(e.target) && !this.status.disableClick) {
-			// popup logic
-			console.log('open popup')
+			// TODO: implement popup
 		}
 	}
 

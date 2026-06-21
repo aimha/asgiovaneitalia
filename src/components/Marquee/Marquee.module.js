@@ -5,6 +5,5 @@ export default class MarqueeClass {
   }
 
   init () {
-    console.log('init marquee');
   }
 }
