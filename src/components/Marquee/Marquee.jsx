@@ -16,8 +16,8 @@ function Marquee() {
 
   return (
     <>
-    <div className={styles.Wrapper}>
-      <ul className={styles.Track}>
+    <div class={styles.Wrapper}>
+      <ul class={styles.Track}>
         <li>
           lorem ipsum
         </li>

@@ -15,8 +15,8 @@ function MouseHighlight() {
   });
 
   return (
-    <div className={styles.MouseContainer}>
-      <div className={styles.MouseHighlight}></div>
+    <div class={styles.MouseContainer}>
+      <div class={styles.MouseHighlight}></div>
     </div>
   )
 }
