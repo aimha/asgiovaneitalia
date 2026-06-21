@@ -100,6 +100,7 @@ export class SliderClass {
 
 	movementStart(e) {
 		if (this.slider.contains(e.target)) {
+			this.status.disableClick = true;
 			this.status.active= true;
 			this.status.touchStart = this.getPositionX(e);
 		}

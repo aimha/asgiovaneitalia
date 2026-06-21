@@ -36,100 +36,74 @@ export class HeaderClass {
 		this.handleClick();
 	}
 
+	openMenu() {
+		this.overlay.classList.remove(`${this.styles.MenuOverlay__hidden}`);
+
+		this.tl_elements.animateElement(
+			[this.overlay],
+			[{opacity: 0}, {opacity: 1}]
+		);
+
+		this.tl_elements.animateElement(
+			[...this.links, this.menuClose],
+			[
+				{opacity: 0, transform: `translateY(20px)`},
+				{opacity: 1, transform: `translateY(0px)`},
+			],
+			{initialDelay: 250}
+		);
+
+		document.addEventListener('click', this.closeHandler);
+	}
+
+	closeMenu(targetElem) {
+		this.tl_elements.animateElement(
+			[...this.links, this.menuClose],
+			[
+				{opacity: 1, transform: `translateY(0px)`},
+				{opacity: 0, transform: `translateY(10px)`},
+			],
+			{initialDelay: 0, stagger: 0, duration: 125}
+		);
+
+		this.tl_elements.animateElement(
+			[this.overlay],
+			[{opacity: 1}, {opacity: 0}],
+			{
+				duration: 500,
+				initialDelay: 125,
+				callback: () => {
+					this.overlay.classList.add(`${this.styles.MenuOverlay__hidden}`);
+					if (targetElem) {
+						targetElem.scrollIntoView({ behavior: 'smooth' });
+					}
+				},
+			}
+		);
+
+		document.removeEventListener('click', this.closeHandler);
+	}
+
 	handleClick() {
 		const openMenu = `${this.styles.ToggleIcon}`;
 		const closeMenu = `${this.styles.MenuCloseIcon}`;
 		const menuLinks = `${this.styles.MenuEl}`;
 
-		document.addEventListener("click", (event) => {
-			if(event.target.classList.contains(openMenu)) {
-				this.overlay.classList.remove(`${this.styles.MenuOverlay__hidden}`);
-
-				this.tl_elements.animateElement(
-					[this.overlay],
-					[
-						{opacity: 0},
-						{opacity: 1}
-					]
-				);
-
-				this.tl_elements.animateElement(
-					[...this.links, this.menuClose],
-					[
-						{opacity: 0, transform: `translateY(20px)`},
-							{opacity: 1, transform: `translateY(0px)`},
-					],
-					{
-						initialDelay: 250,
-					}
-				);
+		this.closeHandler = (event) => {
+			if (event.target.classList.contains(closeMenu)) {
+				this.closeMenu();
 			}
-
-			if(event.target.classList.contains(closeMenu)) {
-				this.tl_elements.animateElement(
-					[...this.links, this.menuClose],
-					[
-						{opacity: 1, transform: `translateY(0px)`},
-							{opacity: 0, transform: `translateY(10px)`},
-					],
-					{
-						initialDelay: 0,
-						stagger: 0,
-						duration: 125,
-					}
-				);
-
-				this.tl_elements.animateElement(
-					[this.overlay],
-					[
-						{opacity: 1},
-						{opacity: 0},
-					],
-					{
-						duration: 500,
-						initialDelay: 125,
-						callback: () => {
-							this.overlay.classList.add(`${this.styles.MenuOverlay__hidden}`);
-						}
-					}
-				);
+			if (event.target.classList.contains(menuLinks)) {
+				const targetElem = document.querySelector('#' + event.target.dataset.target);
+				this.closeMenu(targetElem);
 			}
+		};
 
-			if(event.target.classList.contains(menuLinks)) {
-				const targetElem = document.querySelector("#" + event.target.dataset.target);
-
-				this.tl_elements.animateElement(
-					[...this.links, this.menuClose],
-					[
-						{opacity: 1, transform: `translateY(0px)`},
-							{opacity: 0, transform: `translateY(10px)`},
-					],
-					{
-						initialDelay: 0,
-						stagger: 0,
-						duration: 125,
-					}
-				);
-
-				this.tl_elements.animateElement(
-					[this.overlay],
-					[
-						{opacity: 1},
-						{opacity: 0},
-					],
-					{
-						duration: 500,
-						initialDelay: 125,
-						callback: () => {
-							this.overlay.classList.add(`${this.styles.MenuOverlay__hidden}`);
-
-							targetElem.scrollIntoView({ behavior: "smooth"});
-						}
-					}
-				);
-
+		document.addEventListener('click', (event) => {
+			if (event.target.classList.contains(openMenu)) {
+				this.openMenu();
 			}
-		})
+		});
 	}
 
 }
