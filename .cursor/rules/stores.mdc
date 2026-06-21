@@ -1,0 +1,35 @@
+---
+description: Regole per store e signals SolidJS
+globs: frontend/src/data/stores/**/*.js
+alwaysApply: true
+---
+
+<!-- GENERATED — non modificare direttamente. Fonte: .agent-guidelines/ → npm run sync-agents -->
+
+## Store e Signals
+
+### Struttura
+
+Gli store globali risiedono in `src/store/` con naming `camelCase.store.js`.
+
+### Pattern store
+
+```javascript
+// ✓ createStore per stato complesso (oggetti/array)
+import { createStore } from 'solid-js/store';
+
+const [cart, setCart] = createStore({ items: [], total: 0 });
+
+export function addItem(item) {
+  setCart('items', (items) => [...items, item]);
+  setCart('total', (t) => t + item.price);
+}
+export { cart };
+```
+
+### Regole store
+
+- Uno store per dominio — non creare store omnibus
+- Non esporre setter direttamente: wrappare in funzioni named con semantica di dominio
+- Derivazioni di stato: sempre `createMemo`, mai ricalcolare nel componente
+- Niente side effect nei setter — usare `createEffect` nel punto di utilizzo

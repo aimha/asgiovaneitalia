@@ -1,0 +1,73 @@
+---
+description: Regole per i componenti SolidJS
+globs: frontend/src/components/**/*.jsx
+alwaysApply: true
+---
+
+<!-- GENERATED — non modificare direttamente. Fonte: .agent-guidelines/ → npm run sync-agents -->
+
+## Componenti SolidJS
+
+### Struttura cartella
+
+Ogni componente risiede nella propria cartella con questi file co-located:
+
+```
+src/components/
+└── MyComponent/
+    ├── MyComponent.jsx
+    └── MyComponent.module.scss
+```
+
+### Regole componente
+
+- Esportare una singola funzione **named** — nessun `default export`
+- Non superare le **150 righe** — se più lungo, suddividere in sotto-componenti
+- Non importare direttamente da cartelle di componenti fratelli
+- Le props devono avere tipo esplicito o essere destrutturate con valori di default chiari
+- Niente logica di business nel componente — delegare a store o service
+
+### Signals e reattività
+
+```jsx
+// ✓ Signal locale al componente
+const [count, setCount] = createSignal(0);
+
+// ✓ Effetto con cleanup esplicito
+createEffect(() => {
+  const timer = setInterval(() => setCount((c) => c + 1), 1000);
+  onCleanup(() => clearInterval(timer));
+});
+
+// ✗ Non usare signals per stato derivabile
+const [doubled, setDoubled] = createSignal(0); // sbagliato
+const doubled = createMemo(() => count() * 2); // corretto
+```
+
+### Conditional rendering
+
+```jsx
+// ✓ <Show> per boolean
+<Show when={isLoading()} fallback={<Content />}>
+  <Spinner />
+</Show>
+
+// ✓ <For> per liste — mai .map() nel JSX
+<For each={items()}>{(item) => <Item {...item} />}</For>
+
+// ✓ <Switch>/<Match> per casi multipli
+<Switch fallback={<NotFound />}>
+  <Match when={status() === 'loading'}><Spinner /></Match>
+  <Match when={status() === 'error'}><Error /></Match>
+</Switch>
+```
+
+### Path alias frontend
+
+```javascript
+'@components' → src/components
+'@services'   → src/services
+'@styles'     → src/styles
+'@lib'        → src/lib
+'@domain'     → src/domain
+```
