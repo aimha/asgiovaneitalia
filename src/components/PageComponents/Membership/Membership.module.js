@@ -1,6 +1,6 @@
 // ============================================================
 // ROLE: Membership intersection animation triggers
-// DEPENDS ON: ../../../js/animation
+// DEPENDS ON: ../../../js/animation, ../../../js/cubicBezier
 // USED BY: Membership.jsx
 // KEY DECISIONS: TODO
 // GOTCHAS: TODO
@@ -11,6 +11,7 @@
 
 // imports
 import { AnimationClass } from '../../../js/animation';
+import { cubicBezier } from '../../../js/cubicBezier';
 
 export class MembershipClass {
 	constructor(_root, _styles) {
@@ -21,7 +22,7 @@ export class MembershipClass {
       duration: 500,
       initialDelay: 250,
       stagger: 125,
-      easing: 'cubic-bezier(0, 0, 0.3, 1)'
+      easing: cubicBezier.celebratoryEaseOut
     });
 	}
 

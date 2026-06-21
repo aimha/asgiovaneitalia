@@ -1,6 +1,6 @@
 // ============================================================
 // ROLE: Hero intersection animation + parallax effect
-// DEPENDS ON: ../../../js/animation
+// DEPENDS ON: ../../../js/animation, ../../../js/cubicBezier
 // USED BY: Hero.jsx
 // KEY DECISIONS: TODO
 // GOTCHAS: TODO
@@ -11,6 +11,7 @@
 
 // imports
 import { AnimationClass } from '../../../js/animation';
+import { cubicBezier } from '../../../js/cubicBezier';
 
 export class HeroClass {
 	constructor(_root, _styles) {
@@ -23,14 +24,14 @@ export class HeroClass {
       duration: 1500,
       initialDelay: 125,
       stagger: 0,
-      easing: 'cubic-bezier(0, 0, 0.3, 1)'
+      easing: cubicBezier.celebratoryEaseOut
     });
 
     this.tl_elements = new AnimationClass({
       duration: 500,
       initialDelay: 500,
       stagger: 250,
-      easing: 'cubic-bezier(0, 0, 0.3, 1)'
+      easing: cubicBezier.celebratoryEaseOut
     });
 	}
 
