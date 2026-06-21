@@ -1,4 +1,4 @@
-// funzioni di utilità
+// utility functions
 
 @use 'sass:math';
 
@@ -6,7 +6,7 @@
   @return math.div($number, ($number * 0 + 1));
 }
 
-// funzioni di conversione
+// conversion functions
 
 @function vw($rem, $breakpoint: 1920) {
   @return (calc((strip-units($rem) * 20) / $breakpoint) * 100vw);
