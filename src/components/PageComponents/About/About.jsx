@@ -1,4 +1,4 @@
-import { onMount, splitProps } from 'solid-js';
+import { onMount } from 'solid-js';
 
 // import style
 import styles from './About.module.scss'
